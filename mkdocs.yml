@@ -70,7 +70,7 @@ theme:
       text: 'Lora'
       code: 'JetBrains Mono'
 
-    # logo from https://obsidian.md/blog/new-obsidian-icon/
+    # logo from https://obsidian.md/brand
     favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
     logo: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
 
