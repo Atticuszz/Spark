@@ -129,9 +129,17 @@
             "file": "docs/Daily/writing/2024-9.md"
           }
         }
+      },
+      {
+        "id": "57ac6d6cdaf2e448",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {}
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 3
   },
   "left-ribbon": {
     "hiddenItems": {
