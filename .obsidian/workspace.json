@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CS/VCS/github/SSH_keypair_setup_for_GitHub.md",
+                "file": "docs/Features/Admonitions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/CS/VCS/github/SSH_keypair_setup_for_GitHub.md",
+                "file": "docs/Features/Admonitions.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/CS/VCS/github/SSH_keypair_setup_for_GitHub.md",
+                "file": "docs/Features/Admonitions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/CS/VCS/github/SSH_keypair_setup_for_GitHub.md"
+                "file": "docs/Features/Admonitions.md"
               }
             }
           },
@@ -202,8 +202,8 @@
   },
   "active": "3c9df18a01ae789f",
   "lastOpenFiles": [
-    "docs/CS/VCS/github/How_to_connect_ssh.md",
     "docs/CS/VCS/github/SSH_keypair_setup_for_GitHub.md",
+    "docs/CS/VCS/github/How_to_connect_ssh.md",
     "docs/CS/schedule/TODO.md",
     "docs/CS/schedule/report_mid.md",
     "docs/CS/schedule/report.md",
