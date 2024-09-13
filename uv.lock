@@ -264,35 +264,6 @@ wheels = [
 ]
 
 [[package]]
-name = "mkdocs-obsidian-template"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "mkdocs-git-revision-date-localized-plugin" },
-    { name = "mkdocs-glightbox" },
-    { name = "mkdocs-material" },
-    { name = "mkdocs-obsidian-bridge" },
-    { name = "pymdown-extensions" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.2.8" },
-    { name = "mkdocs-glightbox", specifier = ">=0.4.0" },
-    { name = "mkdocs-material", specifier = ">=9.5.34" },
-    { name = "mkdocs-obsidian-bridge", specifier = ">=1.0.4" },
-    { name = "pymdown-extensions", specifier = ">=10.9" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = ">=0.6.4" }]
-
-[[package]]
 name = "packaging"
 version = "24.1"
 source = { registry = "https://pypi.org/simple" }
@@ -489,6 +460,35 @@ sdist = { url = "https://files.pythonhosted.org/packages/88/04/b5bf6d21dc4041000
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl", hash = "sha256:e6d8668fa5f93e706934a62d7b4db19c8d9eb8cf2adbb75ef1b675aa332b69da", size = 24282 },
 ]
+
+[[package]]
+name = "spark"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "mkdocs-git-revision-date-localized-plugin" },
+    { name = "mkdocs-glightbox" },
+    { name = "mkdocs-material" },
+    { name = "mkdocs-obsidian-bridge" },
+    { name = "pymdown-extensions" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.2.8" },
+    { name = "mkdocs-glightbox", specifier = ">=0.4.0" },
+    { name = "mkdocs-material", specifier = ">=9.5.34" },
+    { name = "mkdocs-obsidian-bridge", specifier = ">=1.0.4" },
+    { name = "pymdown-extensions", specifier = ">=10.9" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = ">=0.6.4" }]
 
 [[package]]
 name = "urllib3"
