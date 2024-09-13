@@ -26,21 +26,9 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "afcfd986b2417280",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +143,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -203,13 +187,21 @@
       "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e5fb1abf4287bce9",
+  "active": "3c9df18a01ae789f",
   "lastOpenFiles": [
+    "docs/CS/schedule/TODO.md",
+    "docs/CS/schedule/report_mid.md",
+    "docs/CS/schedule/report.md",
+    "docs/CS/schedule/Free_time.md",
+    "docs/CS/schedule/meetings/standard.md",
+    "docs/CS/schedule/meetings/2024-2-28.md",
+    "docs/CS/schedule/meetings/2024-1-24.md",
+    "README.md",
     "mkdocs_temp.yml",
     "docs/blog/posts/hello-world.md",
     "docs/blog/posts",
@@ -227,7 +219,6 @@
     "2021-11-22-22-52-49.png",
     "2021-11-22-22-49-26.png",
     "docs/index.md",
-    "README.md",
     "assets/picgo",
     "docs/Features/code.md",
     "docs/Features/Text Formatting.md",
@@ -247,13 +238,6 @@
     "docs/Features/Draw.md",
     "assests/drawio/test.drawio.svg",
     "assests/drawio/test.drawio",
-    "assests/drawio",
-    "docs/Features/Mermaid Diagrams.md",
-    "essay/texs/GsplatLoc/main.md",
-    "docs/tools/IDE/vscode.md",
-    "essay/texs/GsplatLoc/mess notes.md",
-    "docs/Language/python/py-env/UV.md",
-    "docs/tools/IDE/JetBrains.md",
     "assets/20240822115648.png",
     "assets/Pasted image 20240727181456.png",
     "未命名.canvas",
