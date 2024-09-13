@@ -51,7 +51,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: green
+      primary: white
       accent: green
       toggle:
         icon: material/brightness-7
@@ -60,8 +60,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: green
-      accent: green
+      primary: black
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -70,7 +70,7 @@ theme:
       text: 'Lora'
       code: 'JetBrains Mono'
 
-    # logo from https://obsidian.md/blog/new-obsidian-icon/
+    # logo from https://obsidian.md/brand
     favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
     logo: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
 
@@ -165,7 +165,7 @@ markdown_extensions:
 
 # math and mermaid
 extra_javascript:
-  - https://raw.githubusercontent.com/Atticuszz/Spark/main/scripts/katex.js
+  - js/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
