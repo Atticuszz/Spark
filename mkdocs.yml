@@ -62,7 +62,6 @@ theme:
       scheme: slate
       primary: black
       accent: deep purple
-
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
