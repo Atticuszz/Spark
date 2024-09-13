@@ -77,7 +77,7 @@ theme:
     icon:
       edit: material/pencil
       repo: fontawesome/brands/git-alt
-      logo: material-sigma
+      logo: material/material-sigma
 
 plugins:
   # The git-revision-date-localized plugin adds support for adding the date of last update and creation of a document at the bottom of each page
