@@ -71,7 +71,7 @@ theme:
       code: 'JetBrains Mono'
 
     # logo from https://obsidian.md/brand
-    favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
+    favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/favicon.svg
     logo: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
 
     icon:
