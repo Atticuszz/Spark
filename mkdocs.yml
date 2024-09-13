@@ -71,13 +71,12 @@ theme:
       code: 'JetBrains Mono'
 
     # logo from https://obsidian.md/blog/new-obsidian-icon/
-    favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/obsidian.svg
-    # logo: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/obsidian.svg
+    favicon: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
+    logo: https://raw.githubusercontent.com/Atticuszz/Spark/main/assets/icon/logo.svg
 
     icon:
       edit: material/pencil
       repo: fontawesome/brands/git-alt
-      logo: material-sigma
 
 plugins:
   # The git-revision-date-localized plugin adds support for adding the date of last update and creation of a document at the bottom of each page
