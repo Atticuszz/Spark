@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Features/footntoes.md",
+                "file": "docs/Features/Image.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Features/footntoes.md",
+                "file": "docs/Features/Image.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Features/footntoes.md",
+                "file": "docs/Features/Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Features/footntoes.md"
+                "file": "docs/Features/Image.md"
               }
             }
           },
@@ -183,21 +183,20 @@
       "switcher:Open quick switcher": false,
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "68741885d840b25b",
   "lastOpenFiles": [
+    "docs/Features/Diagrams.md",
+    "docs/Features/Image.md",
+    "docs/Features/footntoes.md",
     "README.md",
     "docs/Daily/writing/2024-9.md",
     "docs/Features/code.md",
     "docs/Features/Admonitions.md",
-    "docs/Features/Diagrams.md",
     "docs/Features/Draw.md",
-    "docs/Features/footntoes.md",
     "docs/Features/Icons, Emojis.md",
-    "docs/Features/Image.md",
     "docs/Features/Text Formatting.md",
     "docs/Features/Table.md",
     "docs/Features/LaTeX Math Support.md",
