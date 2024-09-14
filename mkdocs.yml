@@ -90,7 +90,7 @@ plugins:
   # image zoom
   - glightbox
   - search
-
+  - awesome-pages
   # - blog
   # - rss:
   #     match_path: blog/posts/.*
