@@ -1,8 +1,10 @@
-### net
+# Net
 
-**before ssh connect,u maybe connect by gui or connect by password**
+## Net
 
-#### install ssh
+__before ssh connect,u maybe connect by gui or connect by password__
+
+### Install Ssh
 
 - install and start
 
@@ -24,7 +26,7 @@ PasswordAuthentication no
 PermitRootLogin yes
 ```
 
-- generate ssh-pub-key **in local machine**
+- generate ssh-pub-key __in local machine__
 
 ```powershell
 
@@ -47,10 +49,10 @@ nano ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-#### clash
+### Clash
 
 [GitHub - Elegycloud/clash-for-linux-backup: Linux最完整的Clash for Linux的备份仓库，完全可以使用！由Yizuko进行修复及维护](https://github.com/Elegycloud/clash-for-linux-backup)
-**or**
+__or__
 [GitHub - LaoYutang/clash-and-dashboard: clash-dashboard的修改版，与clash一起打包成docker镜像](https://github.com/LaoYutang/clash-and-dashboard)
 
 - add config
@@ -76,7 +78,7 @@ docker run -d \
   laoyutang/clash-and-dashboard:latest
 ```
 
-- **remember set proxy** in `/etc/environment`
+- __remember set proxy__ in `/etc/environment`
 
 ```bash
 nano /etc/environment
@@ -103,10 +105,11 @@ source /etc/environment
 curl https://www.google.com
 ```
 
-####  NAT
+### NAT
 
 - get download command in [花生壳客户端官方下载 - 贝锐花生壳官网](https://hsk.oray.com/download)
 - tutorial in [Linux版使用教程-贝锐官网](https://service.oray.com/question/11630.html)
+
   > successful example ubuntu 22,(X86_64)
 
 ```bash
@@ -132,7 +135,7 @@ phddns enable
 - login [贝锐花生壳管理](http://b.oray.com) by `orayec00470c5af6` and `admin`
 - add map in [Site](https://console.hsk.oray.com/forward)
 
-#### access port
+### Access Port
 
 - set local port forwarding in `Termius`
 - ![../../../assets/Pasted_image_20240204144722.png](../../../assets/Pasted_image_20240204144722.png)

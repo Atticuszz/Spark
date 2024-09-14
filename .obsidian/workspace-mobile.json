@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Daily/writing/2024-9.md",
+                "file": "docs/Learning/CS/VCS/git.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,6 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "docs/Learning/CS/VCS/git.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -113,6 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "docs/Learning/CS/VCS/git.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -124,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "conflict-files-obsidian-git.md"
+            "file": "docs/Learning/CS/VCS/git.md"
           }
         }
       },
@@ -150,12 +152,12 @@
       "publish:Publish changes...": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "oz-clear-unused-images:Clear Unused Images": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "57ac6d6cdaf2e448",
+  "active": "7a2e9c95af36d817",
   "lastOpenFiles": [
+    "assets/Image example.png",
     "docs/Daily/writing/2024-9.md",
     "conflict-files-obsidian-git.md",
     "docs/Learning",

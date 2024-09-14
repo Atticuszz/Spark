@@ -1,51 +1,51 @@
+# Admonitions
 
-## Obsidian admonition Types and Examples
+## Obsidian Admonition Types and Examples
 
 1. Note
 !!! note Note
 	This is a note callout.
 
-
-1. Abstract / Summary
+2. Abstract / Summary
 !!! abstract Abstract
 	This is an abstract or summary callout.
 
-1. Info
+3. Info
 !!! info Information
 	This is an info callout.
 
-1. Tip / Hint
+4. Tip / Hint
 !!! tip Helpful Tip
 	This is a tip or hint callout.
 
-1. Success / Check / Done
+5. Success / Check / Done
 !!! success Task Completed
 	This is a success callout.
 
-1. Question / Help / FAQ
+6. Question / Help / FAQ
 !!! question Frequently Asked Question
 	This is a question or FAQ callout.
 
-1. Warning / Caution / Attention
+7. Warning / Caution / Attention
 !!! warning Be Careful!
 	This is a warning callout.
 
-1. Failure / Fail / Missing
+8. Failure / Fail / Missing
 !!! failure Error Occurred
 	This is a failure or error callout.
 
-1. Danger / Error
+9. Danger / Error
 !!! danger Danger Zone
 	This is a danger callout.
 
-1.  Bug
+10. Bug
 !!! bug Known Issue
 	This is a bug callout.
 
-1.  Example
+11. Example
 !!! example Code Example
 	This is an example callout.
 
-1.  Quote
+12. Quote
 !!! quote Famous Words
 	This is a quote callout.

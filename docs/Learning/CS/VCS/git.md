@@ -1,6 +1,10 @@
-## init
+# Git
 
-### auth
+Git game in [Learn Git Branching](https://learngitbranching.js.org/?locale=en_US)
+
+## Init
+
+### Auth
 
 ```bash
 git config --global user.name "你的GitHub用户名"
@@ -10,7 +14,7 @@ git config --global init.defaultBranch main
 git config credential.helper
 ```
 
-### proxy
+### Proxy
 
 #### http\\https
 
@@ -28,14 +32,14 @@ git config --global https.proxy http://192.168.0.107:7890
 
 _in admin powershell_
 
-#### start ssh-agent
+#### Start Ssh-agent
 
 ```powershell
 Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 Start-Service ssh-agent
 ```
 
-#### generate key-pair
+#### Generate Key-pair
 
 ```powershell/bash
 ssh-keygen -t ed25519 -C "1831768457@qq.com"
@@ -43,7 +47,7 @@ ssh-keygen -t ed25519 -C "1831768457@qq.com"
 
 _in normal powersehll_
 
-#### add ssh-key-pair into ssh-agent
+#### Add Ssh-key-pair into Ssh-agent
 
 ```powershell
 ssh-add C:\Users\18317\.ssh\id_ed25519
@@ -54,7 +58,7 @@ eval $(ssh-agent -s)
 ssh-add /root/.ssh/id_ed25519
 ```
 
-#### copy id_ed25519.pub into [github_ssh_setting](https://github.com/settings/keys) set auth key type
+#### Copy id_ed25519.pub into [github_ssh_setting](https://github.com/settings/keys) Set Auth Key Type
 
 ```powershell
 cat ~/.ssh/id_ed25519.pub | clip
@@ -64,13 +68,13 @@ cat ~/.ssh/id_ed25519.pub | clip
 cat ~/.ssh/id_ed25519.pub
 ```
 
-#### test ssh connect by https
+#### Test Ssh Connect by Https
 
 ```shell
 ssh -T -p 443 git@ssh.github.com
 ```
 
-#### add config
+#### Add Config
 
 add the following text into `~/.ssh/config`
 
@@ -87,7 +91,7 @@ Host github.com
     User git
 ```
 
-#### test test ssh connect
+#### Test Test Ssh Connect
 
 _you may need to enter yes as it's requiring to trust connection to github_
 
@@ -95,9 +99,9 @@ _you may need to enter yes as it's requiring to trust connection to github_
 ssh -T git@github.com
 ```
 
-## usual commands
+## Usual Commands
 
-### reset http proxy
+### Reset Http Proxy
 
 ```bash
 
@@ -116,7 +120,7 @@ git config --global --unset http."https://github.com".proxy
 
 ```
 
-### check info
+### Check Info
 
 ```bash
 # 列出本地配置
@@ -125,7 +129,7 @@ git config --global --list
 git config --local --list
 ```
 
-### remote
+### Remote
 
 1. list remote repo
 
@@ -133,7 +137,7 @@ git config --local --list
 git remote -v
 ```
 
-2. add remote
+1. add remote
 
 ```bash
 git init
@@ -142,26 +146,26 @@ git commit -m "Initial commit"
 git remote add origin <remote_repo_URL>
 ```
 
-3. associate remote
+1. associate remote
 
 ```bash
 git push -u origin main
 ```
 
-4. set https to ssh
+1. set https to ssh
 
 ```bash
 git remote set-url origin <remote_repo_URL>
 ```
 
-### remove track
+### Remove Track
 
 ```bash
 git rm --cached <file_path_or_folder>
 # if folder add -r
 ```
 
-### roll back
+### Roll back
 
 ```shell
 # force roll back some commit
@@ -170,7 +174,7 @@ git reset --hard <commit hash>
 git push origin main -f
 ```
 
-### sync from github
+### Sync from Github
 
 ```shell
 git fetch origin
@@ -178,7 +182,7 @@ git reset --hard origin/main
 git clean -fd
 ```
 
-### submodule
+### Submodule
 
 1. clone with submodule
 
@@ -188,7 +192,7 @@ git clone --recurse-submodules <repository-url>
 git submodule update --init --recursive
 ```
 
-2. add submodule or clone in main as submodule
+1. add submodule or clone in main as submodule
 
 ```bash
 git submodule add <repository-url> <sub_repo_relative_path_to_root>
@@ -196,7 +200,7 @@ git submodule add <repository-url> <sub_repo_relative_path_to_root>
 git submodule update --init --recursive
 ```
 
-3. remove
+1. remove
 
 ```bash
 rm -rf thirdparty/GS_ICP_SLAM
@@ -215,7 +219,7 @@ git commit -m "add extractor model .onnx"
 git push origin main
 ```
 
-## pre-commit
+## Pre-commit
 
 1. clean cache
 
