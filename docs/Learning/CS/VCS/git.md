@@ -227,10 +227,8 @@ git push origin main
 pre-commit clean
 ```
 
-
 ## Mobile
+
 <script src="https://gist.github.com/Makeshift/43c7ecb3f1c28a623ea4386552712114.js"></script>
 
 https://gist.github.com/Makeshift/43c7ecb3f1c28a623ea4386552712114
-
-
