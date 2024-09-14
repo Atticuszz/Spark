@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "250d0c2daf1284e4",
+        "id": "4c1bedc8a80a5b9b",
         "type": "tabs",
         "children": [
           {
-            "id": "215eec8d231b0fe8",
+            "id": "68741885d840b25b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c9df18a01ae789f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Features/Image.md",
+                "file": "docs/Features/footntoes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Features/Image.md",
+                "file": "docs/Features/footntoes.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Features/Image.md",
+                "file": "docs/Features/footntoes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Features/Image.md"
+                "file": "docs/Features/footntoes.md"
               }
             }
           },
@@ -200,12 +187,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3c9df18a01ae789f",
+  "active": "68741885d840b25b",
   "lastOpenFiles": [
     "README.md",
-    "docs/Features/Image.md",
-    "docs/Features/Icons, Emojis.md",
+    "docs/Daily/writing/2024-9.md",
+    "docs/Features/code.md",
     "docs/Features/Admonitions.md",
+    "docs/Features/Diagrams.md",
+    "docs/Features/Draw.md",
+    "docs/Features/footntoes.md",
+    "docs/Features/Icons, Emojis.md",
+    "docs/Features/Image.md",
+    "docs/Features/Text Formatting.md",
+    "docs/Features/Table.md",
+    "docs/Features/LaTeX Math Support.md",
+    "docs/js/katex.js",
+    "docs/js",
+    "assets/icon/logo.svg",
     "docs/index.md",
     "docs/Learning/CS/Language/python/standard_lib/Pathlib.md",
     "docs/Learning/CS/Language/python/py-env/Pip.md",
@@ -220,14 +218,6 @@
     "docs/Learning/CS/Language/C++/STL/stack.md",
     "docs/Learning/CS/Language/C++/STL/set.md",
     "docs/Learning/CS/Language/C++/STL/Queue.md",
-    "docs/Learning/CS/Language/C++/STL/map.md",
-    "docs/Learning/CS/Language/C++/STL/Pointer.md",
-    "docs/Learning/CS/Language/C++/STL/algorithm.md",
-    "docs/Learning/CS/Language/js_ts/vue.js/nuxt.js.md",
-    "docs/Learning/CS/Language/C++/Data_model/stack.md",
-    "docs/Learning/CS/Language/C++/Data_model/unordered_set.md",
-    "docs/Learning/CS/Language/C++/Data_model/unordered_map.md",
-    "docs/Learning/CS/Language/C++/Data_model/vector.md",
     "docs/Learning/CS/Language/python/standard_lib",
     "docs/Learning/CS/Language/python/third_party_lib",
     "docs/Learning/CS/Language/python/py-env",
@@ -236,9 +226,6 @@
     "docs/Learning/CS/Language/C++/Data_model",
     "docs/Learning/CS/OS/Windows",
     "docs/Learning/CS/OS/Ubuntu",
-    "docs/Learning/CS/VCS/github",
-    "docs/Learning/CS/Language/python",
-    "assets/icon/logo.svg",
     "assets/picgo20240911105158.png",
     "assets/picgo20240911105138.png",
     "assets/picgo20240911105051.png",
