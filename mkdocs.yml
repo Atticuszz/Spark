@@ -85,7 +85,7 @@ plugins:
       type: iso_datetime
   # adjust to obsidian path
   - obsidian-bridge
-  - pub-obsidian:
+  - pub-obsidian: # https://mkdocs-publisher.github.io/setup/installation/
       obsidian_dir: .obsidian
       backlinks:
         enabled: true
