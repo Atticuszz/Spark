@@ -1,4 +1,6 @@
-### install docker and - compose
+# Docker
+
+## Install Docker and - Compose
 
 _amd_x64_
 
@@ -22,7 +24,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-#### use docker by user without `sudo`
+### Use Docker by User without `sudo`
 
 ```bash
 sudo usermod -aG docker username

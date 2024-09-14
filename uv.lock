@@ -11,6 +11,18 @@ wheels = [
 ]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.12.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "soupsieve" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b3/ca/824b1195773ce6166d388573fc106ce56d4a805bd7427b624e063596ec58/beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051", size = 581181 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/fe/e8c672695b37eecc5cbf43e1d0638d88d66ba3a44c4d321c796f4e59167f/beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed", size = 147925 },
+]
+
+[[package]]
 name = "certifi"
 version = "2024.8.30"
 source = { registry = "https://pypi.org/simple" }
@@ -264,6 +276,21 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-publisher"
+version = "1.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+    { name = "pymdown-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e9/65/224d9aefca5f25581611a234206ad2417bbdb90b3001eb74fb5548c5c4c2/mkdocs_publisher-1.4.2.tar.gz", hash = "sha256:efd339ffd3c93f1e574df744d37b93a62585b48d40dcac7bbad32551bbe4f8c7", size = 45035 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d9/b3/64679fd4f963e08f30e3fa0b5c9aa6632e24bf418c7ecbe8b5e5df481fe3/mkdocs_publisher-1.4.2-py3-none-any.whl", hash = "sha256:ba592b66fedd1fadc63b8042b9b1ec824281a28d3d2f04ea9569b0943cb387dc", size = 92231 },
+]
+
+[[package]]
 name = "packaging"
 version = "24.1"
 source = { registry = "https://pypi.org/simple" }
@@ -462,6 +489,15 @@ wheels = [
 ]
 
 [[package]]
+name = "soupsieve"
+version = "2.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/ce/fbaeed4f9fb8b2daa961f90591662df6a86c1abf25c548329a86920aedfb/soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb", size = 101569 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9", size = 36186 },
+]
+
+[[package]]
 name = "spark"
 version = "0.1.0"
 source = { editable = "." }
@@ -470,6 +506,7 @@ dependencies = [
     { name = "mkdocs-glightbox" },
     { name = "mkdocs-material" },
     { name = "mkdocs-obsidian-bridge" },
+    { name = "mkdocs-publisher" },
     { name = "pymdown-extensions" },
 ]
 
@@ -484,6 +521,7 @@ requires-dist = [
     { name = "mkdocs-glightbox", specifier = ">=0.4.0" },
     { name = "mkdocs-material", specifier = ">=9.5.34" },
     { name = "mkdocs-obsidian-bridge", specifier = ">=1.0.4" },
+    { name = "mkdocs-publisher", specifier = ">=1.4.2" },
     { name = "pymdown-extensions", specifier = ">=10.9" },
 ]
 

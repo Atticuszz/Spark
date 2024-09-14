@@ -1,10 +1,12 @@
-### **kill** the process by PID
+# Powersehll
+
+## __kill__ The Process by PID
 
 ```ps
 taskkill /PID <PID> /F
 ```
 
-### find out the process occupied the **port**
+## Find out the Process Occupied the __port__
 
 _the last line of output is PID_
 
@@ -12,7 +14,7 @@ _the last line of output is PID_
 netstat -ano | findstr :<port>
 ```
 
-### find out the process occupied the **file**
+## Find out the Process Occupied the __file__
 
 [Sysinternals Suite - Microsoft Apps](https://www.microsoft.com/store/productId/9P7KNL5RWT25?ocid=pdpshare)
 
@@ -20,7 +22,7 @@ netstat -ano | findstr :<port>
 handle.exe <file path>
 ```
 
-### get command .exe path
+## Get Command .exe Path
 
 ```ps
 (Get-Command poetry).Source
@@ -28,8 +30,10 @@ handle.exe <file path>
 
 `->C:\Users\18317\AppData\Roaming\Python\Scripts\poetry.exe`
 
-### add Path
-*admin*
+## Add Path
+
+_admin_
+
 ```powershell
 # 获取当前系统路径
 $currentPath = [Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)
@@ -55,8 +59,8 @@ if ($currentPath -notcontains $newPath) {
 
 ```
 
+## Combine Project Files such as .py
 
-### combine project files such as .py
 ```powershell
 # 设置需要递归搜索的目录路径
 $directoryPath = "C:\path\to\your\python\files"

@@ -85,6 +85,16 @@ plugins:
       type: iso_datetime
   # adjust to obsidian path
   - obsidian-bridge
+  - pub-obsidian:
+      obsidian_dir: .obsidian
+      backlinks:
+        enabled: true
+      callouts:
+        enabled: true
+        indentation: spaces
+      # links:
+      #   wikilinks_enabled: true
+      #   img_lazy: true
   # image zoom
   - glightbox
   - search

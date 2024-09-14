@@ -1,15 +1,19 @@
-## wsl
+# GPU
+
+## Wsl
 
 > WSL== Linux Ubuntu 22.04 x86_64
 
 ### Preconditions
 
 1. make sure windows GPU driver has installed
+
    > Windows x86 drivers can be directly downloaded from[https://www.nvidia.com/Download/index.aspx](https://link.zhihu.com/?target=https%3A//www.nvidia.com/Download/index.aspx) for WSL 2 support on Pascal or later GPUs.
 
-- if not ,install on windows by ![](../../assets/Pasted_image_20240212111245.png)
+- if not ,install on windows by ![](assets/Pasted_image_20240212111245.png)
 
-2. make sure the wsl kernel is updated
+1. make sure the wsl kernel is updated
+
    > For these features, you need a kernel version of 5.10.43.3 or higher.
 
 ```powershell
@@ -19,20 +23,20 @@ wsl cat /proc/version
 wsl --update
 ```
 
-3. check wsl2 can touch the GPU
+1. check wsl2 can touch the GPU
 
 ```bash
 nvidia-smi
 ```
 
-- then got the following prove the `wsl` can touch the GPU![../../assets/Pasted_image_20240211163343.png](../../assets/Pasted_image_20240211163343.png)
-- image shows that my GPU can install the **highest** `cuda==12.4`
+- then got the following prove the `wsl` can touch the GPU![assets/Pasted_image_20240211163343.png](assets/Pasted_image_20240211163343.png)
+- image shows that my GPU can install the __highest__ `cuda==12.4`
 
 ---
 
-### install cuda and cudnn
+### Install Cuda and Cudnn
 
-**firstly, make sure the which version is needed for your installed package**
+__firstly, make sure the which version is needed for your installed package__
 
 ```bash
 poetry add onnxruntime
@@ -49,10 +53,10 @@ onnxruntime-gpu = "^1.17.0"
 > so ,here's example for `onnxruntime-gpu==1.17`
 
 - select proper version of onnxruntime in [NVIDIA - CUDA | onnxruntime](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html)
-  ![../../assets/Pasted_image_20240212110546.png](../../assets/Pasted_image_20240212110546.png)
+  ![assets/Pasted_image_20240212110546.png](assets/Pasted_image_20240212110546.png)
 - as for installed `onnxruntime-gpu==1.17`, should install `cuda==11.8`, `cudnn==8.92.26`
 
-#### cuda
+#### Cuda
 
 1. [CUDA Toolkit Archive | NVIDIA Developer](https://developer.nvidia.com/cuda-toolkit-archive)select `cuda==11.8` and click it
 
@@ -78,7 +82,7 @@ sudo apt-cache search cuda-toolkit
 sudo apt-get -y install cuda-toolkit-11-8
 ```
 
-2. add env_path
+1. add env_path
 
 ```bash
 sudo nano /etc/environment
@@ -90,7 +94,7 @@ LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64"
 source /etc/environment
 ```
 
-6. test cuda
+1. test cuda
 
 ```bash
 nvcc -V
@@ -104,14 +108,14 @@ Build cuda_11.8.r11.8/compiler.31833905_0
 
 - `release 11.8` -> `cuda==11.8`,if not the specified version, reinstall it
 
-#### cudnn
+#### Cudnn
 
 1. download [cuDNN Archive | NVIDIA Developer](https://developer.nvidia.com/rdp/cudnn-archive) on windows, and upload WSL
 
-- as for `cudnn==8.92.26` and `cuda==11.8` ![../../assets/Pasted_image_20240212114616.png](../../assets/Pasted_image_20240212114616.png)
+- as for `cudnn==8.92.26` and `cuda==11.8` ![assets/Pasted_image_20240212114616.png](assets/Pasted_image_20240212114616.png)
   _we assume you upload `.deb` to `/home/atticuszz/`_
 
-2. install `.deb`
+1. install `.deb`
 
 ```bash
 sudo dpkg -i /home/atticuszz/cudnn-local-repo-ubuntu2204-8.9.2.26_1.0-1_amd64.deb
@@ -130,7 +134,7 @@ sudo apt-get install libcudnn8
 sudo apt-get install libcudnn8-dev
 ```
 
-3. check installed
+1. check installed
 
 ```bash
 # This should list the installed cuDNN runtime library files
@@ -140,8 +144,7 @@ ls -l /usr/lib/x86_64-linux-gnu/libcudnn*
 cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 
-- ->![../../assets/Pasted_image_20240212120735.png](../../assets/Pasted_image_20240212120735.png)
-
+- ->![assets/Pasted_image_20240212120735.png](assets/Pasted_image_20240212120735.png)
 - gpu test
 
 ```bash
@@ -150,9 +153,9 @@ docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 
 ## Ubuntu
 
-### install gpu driver ![../../assets/Pasted_image_20240412154259.png](../../assets/Pasted_image_20240412154259.png)
+### Install Gpu Driver ![assets/Pasted_image_20240412154259.png](assets/Pasted_image_20240412154259.png)
 
-#### install via conda
+#### Install via Conda
 
 ```yaml
 name: your env
@@ -166,7 +169,7 @@ dependencies:
   - cudnn=8.9.2.26
 ```
 
-#### gpu monitor
+#### Gpu Monitor
 
 ```bash
 conda install -c conda-forge nvitop

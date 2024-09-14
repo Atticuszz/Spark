@@ -1,31 +1,33 @@
+# Configs
+
 > ubuntu could be install via usb or wsl
 
-## install system
+## Install System
 
-### usb
+### Usb
 
 - official tutorial[Install Ubuntu desktop | Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
 1. download `ios file` [Download Ubuntu Desktop | Download | Ubuntu](https://ubuntu.com/download/desktop)
 2. download `Flash OS images app`[balenaEtcher - Flash OS images to SD cards & USB drives](https://etcher.balena.io/)
-3. let device start by the **flashed** drivers
+3. let device start by the __flashed__ drivers
 
-### wsl
+### Wsl
 
 - in Microsoft Store download `wsl` and `ubuntu 22`
 
-### connection
+### Connection
 
 connect by vscode or gateway,wsl mode or ssh
 
-#### wsl
+#### Wsl
 
 > before connection
 
-remember to set default user as root for more power [set root](docs/OS/Ubuntu/wsl#set default user as root)
-_optional: if docker installed ,set default wsl distro as ubuntu 22 by [set default distro](docs/OS/Ubuntu/wsl#set default distro)_
+remember to set default user as root for more power [set root](Learning/CS/OS/Ubuntu/wsl#set default user as root)
+_optional: if docker installed ,set default wsl distro as ubuntu 22 by [set default distro](Learning/CS/OS/Ubuntu/wsl#set default distro)_
 
-#### native ubuntu
+#### Native Ubuntu
 
 _upgrade power_
 
@@ -37,7 +39,7 @@ sudo usermod -aG sudo yourusername
 groups yourusername
 ```
 
-2. avoid be asked input passwd call `sudo` everytime
+1. avoid be asked input passwd call `sudo` every time
 
 ```bash
 sudo visudo
@@ -45,27 +47,27 @@ sudo visudo
 %sudo ALL=(ALL) NOPASSWD: ALL
 ```
 
-[ssh](docs/OS/Ubuntu/net#install ssh)
+[ssh](Learning/CS/OS/Ubuntu/net#install ssh)
 connect by ssh ,enter password first time and try to connect by ssh-key
 
-## initialization
+## Initialization
 
-### set proxies
+### Set Proxies
 
 > before any download from web, set proxies first for too slow speed
 
-#### wsl
+#### Wsl
 
-[proxy](docs/OS/Ubuntu/wsl#proxy)
+[proxy](Learning/CS/OS/Ubuntu/wsl.md#proxy)
 
 1. set shared proxies first!!
 
-#### native ubuntu
+#### Native Ubuntu
 
-1. run clash itself by [clash](docs/OS/Ubuntu/net#clash)
+1. run clash itself by [clash](Learning/CS/OS/Ubuntu/net.md#clash)
 2. or in the same subnet ,share your clash proxy by open allow lan
 
-### basic web tools
+### Basic Web Tools
 
 ```bash
 sudo apt update
@@ -76,13 +78,13 @@ sudo apt-get update
 sudo apt-get install unzip
 ```
 
-### shell
+### Shell
 
-1. install `zsh` for friendly development experience [zsh](docs/OS/Ubuntu/shell#install zsh)
-2. set auto read envs [auto read env](docs/OS/Ubuntu/shell#auto read envs)
+1. install `zsh` for friendly development experience [zsh](Learning/CS/OS/Ubuntu/shell#install zsh)
+2. set auto read envs [auto read env](Learning/CS/OS/Ubuntu/shell#auto read envs)
 
-### code envs
+### Code Envs
 
-[code_env](../../../docs/OS/Ubuntu/code_env.md)
+[code_env](Learning/CS/OS/Ubuntu/code_env.md)
 
-- python, conda ,pip, poetry ,cmake...
+- python, conda ,pip, poetry ,cmake…

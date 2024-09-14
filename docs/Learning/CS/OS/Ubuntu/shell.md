@@ -1,4 +1,6 @@
-#### auto read envs
+# Shell
+
+## Auto Read Envs
 
 > make ur bash auto read envs from shells like bash,zsh and Centralize it for easier management
 
@@ -26,17 +28,17 @@ set +a
 source ~/.zshrc
 ```
 
-#### add envs to `/etc/environment`
+## Add Envs to `/etc/environment`
 
 ```bash
 echo 'MY_ENV_VAR="my_value"' | sudo tee -a /etc/environment > /dev/null
 
 ```
 
-#### install zsh
+## Install Zsh
 
 see yellow hints
-![../../../assets/Pasted_image_20240224182254.png](../../../assets/Pasted_image_20240224182254.png)
+![assets/Pasted_image_20240224182254.png](assets/Pasted_image_20240224182254.png)
 [ZSH + Oh My ZSH! on Windows with WSL - DEV Community](https://dev.to/equiman/zsh-on-windows-with-wsl-1jck)
 
 1. install zsh
@@ -47,14 +49,14 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-2. install front,[GitHub - romkatv/powerlevel10k: A Zsh theme](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k),select one of `.ttf` download and move it into `~/.front`
+1. install front,[GitHub - romkatv/powerlevel10k: A Zsh theme](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k),select one of `.ttf` download and move it into `~/.front`
 
 ```bash
 sudo apt install fontconfig
 fc-cache -fv
 ```
 
-3. install theme
+1. install theme
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -71,13 +73,13 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 export LS_COLORS="rs=0:no=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:"
 ```
 
-4. restart terminal and config themes
+1. restart terminal and config themes
 
 ```bash
 p10k configure
 ```
 
-5. install plugins
+1. install plugins
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -116,7 +118,7 @@ plugins=(
 )
 ```
 
-6. vs code terminal , Add these properties to the user `setttings.json`
+1. vs code terminal , Add these properties to the user `setttings.json`
 
 ```json
 {
@@ -126,4 +128,3 @@ plugins=(
   "terminal.integrated.defaultProfile.linux": "zsh"
 }
 ```
-

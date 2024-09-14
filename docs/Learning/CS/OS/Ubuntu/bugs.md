@@ -1,3 +1,5 @@
+# Bugs
+
 1. run `sudo apt-get update` got
 
 ```bash
@@ -109,7 +111,7 @@ If you continue to experience issues after following these steps:
 
 This approach addresses the most common causes of OpenGL driver issues on Linux. However, if your setup is highly customized or you're using less common hardware, additional steps may be necessary.
 
-## settings disappper
+## Settings Disappper
 
 ```bash
 sudo apt update
@@ -127,14 +129,12 @@ pip uninstall opencv-python
 pip install opencv-python-headless
 ```
 
-#### time wrong in dul system
+### Time Wrong in Dul System
 
-要在Windows中更改RTC设置为UTC，你需要编辑注册表：
+要在 Windows 中更改 RTC 设置为 UTC，你需要编辑注册表：
 a. 按下 `Win + R` 键入 `regedit`，然后按回车。
 b. 导航到 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation`。
 c. 右键单击空白区域，选择 `新建` -> `DWORD (32位) 值`。
 d. 将新值命名为 `RealTimeIsUniversal`。
 e. 双击新创建的 `RealTimeIsUniversal`，在“值数据”框中输入 `1`，然后点击“确定”。
-f. 重启Windows。F。重新启动Windows。
-
-#### poetry
+f. 重启 Windows。F。重新启动 Windows。

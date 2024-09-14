@@ -1,51 +1,37 @@
 # Admonitions
 
-## Obsidian Admonition Types and Examples
+> [!note] Note
+> This is a note callout.
 
-1. Note
-!!! note Note
-	This is a note callout.
+> [!abstract] Abstract
+> This is an abstract or summary callout.
 
-2. Abstract / Summary
-!!! abstract Abstract
-	This is an abstract or summary callout.
+> [!INFO] Information
+> This is an info callout.
 
-3. Info
-!!! info Information
-	This is an info callout.
+> [!TIP] Helpful Tip
+> This is a tip or hint callout.
 
-4. Tip / Hint
-!!! tip Helpful Tip
-	This is a tip or hint callout.
+> [!SUCCESS] Task Completed
+> This is a success callout.
 
-5. Success / Check / Done
-!!! success Task Completed
-	This is a success callout.
+> [!QUESTION] Frequently Asked Question
+> This is a question or FAQ callout.
 
-6. Question / Help / FAQ
-!!! question Frequently Asked Question
-	This is a question or FAQ callout.
+> [!WARNING] Be Careful!
+> This is a warning callout.
 
-7. Warning / Caution / Attention
-!!! warning Be Careful!
-	This is a warning callout.
+> [!FAILURE] Error Occurred
+> This is a failure or error callout.
 
-8. Failure / Fail / Missing
-!!! failure Error Occurred
-	This is a failure or error callout.
+> [!DANGER] Danger Zone
+> This is a danger callout.
 
-9. Danger / Error
-!!! danger Danger Zone
-	This is a danger callout.
+> [!BUG] Known Issue
+> This is a bug callout.
 
-10. Bug
-!!! bug Known Issue
-	This is a bug callout.
+> [!EXAMPLE] Code Example
+> This is an example callout.
 
-11. Example
-!!! example Code Example
-	This is an example callout.
-
-12. Quote
-!!! quote Famous Words
-	This is a quote callout.
+> [!QUOTE] Famous Words
+> This is a quote callout.

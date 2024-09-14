@@ -1,4 +1,6 @@
-### set default user as root
+# Wsl
+
+## Set Default User as Root
 
 ```bash
 sudo nano /etc/wsl.conf
@@ -7,7 +9,7 @@ sudo nano /etc/wsl.conf
 default=root
 ```
 
-### set default distro
+## Set Default Distro
 
 1. enter wsl distro
 
@@ -17,7 +19,7 @@ wsl -l
 wsl -d <wsl distro>
 ```
 
-3. set default wsl distro
+1. set default wsl distro
 
 ```bash
 wsl --set-default <wsl distro>
@@ -29,7 +31,7 @@ wsl --set-default <wsl distro>
 wsl --shutdown
 ```
 
-#### proxy
+### Proxy
 
 [WSL2 网络的最终解决方案 - 知乎](https://zhuanlan.zhihu.com/p/593263088?utm_id=0)
 [Advanced settings configuration in WSL | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)
@@ -53,7 +55,7 @@ networkingMode=mirrored
 firewall=true
 ```
 
-2. restart wsl
+1. restart wsl
 
 ```powershell
 wsl --shutdown
@@ -74,7 +76,7 @@ sudo nano /etc/wsl.conf
 systemd=true
 ```
 
-2. add wget .sh for auto start with set proxies
+1. add wget .sh for auto start with set proxies
 
 ```bash
 # 使用wget下载脚本
@@ -110,11 +112,11 @@ no_proxy="localhost,127.0.0.1,::1"
 source /etc/environment
 ```
 
-### share wsl port in LAN
+## Share Wsl Port in LAN
 
 [Accessing network applications with WSL | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/networking)
 
-> use **NAT** mode works for me
+> use __NAT__ mode works for me
 
 1. find `wsl ip` relative to windows
 
@@ -122,9 +124,9 @@ source /etc/environment
  wsl hostname -I
 ```
 
-![200](../../../assets/Pasted_image_20240306200159.png)
+![400](assets/Pasted_image_20240306200159.png)
 
-2. enable port bind
+1. enable port bind
    `wsl-ip` = `192.168.245.116`
    port bind = 5000:5000
 
@@ -132,14 +134,14 @@ source /etc/environment
 netsh interface portproxy add v4tov4 listenport=5000 listenaddress=0.0.0.0 connectport=5000 connectaddress=192.168.245.116
 ```
 
-3. access port via wifi ipv4,you can see it in clash or run `ipconfig`
+1. access port via wifi ipv4,you can see it in clash or run `ipconfig`
 
-### install wsl-linux kernel to enable access to usb device
+## Install Wsl-linux Kernel to Enable Access to Usb Device
 
 > [WSL/Connect USB devices/USB Camera.md at main · phuoctan4141/WSL · GitHub](https://github.com/phuoctan4141/WSL/blob/main/Connect%20USB%20devices/USB%20Camera.md) update from
 > [WSL support · dorssel/usbipd-win Wiki · GitHub](https://github.com/dorssel/usbipd-win/wiki/WSL-support)
 
-#### download kernel
+### Download Kernel
 
 1. update to latest wsl
 
@@ -147,14 +149,14 @@ netsh interface portproxy add v4tov4 listenport=5000 listenaddress=0.0.0.0 conne
 wsl --update
 ```
 
-2. check your version
+1. check your version
 
 ```bash
 uname -r
 -> 5.15.133.1-microsoft-standard-WSL2
 ```
 
-3. select [Releases · microsoft/WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel/releases) to download via `wget` into any dir such `/usr/src/`
+1. select [Releases · microsoft/WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel/releases) to download via `wget` into any dir such `/usr/src/`
 
 ```bash
 cd /usr/src/
@@ -166,7 +168,7 @@ ls
 cd WSL2-Linux-Kernel-linux-msft-wsl-5.15.133.1
 ```
 
-4. Copy current configuration file.
+1. Copy current configuration file.
 
 ```bash
 sudo cp /proc/config.gz config.gz
@@ -176,7 +178,7 @@ sudo mv config .config
 
 You may need to set `CONFIG_USB=y` in `.config` prior to running `menuconfig `to get all options enabled for selection. use `nano` to check it
 
-#### config kernel
+### Config Kernel
 
 > Select different modules according to your own needs. (Press space to select or deselect.)
 
@@ -209,7 +211,7 @@ Device Drivers->Network device support->USB Network Adapters->CDC Ethernet suppo
 Device Drivers->Network device support->USB Network Adapters->Host for RNDIS and ActiveSync devices[M]
 ```
 
-3. These are **additional** features required for the camera.
+1. These are __additional__ features required for the camera.
 
 ```text
 
@@ -225,9 +227,9 @@ Device Drivers->Multimedia support[M]->Media drivers->Media USB Adapters[*]->UVC
 
 ⚠️ These instructions have changed. Previously, it was recommended to enable "Debug messages for USB/IP". However, debug messages have a huge negative performance impact on bulk transfers. Enabling debug messages is no longer recommended.
 
-#### compile and build
+### Compile and Build
 
-> In the following command the number '16' is the number of cores to use; **run** `getconf _NPROCESSORS_ONLN` to find the number of cores.
+> In the following command the number '16' is the number of cores to use; __run__ `getconf _NPROCESSORS_ONLN` to find the number of cores.
 
 1. compile kernel
 
@@ -235,7 +237,7 @@ Device Drivers->Multimedia support[M]->Media drivers->Media USB Adapters[*]->UVC
 sudo make -j 16 && sudo make modules_install -j 16 && sudo make install -j 16
 ```
 
-2. Build USB/IP tools.
+1. Build USB/IP tools.
 
 ```bash
 cd tools/usb/usbip
@@ -244,25 +246,25 @@ sudo ./configure
 sudo make install -j 16
 ```
 
-3. Copy tools libraries location so usbip tools can get them.
+1. Copy tools libraries location so usbip tools can get them.
 
 ```bash
 sudo cp libsrc/.libs/libusbip.so.0 /lib/libusbip.so.0
 ```
 
-4. Install usb.ids so you have names displayed for usb devices.
+1. Install usb.ids so you have names displayed for usb devices.
 
 ```bash
 sudo apt install linux-tools-virtual hwdata
 ```
 
-5. From the **root path of the repo that you cloned**, copy the image.
+1. From the __root path of the repo that you cloned__, copy the image.
 
 ```bash
 cp arch/x86/boot/bzImage /mnt/c/Users/<username>/usbip-bzImage
 ```
 
-#### config wsl
+### Config Wsl
 
 Create a `.wslconfig` file on `/mnt/c/Users/<username>/` and add a reference to the created image with the following.
 
@@ -273,13 +275,13 @@ kernel=c:\\users\\<username>\\usbip-bzImage
 
 > then remember to restart wsl
 
-#### bind usb device
+### Bind Usb Device
 
 [Connect USB devices | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
 
 > `usbipd` download from [Releases · dorssel/usbipd-win](https://github.com/dorssel/usbipd-win/releases)
 
-From an **administrator Powershell** on Windows, run this command. It will list all the USB devices connected to Windows.
+From an __administrator Powershell__ on Windows, run this command. It will list all the USB devices connected to Windows.
 
 1. find usb device
 
@@ -288,10 +290,11 @@ usbipd list
 ```
 
 > i have two camera now, 2-1 and 2-7
-> ![../../../assets/Pasted_image_20240306115828.png](../../../assets/Pasted_image_20240306115828.png)
+> ![assets/Pasted_image_20240306115828.png](assets/Pasted_image_20240306115828.png)
 
-2.  bind and attach device
-    > unattached occasionally, remember to `sudo chmod 777 /dev/video0`
+1. bind and attach device
+
+	> unattached occasionally, remember to `sudo chmod 777 /dev/video0`
 
 ```powershell
 usbipd bind --busid 2-1
@@ -300,13 +303,13 @@ usbipd bind --busid 2-7
 usbipd attach --wsl --busid 2-7
 ```
 
-3. check in wsl
+1. check in wsl
 
 ```bash
 sudo usbip list --remote=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
 ```
 
-![../../../assets/Pasted_image_20240306121432.png](../../../assets/Pasted_image_20240306121432.png)
+![assets/Pasted_image_20240306121432.png](assets/Pasted_image_20240306121432.png)
 
 > it shows that connect two devices successful
 
@@ -317,7 +320,7 @@ sudo usbip list --remote=$(cat /etc/resolv.conf | grep nameserver | awk '{print 
 sudo usbip attach --remote=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}') --busid=2-1
 ```
 
-#### test device
+### Test Device
 
 At this moment, it can be found that it has appeared and can be tested with `/dev/video0`
 
@@ -333,71 +336,71 @@ sudo apt install v4l-utils
 v4l2-ctl --list-devices
 ```
 
-![400](../../../assets/Pasted_image_20240306122129.png) 2. Show webcamera information
+![400](assets/Pasted_image_20240306122129.png) 2. Show webcamera information
 
 ```
 v4l2-ctl -d /dev/video0 --all
 v4l2-ctl -d /dev/video0 --list-formats-ext
 ```
 
-3. Allow access by using
+1. Allow access by using
 
 ```shell
 sudo chmod 777 /dev/video0
 ```
 
-#### test by gui
+### Test by Gui
 
 ```
 guvcview
 ```
 
-![../../../assets/Pasted_image_20240306142902.png](../../../assets/Pasted_image_20240306142902.png)
+![assets/Pasted_image_20240306142902.png](assets/Pasted_image_20240306142902.png)
 
-### push to github via ssh
+## Push to Github via Ssh
 
 解决在 wsl 中普通的网页令牌认证，推送代码的过程中出现了权限问题，使用 ssh 配 https 转发解决推送的身份验证问题
 
-git ssh命令详见 [SSH](../../../docs/VCS/git.md)，具体操作如下
+git ssh 命令详见 [SSH](Learning/CS/VCS/git.md)，具体操作如下
 
-1. 添加SSH密钥
+1. 添加 SSH 密钥
 
-首先，将SSH私钥添加到wsl中,在bash中执行以下命令：
+首先，将 SSH 私钥添加到 wsl 中,在 bash 中执行以下命令：
 
 ```powershell/bash
 ssh-keygen -t ed25519 -C "1831768457@qq.com"
 ```
 
-请确保将`1831768457@qq.com`邮箱替换为你GitHub账户的实际邮箱。
+请确保将 `1831768457@qq.com` 邮箱替换为你 GitHub 账户的实际邮箱。
 
-用vscode连接wsl访问文件`cat /root/.ssh/id_ed25519.pub`或使用命令行
+用 vscode 连接 wsl 访问文件 `cat /root/.ssh/id_ed25519.pub` 或使用命令行
 
 ```bash
 cat /root/.ssh/id_ed25519.pub
 ```
 
-在GitHub中添加ssh密匙
-![../../../assets/Pasted_image_20240303125256.png](../../../assets/Pasted_image_20240303125256.png)
-![../../../assets/Pasted_image_20240303125354.png](../../../assets/Pasted_image_20240303125354.png)
-![../../../assets/Pasted_image_20240303125518.png](../../../assets/Pasted_image_20240303125518.png)
-![../../../assets/Pasted_image_20240303125609.png](../../../assets/Pasted_image_20240303125609.png)
-添加`id_ed25519.pub`的内容到2的框中
+在 GitHub 中添加 ssh 密匙
+![assets/Pasted_image_20240303125256.png](assets/Pasted_image_20240303125256.png)
+![assets/Pasted_image_20240303125354.png](assets/Pasted_image_20240303125354.png)
+![assets/Pasted_image_20240303125518.png](assets/Pasted_image_20240303125518.png)
+![assets/Pasted_image_20240303125609.png](assets/Pasted_image_20240303125609.png)
+添加 `id_ed25519.pub` 的内容到 2 的框中
 
-2. 通过HTTPS测试SSH连接
+1. 通过 HTTPS 测试 SSH 连接
 
-GitHub支持通过HTTPS端口443进行SSH连接。这对于在某些网络环境下，标准SSH端口22被阻塞的情况特别有用。使用以下命令测试SSH连接：
+GitHub 支持通过 HTTPS 端口 443 进行 SSH 连接。这对于在某些网络环境下，标准 SSH 端口 22 被阻塞的情况特别有用。使用以下命令测试 SSH 连接：
 
 ```shell
 ssh -T -p 443 git@ssh.github.com
 ```
 
-如果是第一次连接到GitHub服务器，可能会提示您确认服务器的身份。输入`yes`以继续。
+如果是第一次连接到 GitHub 服务器，可能会提示您确认服务器的身份。输入 `yes` 以继续。
 
-3. 配置SSH
+1. 配置 SSH
 
-为了使SSH连接自动使用HTTPS端口，需要配置SSH客户端。这涉及到编辑`~/.ssh/config`文件（在Linux或WSL中）或`C:\Users\您的用户名\.ssh\config`文件（在Windows中）。
+为了使 SSH 连接自动使用 HTTPS 端口，需要配置 SSH 客户端。这涉及到编辑 `~/.ssh/config` 文件（在 Linux 或 WSL 中）或 `C:\Users\您的用户名\.ssh\config` 文件（在 Windows 中）。
 
-首先，使用nano编辑器（或任何您喜欢的文本编辑器）打开或创建配置文件：
+首先，使用 nano 编辑器（或任何您喜欢的文本编辑器）打开或创建配置文件：
 
 ```bash
 nano ~/.ssh/config
@@ -412,24 +415,24 @@ Host github.com
     User git
 ```
 
-这告诉SSH客户端，当尝试连接到`github.com`时，应该使用`ssh.github.com`作为主机名，并通过端口443进行连接。
+这告诉 SSH 客户端，当尝试连接到 `github.com` 时，应该使用 `ssh.github.com` 作为主机名，并通过端口 443 进行连接。
 
-4.  测试SSH连接
+1. 测试 SSH 连接
 
-配置完成后，您应该测试SSH连接以确保一切工作正常：
+配置完成后，您应该测试 SSH 连接以确保一切工作正常：
 
 ```powershell
 ssh -T git@github.com
 ```
 
-如果配置正确，GitHub会通过SSH响应您的用户名，表示您已成功设置SSH连接。
+如果配置正确，GitHub 会通过 SSH 响应您的用户名，表示您已成功设置 SSH 连接。
 
-5. 尝试提交
+1. 尝试提交
 
-使用ssh克隆仓库
+使用 ssh 克隆仓库
 
 ```
 git clone git@github.com:SupaVision/AutoDrive_backend.git
 ```
 
-使用gateway的pycharm连接wsl，对仓库中的某个代码添加注释按Ctrl+K，点击commit and push，尝试提交，如果提交成功，说明配置正常，可以进行愉快的代码协作啦
+使用 gateway 的 pycharm 连接 wsl，对仓库中的某个代码添加注释按 Ctrl+K，点击 commit and push，尝试提交，如果提交成功，说明配置正常，可以进行愉快的代码协作啦

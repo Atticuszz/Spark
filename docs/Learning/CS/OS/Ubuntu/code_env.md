@@ -1,4 +1,6 @@
-#### install cmake
+# code_env
+
+## Install Cmake
 
 ```bash
 sudo apt-get update
@@ -6,7 +8,7 @@ sudo apt-get install cmake
 cmake --version
 ```
 
-#### install python
+## Install Python
 
 - python 3
 
@@ -24,7 +26,7 @@ pip install -r requirements.txt
 deactivate
 ```
 
-#### install poetry
+## Install Poetry
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
@@ -35,7 +37,7 @@ source ~/.bashrc
 poetry --version
 ```
 
-#### install conda
+## Install Conda
 
 1. install by wget
 
@@ -48,7 +50,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 
 > remember set no to auto activate in your shell if u use poetry,etc to manage py-env
 
-2. add `/root/miniconda3/bin` to `PATH` in `/etc/environment`
+1. add `/root/miniconda3/bin` to `PATH` in `/etc/environment`
 
 ```bash
 PATH="/root/miniconda3/bin:"
@@ -57,13 +59,13 @@ source /etc/environment
 export PATH="/root/miniconda3/bin:$PATH"
 ```
 
-3. test conda
+1. test conda
 
 ```bash
 conda info
 ```
 
-4.  optinal, enable auto activate conda
+1. optional, enable auto activate conda
 
 ```bash
 conda config --set auto_activate_base true
@@ -71,7 +73,7 @@ conda config --set auto_activate_base true
 
 > repeat to warn `conda init` ,try `conda init <shell>`
 
-#### install node-js
+## Install Node-js
 
 ```bash
 cd ~/Downloads
