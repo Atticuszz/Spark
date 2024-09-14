@@ -44,23 +44,6 @@
         "documentation": {}
     },
     {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
         "label": "bin_dir",
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
@@ -139,15 +122,6 @@
         "description": ".venv.Scripts.activate_this",
         "peekOfCode": "sys.prefix = base",
         "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "convert_obsidian_callouts",
-        "kind": 2,
-        "importPath": "scripts.formatter",
-        "description": "scripts.formatter",
-        "peekOfCode": "def convert_obsidian_callouts(cwd: str=\"../docs\") -> None:\n    \"\"\"Convert callouts in cwd.\n    Args:\n        cwd (str, optional): _description_. Defaults to \"../docs\".\n    \"\"\"\n    root =  Path(__file__).parents[1]/'docs'\n    if not root.exists():\n        raise FileExistsError\n    for file_path in root.rglob(\"*.md\"):\n        with file_path.open(encoding=\"utf-8\") as file:",
-        "detail": "scripts.formatter",
         "documentation": {}
     }
 ]
