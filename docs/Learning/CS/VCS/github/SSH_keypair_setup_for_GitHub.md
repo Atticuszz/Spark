@@ -1,18 +1,18 @@
 - 简化版 _for bash or powershell_
 
-### SSH
+# SSH
 
 _system: win11_
 _in admin powershell_
 
-#### start ssh-agent
+## Start Ssh-agent
 
 ```powershell
 Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 Start-Service ssh-agent
 ```
 
-#### generate key-pair
+## Generate Key-pair
 
 ```powershell
 ssh-keygen -t ed25519 -C "1831768457@qq.com"
@@ -20,25 +20,25 @@ ssh-keygen -t ed25519 -C "1831768457@qq.com"
 
 _in normal powersehll_
 
-#### add ssh-key-pair into ssh-agent
+## Add Ssh-key-pair into Ssh-agent
 
 ```powershell
 ssh-add C:\Users\18317\.ssh\id_ed25519
 ```
 
-#### copy id_ed25519.pub into [github_ssh_setting](https://github.com/settings/keys) set auth key type
+## Copy id_ed25519.pub into [github_ssh_setting](https://github.com/settings/keys) Set Auth Key Type
 
 ```powershell
 cat ~/.ssh/id_ed25519.pub | clip
 ```
 
-#### test ssh connect by https
+## Test Ssh Connect by Https
 
 ```shell
 ssh -T -p 443 git@ssh.github.com
 ```
 
-#### add config
+## Add Config
 
 add the following text into `~/.ssh/config`
 
@@ -49,7 +49,7 @@ Host github.com
     User git
 ```
 
-#### test test ssh connect
+## Test Test Ssh Connect
 
 _you may need to enter yes as it's requiring to trust connection to github_
 
@@ -59,9 +59,9 @@ ssh -T git@github.com
 
 ---
 
-_以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub 文档](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)_
+_以下转自 GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub 文档](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)_
 
-# 生成新的 SSH 密钥并将其添加到 ssh-agent
+# 生成新的 SSH 密钥并将其添加到 Ssh-agent
 
 ## 本文内容
 
@@ -71,7 +71,7 @@ _以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub
 - [为硬件安全密钥生成新的 SSH 密钥](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key-for-a-hardware-security-key)
   检查现有 SSH 密钥后，您可以生成新 SSH 密钥以用于身份验证，然后将其添加到 ssh-agent。
 
-## Platform navigation
+## Platform Navigation
 
 - [Mac](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac)
 - [Windows](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows)
@@ -93,12 +93,11 @@ _以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub
 
 注意：GitHub 通过在 2022 年 3 月 15 日删除旧的、不安全的密钥类型来提高安全性。
 
-自该日期起，不再支持 DSA 密钥 (`ssh-dss`)。 无法在 GitHub.com上向个人帐户添加新的 DSA 密钥。
+自该日期起，不再支持 DSA 密钥 (`ssh-dss`)。 无法在 GitHub.com 上向个人帐户添加新的 DSA 密钥。
 
 2021 年 11 月 2 日之前带有 `valid_after` 的 RSA 密钥 (`ssh-rsa`) 可以继续使用任何签名算法。 在该日期之后生成的 RSA 密钥必须使用 SHA-2 签名算法。 一些较旧的客户端可能需要升级才能使用 SHA-2 签名。
 
-1. 打开Git Bash。
-
+1. 打开 Git Bash。
 2. 粘贴以下文本，将示例中使用的电子邮件替换为 GitHub 电子邮件地址。
 
    ```shell
@@ -136,7 +135,7 @@ _以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub
 
 如果已安装 [GitHub Desktop](https://desktop.github.com/)，可使用它克隆存储库，而无需处理 SSH 密钥。
 
-1. 在新的*管理员提升*终端窗口（PowerShell 或 CMD）中，确保 ssh-agent 正在运行。 可以使用“[使用 SSH 密钥密码](https://docs.github.com/zh/articles/working-with-ssh-key-passphrases)”中的“自动启动 ssh agent”说明，或者手动启动它：
+1. 在新的 _ 管理员提升 _ 终端窗口（PowerShell 或 CMD）中，确保 ssh-agent 正在运行。 可以使用“[使用 SSH 密钥密码](https://docs.github.com/zh/articles/working-with-ssh-key-passphrases)”中的“自动启动 ssh agent”说明，或者手动启动它：
 
    ```powershell
    # start the ssh-agent in the background
@@ -157,9 +156,7 @@ _以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub
 如果您使用 macOS 或 Linux， 在生成新的 SSH 密钥之前，您可能需要更新 SSH 客户端或安装新的 SSH 客户端。 有关详细信息，请参阅“[错误：未知密钥类型](https://docs.github.com/zh/authentication/troubleshooting-ssh/error-unknown-key-type)”。
 
 1. 将硬件安全密钥插入计算机。
-
-2. 打开Git Bash。
-
+2. 打开 Git Bash。
 3. 粘贴以下文本，将示例中使用的电子邮件替换为与 GitHub 中帐户关联的电子邮件地址。
 
    ```powershell
@@ -173,7 +170,6 @@ _以下转自GitHub[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub
 ```
 
 1. 出现提示时，请触摸硬件安全密钥上的按钮。
-
 2. 当提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 接受默认文件位置。
 
    ```shell

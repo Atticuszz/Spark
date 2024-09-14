@@ -1,10 +1,10 @@
-## basic
+# Basic
 
-- **"a"->string, 'a'->char**
+- __"a"->string, 'a'->char__
 
-# value range
+# Value Range
 
-### 有符号整数类型
+## 有符号整数类型
 
 | 类型        | 最小值                     | 最大值                    | 备注                   |
 | ----------- | -------------------------- | ------------------------- | ---------------------- |
@@ -14,7 +14,7 @@
 | `long`      | -2,147,483,648             | 2,147,483,647             | 至少 32 位，但可能更长 |
 | `long long` | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 至少 64 位             |
 
-### 无符号整数类型（非负数）
+## 无符号整数类型（非负数）
 
 | 类型                 | 最小值 | 最大值                     | 备注                   |
 | -------------------- | ------ | -------------------------- | ---------------------- |
@@ -24,7 +24,7 @@
 | `unsigned long`      | 0      | 4,294,967,295              | 至少 32 位，但可能更长 |
 | `unsigned long long` | 0      | 18,446,744,073,709,551,615 | 至少 64 位             |
 
-## Uniform Initialization
+# Uniform Initialization
 
 ```cpp
 int a{5}; // 直接初始化
@@ -32,14 +32,14 @@ std::vector<int> v{1, 2, 3}; // 统一初始化
 
 ```
 
-## Auto Keyword for Type Inference
+# Auto Keyword for Type Inference
 
 ```cpp
 auto x = 42;  // int
 auto y = 42.0;  // double
 ```
 
-## Range-based For Loops
+# Range-based For Loops
 
 ```cpp
 for (const auto& elem : vec) {
@@ -47,7 +47,7 @@ for (const auto& elem : vec) {
 }
 ```
 
-## Lambda Expressions
+# Lambda Expressions
 
 ```cpp
 auto add = [](int a, int b) -> int {
@@ -55,14 +55,14 @@ auto add = [](int a, int b) -> int {
 };
 ```
 
-## Smart Pointers
+# Smart Pointers
 
 ```cpp
 std::unique_ptr<int> p1(new int(42));
 std::shared_ptr<int> p2 = std::make_shared<int>(42);
 ```
 
-## Template Functions
+# Template Functions
 
 ```cpp
 template <typename T>
@@ -71,21 +71,21 @@ T getMax(T a, T b) {
 }
 ```
 
-## Move Semantics
+# Move Semantics
 
 ```cpp
 std::vector<int> vec1 = {1, 2, 3};
 std::vector<int> vec2 = std::move(vec1);  // Moves data from vec1 to vec2
 ```
 
-## Structured Binding (C++17)
+# Structured Binding (C++17)
 
 ```cpp
 std::pair<int, std::string> p = {1, "one"};
 auto [num, word] = p;
 ```
 
-## Variadic Templates
+# Variadic Templates
 
 ```cpp
 template<typename... Args>
@@ -94,9 +94,9 @@ void printAll(Args... args) {
 }
 ```
 
-## pattern match
+# Pattern Match
 
-### switch
+## Switch
 
 ```cpp
 int value = /* some value */;
@@ -113,7 +113,7 @@ switch (value) {
 }
 ```
 
-### unordered_map
+## unordered_map
 
 ```cpp
 unordered_map<string, function<int(int, int)>> operations = {
