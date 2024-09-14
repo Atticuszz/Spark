@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Learning/CS/OS/Ubuntu/net.md",
+                "file": "docs/Features/Image.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Learning/CS/OS/Ubuntu/net.md",
+                "file": "docs/Features/Image.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Learning/CS/OS/Ubuntu/net.md",
+                "file": "docs/Features/Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Learning/CS/OS/Ubuntu/net.md"
+                "file": "docs/Features/Image.md"
               }
             }
           },
@@ -188,6 +188,11 @@
   },
   "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
+    "assets/Image example.png",
+    "docs/Features/Image.md",
+    "assets/Pasted image 20240914133320.png",
+    "assets/Pasted image 20240914133240.png",
+    "docs/Learning/CS/OS/Ubuntu/net.md",
     "docs/index.md",
     "docs/Learning/CS/VCS/git.md",
     "docs/Daily/writing/2024-9.md",
@@ -205,19 +210,15 @@
     "docs/Learning/CS/Language/C++/Data_model/Queue.md",
     "docs/Features/Text Formatting.md",
     "docs/Features/LaTeX Math Support.md",
-    "docs/Features/Image.md",
     "docs/Features/footntoes.md",
     "docs/Features/Draw.md",
     "docs/Features/Diagrams.md",
-    "assets/Image example.png",
     "docs/Features/code.md",
     "README.md",
     "docs/Features/Icons, Emojis.md",
-    "docs/Features/Table.md",
     "docs/js/katex.js",
     "docs/js",
     "assets/icon/logo.svg",
-    "docs/Learning/CS/Language/python/standard_lib/Pathlib.md",
     "docs/Learning/CS/Language/python/standard_lib",
     "docs/Learning/CS/Language/python/third_party_lib",
     "docs/Learning/CS/Language/python/py-env",
@@ -232,8 +233,6 @@
     "2021-11-22-22-54-02.png",
     "2021-11-22-22-52-49.png",
     "2021-11-22-22-49-26.png",
-    "assets/drawio/test.drawio.svg",
-    "assests/drawio/test.drawio.svg",
     "未命名.canvas",
     "未命名 3.canvas",
     "未命名 2.canvas",
