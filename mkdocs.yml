@@ -78,6 +78,8 @@ theme:
       edit: material/pencil
       repo: fontawesome/brands/git-alt
 
+docs_dir: '.'
+
 plugins:
   # The git-revision-date-localized plugin adds support for adding the date of last update and creation of a document at the bottom of each page
   - git-revision-date-localized:
