@@ -1,0 +1,3 @@
+nav:
+  - ... | glob=**/*.md
+  - ... | exclude=non_md_resources/**
