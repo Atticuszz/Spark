@@ -155,8 +155,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ac6489836e53e3c3",
+  "active": "57ac6d6cdaf2e448",
   "lastOpenFiles": [
+    "/mkdocs.yml",
     "docs/Learning/CS/VCS/git.md",
     "assets/Image example.png",
     "docs/Daily/writing/2024-9.md",
@@ -164,7 +165,6 @@
     "docs/Learning",
     "docs/js/katex.js",
     "/docs/js/katex.js",
-    "/mkdocs.yml",
     "/uv.lock",
     "/docs/Daily/writing/2024-9.md",
     "/assets/icon/logo.svg",
