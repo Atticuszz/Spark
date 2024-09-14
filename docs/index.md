@@ -1,4 +1,4 @@
-# Index
+# Home
 
 <h1 align="center">Hi there, I'm Atticus Zhou 👋</h1>
 <p align="center">
