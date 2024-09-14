@@ -4,4 +4,4 @@
 
 install auto upload image with [picgo](https://github.com/Molunerfinn/PicGo/releases) and [obsidian-plugin](https://github.com/renmu123/obsidian-image-auto-upload-plugin)
 
-![[../../assets/Image example.png]]
+![[docs/assets/Image example.png]]
