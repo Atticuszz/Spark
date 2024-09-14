@@ -6,7 +6,7 @@
 
 - install and start
 
-```shell
+```bash
 sudo apt update
 sudo apt install openssh-server
 # add it into ~/.bashrc for auto start
