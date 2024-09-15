@@ -1,4 +1,5 @@
 # Home
+<center>![[assets/logo/logo.svg|200]]</center>
 
 <h1 align="center">Hi there, I'm Atticus Zhou 👋</h1>
 <p align="center">
