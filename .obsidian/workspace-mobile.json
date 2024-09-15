@@ -11,8 +11,12 @@
             "id": "ac6489836e53e3c3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/Daily/writing/2024-9.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -93,6 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "docs/Daily/writing/2024-9.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -109,6 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "docs/Daily/writing/2024-9.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -119,7 +125,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "docs/Daily/writing/2024-9.md"
+          }
         }
       },
       {
@@ -135,41 +143,41 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "oz-clear-unused-images:Clear Unused Images": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false,
-      "publish:Publish changes...": false,
-      "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ac6489836e53e3c3",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "docs/Daily/writing/2024-9.md",
-    "/mkdocs.yml",
     "docs/Learning/CS/VCS/git.md",
+    "docs/assets/logo/logo.svg",
+    "/mkdocs.yml",
+    "/docs/assets/logo/logo.svg",
+    "/docs/Features/Image.md",
+    "docs/assets/logo",
+    "/docs/assets/logo",
+    "Untitled.canvas",
+    "docs/assets/drawio/test.drawio",
+    "docs/assets/Image example.png",
+    "docs/Daily/writing/2024-9.md",
+    "docs/assets/drawio",
+    "docs/assets",
+    "/docs/assets/drawio",
+    "/docs/assets",
     "assets/Image example.png",
     "conflict-files-obsidian-git.md",
     "docs/Learning",
     "docs/js/katex.js",
-    "/docs/js/katex.js",
-    "/uv.lock",
     "/docs/Daily/writing/2024-9.md",
     "/assets/icon/logo.svg",
-    "docs/js",
-    "/docs/js",
     "assets/icon/logo.svg",
     "docs/Learning/CS/Language/python/py-env/UV.md",
     "Untitled.md",
-    "docs/Daily/Untitled.md",
-    "docs/Daily/writing",
-    "docs/Daily",
-    "docs/daily"
+    "docs/Daily/Untitled.md"
   ]
 }
