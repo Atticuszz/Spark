@@ -1,2 +1,7 @@
+## paper
+
 - [ ] illustration of `GsplatLoc`
-- [ ] Evaluation,conclusion and
+- [ ] data table of Evaluation,conclusion and Abstract,title 
+- [ ] forms of submission  to IET
+	- [ ] author info of Mrs. Wu
+- [ ] template check 
