@@ -10,4 +10,5 @@
 
 ## English
 
-- [ ] filter familiar words 
+- [ ] filter familiar words in momo
+
