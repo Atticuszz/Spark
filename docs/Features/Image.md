@@ -2,6 +2,6 @@
 
 [Images - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/images/)
 
-install auto upload image with [picgo](https://github.com/Molunerfinn/PicGo/releases) and [obsidian-plugin](https://github.com/renmu123/obsidian-image-auto-upload-plugin)
+![[assets/logo/logo.svg|100]]
 
 ![[assets/Image example.png]]
