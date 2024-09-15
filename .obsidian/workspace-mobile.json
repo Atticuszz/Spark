@@ -152,11 +152,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57ac6d6cdaf2e448",
+  "active": "ac6489836e53e3c3",
   "lastOpenFiles": [
+    "docs/Features/Text Formatting.md",
+    "docs/Daily/Tasks.md",
     "/docs/Features/Text Formatting.md",
     "docs/Daily/writing/2024-9.md",
-    "docs/Daily/Tasks.md",
     "docs/Learning/CS/VCS/git.md",
     "docs/assets/logo/logo.svg",
     "/mkdocs.yml",
