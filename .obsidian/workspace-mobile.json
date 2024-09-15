@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Daily/writing/2024-9.md",
+                "file": "docs/Daily/Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Daily/Tasks.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Daily/Tasks.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md"
+            "file": "docs/Daily/Tasks.md"
           }
         }
       },
@@ -154,6 +154,9 @@
   },
   "active": "ac6489836e53e3c3",
   "lastOpenFiles": [
+    "/docs/Features/Text Formatting.md",
+    "docs/Daily/writing/2024-9.md",
+    "docs/Daily/Tasks.md",
     "docs/Learning/CS/VCS/git.md",
     "docs/assets/logo/logo.svg",
     "/mkdocs.yml",
@@ -164,7 +167,6 @@
     "Untitled.canvas",
     "docs/assets/drawio/test.drawio",
     "docs/assets/Image example.png",
-    "docs/Daily/writing/2024-9.md",
     "docs/assets/drawio",
     "docs/assets",
     "/docs/assets/drawio",
@@ -177,7 +179,6 @@
     "/assets/icon/logo.svg",
     "assets/icon/logo.svg",
     "docs/Learning/CS/Language/python/py-env/UV.md",
-    "Untitled.md",
-    "docs/Daily/Untitled.md"
+    "Untitled.md"
   ]
 }
