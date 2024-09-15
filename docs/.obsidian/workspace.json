@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Features/Text Formatting.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Features/Text Formatting.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Features/Text Formatting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Image.md"
+                "file": "Features/Text Formatting.md"
               }
             }
           },
@@ -201,15 +201,12 @@
   },
   "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
-    "Features/Icons, Emojis.md",
-    "Features/Image.md",
-    "Features/Text Formatting.md",
-    "Features/Table.md",
-    "index.md",
+    "Features/Admonitions.md",
     "Learning/CS/VCS/git.md",
+    "assets/logo/logo.svg",
+    "assets/logo",
     "Learning/CS/tools/IDE/plugin.md",
     "Learning/CS/tools/git-install-instruction.md",
-    "Features/Admonitions.md",
     "Features/Diagrams.md",
     "Features/code.md",
     "Learning/CS/tools/IDE/JetBrains.md",
@@ -227,6 +224,10 @@
     "Features/Draw.md",
     "Features/footntoes.md",
     "Daily/writing/2024-9.md",
+    "Learning/CS/Language 1/python/third_party_lib/pyqt6.md",
+    "Learning/CS/Language 1/python/standard_lib/Pathlib.md",
+    "Learning/CS/Language 1/python/py-env/UV.md",
+    "Learning/CS/Language 1/python/py-env/Poetry.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
@@ -236,7 +237,6 @@
     "assets/Pasted_image_20240303125518.png",
     "assets/Pasted_image_20240303125354.png",
     "assets/Pasted_image_20240124155710.png",
-    "assets/cmd_cd_2.gif",
     "docs/VCS/github",
     "docs/VCS",
     "docs/tutorials",
@@ -246,7 +246,6 @@
     "Learning/CS/Language 1/python/py-env",
     "Learning/CS/Language 1/C++/STL",
     "Learning/CS/Language 1/C++/Data_model",
-    "Learning/CS/Language 1/js_ts",
     "Untitled.canvas",
     "未命名.canvas",
     "未命名 3.canvas",
