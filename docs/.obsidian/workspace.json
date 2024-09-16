@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/Tasks.md",
+                "file": "Learning/Reading list.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/Tasks.md",
+                "file": "Learning/Reading list.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/Tasks.md",
+                "file": "Learning/Reading list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/Tasks.md"
+                "file": "Learning/Reading list.md"
               }
             }
           },
@@ -214,11 +214,13 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "assets/Pasted image 20240916211902.png",
+    "Daily/Tasks.md",
+    "Learning/Reading list.md",
     "assets/myself.jpeg",
     "Daily/writing/2024-9.md",
     "index.md",
     "Features/Admonitions.md",
-    "Daily/Tasks.md",
     "Features/Text Formatting.md",
     "Features/Icons, Emojis.md",
     "Features/Image.md",
@@ -241,7 +243,6 @@
     "Learning/CS/OS/Ubuntu/code_env.md",
     "Learning/CS/OS/Ubuntu/configs.md",
     "Learning/CS/OS/Ubuntu/net.md",
-    "Learning/CS/OS/Ubuntu/shell.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
@@ -250,7 +251,6 @@
     "assets/Pasted_image_20240303125609.png",
     "assets/Pasted_image_20240303125518.png",
     "assets/Pasted_image_20240303125354.png",
-    "assets/Pasted_image_20240124155710.png",
     "docs/VCS/github",
     "docs/VCS",
     "docs/tutorials",
