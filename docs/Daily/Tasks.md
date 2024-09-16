@@ -13,3 +13,7 @@
 ## English
 
 - [ ] filter familiar words in momo
+
+
+## diet 
+- [ ] find out food with enough carbohydrates for matainin

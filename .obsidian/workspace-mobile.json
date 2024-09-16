@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Daily/writing/2024-9.md",
+                "file": "docs/Daily/Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Daily/Tasks.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Daily/Tasks.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md"
+            "file": "docs/Daily/Tasks.md"
           }
         }
       },
@@ -154,9 +154,9 @@
   },
   "active": "ac6489836e53e3c3",
   "lastOpenFiles": [
+    "docs/Daily/writing/2024-9.md",
     "docs/Reflections",
     "docs/Reflections.md",
-    "docs/Daily/writing/2024-9.md",
     "docs/assets/myself.jpeg",
     "docs/assets/Pasted image 20240916211902.png",
     "docs/Learning/Reading list.md",
@@ -190,7 +190,6 @@
     "/mkdocs.yml",
     "/docs/assets/logo/logo.svg",
     "/docs/Features/Image.md",
-    "docs/assets/logo",
     "Untitled.canvas",
     "docs/assets/Image example.png",
     "assets/Image example.png",
