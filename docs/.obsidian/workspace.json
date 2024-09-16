@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/CS/OS/Ubuntu/wsl.md",
+                "file": "Daily/Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/CS/OS/Ubuntu/wsl.md",
+                "file": "Daily/Tasks.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/CS/OS/Ubuntu/wsl.md",
+                "file": "Daily/Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/CS/OS/Ubuntu/wsl.md"
+                "file": "Daily/Tasks.md"
               }
             }
           },
@@ -202,7 +202,13 @@
   },
   "active": "e4b2b643529b5c53",
   "lastOpenFiles": [
+    "Features/Icons, Emojis.md",
+    "Features/Image.md",
+    "Features/LaTeX Math Support.md",
     "Features/Text Formatting.md",
+    "Features/Table.md",
+    "Learning/CS/OS/Ubuntu/wsl.md",
+    "Daily/Tasks.md",
     "Features/Admonitions.md",
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
@@ -222,14 +228,8 @@
     "Learning/CS/OS/Ubuntu/net.md",
     "Learning/CS/OS/Ubuntu/shell.md",
     "Learning/CS/OS/Ubuntu/system.md",
-    "Learning/CS/OS/Ubuntu/wsl.md",
     "Features/Draw.md",
     "Features/footntoes.md",
-    "Daily/writing/2024-9.md",
-    "Learning/CS/Language 1/python/third_party_lib/pyqt6.md",
-    "Learning/CS/Language 1/python/standard_lib/Pathlib.md",
-    "Learning/CS/Language 1/python/py-env/UV.md",
-    "Learning/CS/Language 1/python/py-env/Poetry.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
