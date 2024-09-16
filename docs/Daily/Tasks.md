@@ -7,7 +7,7 @@
 - [ ] forms of submission to IET
 	- [ ] author info of Mrs. Wu
 - [x] template check
-- [x] change to IET csl format 
+- [x] change to IET csl format
 	- [ ] Reference order format
 
 ## English
