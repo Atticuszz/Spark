@@ -152,8 +152,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57ac6d6cdaf2e448",
+  "active": "7a2e9c95af36d817",
   "lastOpenFiles": [
+    "docs/Reflections",
+    "docs/Reflections.md",
+    "docs/Daily/writing/2024-9.md",
     "docs/assets/myself.jpeg",
     "docs/assets/Pasted image 20240916211902.png",
     "docs/Learning/Reading list.md",
@@ -180,7 +183,6 @@
     "/docs/Daily/Tasks.md",
     "/docs/Features/Admonitions.md",
     "docs/Daily/Tasks.md",
-    "docs/Daily/writing/2024-9.md",
     "docs/Features/Text Formatting.md",
     "/docs/Features/Text Formatting.md",
     "docs/Learning/CS/VCS/git.md",
