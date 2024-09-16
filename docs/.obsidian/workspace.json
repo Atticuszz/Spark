@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Text Formatting.md",
+                "file": "Learning/CS/OS/Ubuntu/wsl.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Text Formatting.md",
+                "file": "Learning/CS/OS/Ubuntu/wsl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Text Formatting.md"
+                "file": "Learning/CS/OS/Ubuntu/wsl.md"
               }
             }
           },
@@ -199,8 +200,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0cb70fb2c9b28a6e",
+  "active": "e4b2b643529b5c53",
   "lastOpenFiles": [
+    "Features/Text Formatting.md",
     "Features/Admonitions.md",
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
