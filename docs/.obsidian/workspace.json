@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Reading list.md"
+                "file": "Learning/Paper/journals/IET/Submission.md"
               }
             }
           },
@@ -214,9 +214,18 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "Learning/Reading list.md",
+    "Learning/Paper/journals/IET/Submission.md",
+    "Learning/Paper/journals/IET/Main.md",
+    "Learning/Paper/journals/IET/ITE computer vision.md",
+    "Learning/Paper/journals/IET/Cover question.md",
+    "Learning/Paper/journals/IET/Free Format.md",
+    "Learning/Paper/journals/IET/iet-computer-vision.csl",
+    "Learning/Paper/journals/IET",
+    "Learning/Paper/journals",
+    "Learning/Paper",
     "assets/Pasted image 20240916211902.png",
     "Daily/Tasks.md",
-    "Learning/Reading list.md",
     "assets/myself.jpeg",
     "Daily/writing/2024-9.md",
     "index.md",
@@ -239,10 +248,6 @@
     "Learning/CS/OS/GPU.md",
     "Learning/CS/OS/Windows/Powersehll.md",
     "Learning/CS/OS/Windows/CMD.md",
-    "Learning/CS/OS/Ubuntu/bugs.md",
-    "Learning/CS/OS/Ubuntu/code_env.md",
-    "Learning/CS/OS/Ubuntu/configs.md",
-    "Learning/CS/OS/Ubuntu/net.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
@@ -250,16 +255,11 @@
     "assets/Pasted_image_20240306115828.png",
     "assets/Pasted_image_20240303125609.png",
     "assets/Pasted_image_20240303125518.png",
-    "assets/Pasted_image_20240303125354.png",
     "docs/VCS/github",
     "docs/VCS",
     "docs/tutorials",
     "Learning/CS/Language 1/js_ts/vue.js",
     "Learning/CS/Language 1/python/third_party_lib",
-    "Learning/CS/Language 1/python/standard_lib",
-    "Learning/CS/Language 1/python/py-env",
-    "Learning/CS/Language 1/C++/STL",
-    "Learning/CS/Language 1/C++/Data_model",
     "Untitled.canvas",
     "未命名.canvas",
     "未命名 3.canvas",
