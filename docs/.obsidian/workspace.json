@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Daily/Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Daily/Tasks.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Daily/Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Admonitions.md"
+                "file": "Daily/Tasks.md"
               }
             }
           },
@@ -212,8 +212,12 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "e5fb1abf4287bce9",
+  "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "assets/myself.jpeg",
+    "Daily/writing/2024-9.md",
+    "index.md",
+    "Features/Admonitions.md",
     "Daily/Tasks.md",
     "Features/Text Formatting.md",
     "Features/Icons, Emojis.md",
@@ -221,7 +225,6 @@
     "Features/LaTeX Math Support.md",
     "Features/Table.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
-    "Features/Admonitions.md",
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
     "assets/logo",
@@ -239,9 +242,6 @@
     "Learning/CS/OS/Ubuntu/configs.md",
     "Learning/CS/OS/Ubuntu/net.md",
     "Learning/CS/OS/Ubuntu/shell.md",
-    "Learning/CS/OS/Ubuntu/system.md",
-    "Features/Draw.md",
-    "Features/footntoes.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
