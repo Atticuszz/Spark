@@ -17,8 +17,6 @@
 ### File Upload
 
 - [ ] paper resources
-
-
 - [x] Corresponding author profile
 	- [x] [cut out](https://swanhub.co/ZeYiLin/HivisionIDPhotos/demo)
 	- [x] [resume](https://rxresume.analyticsvidhya.com/) [[assets/resume/RxResume_Atticus_Zhou.pdf|RxResume_Atticus_Zhou]]
