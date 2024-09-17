@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/Tasks.md",
+                "file": "Learning/Reading list.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Learning/Reading list.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Learning/Reading list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md"
+                "file": "Learning/Reading list.md"
               }
             }
           },
@@ -212,11 +212,12 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "79f5631338b21d85",
+  "active": "e4b2b643529b5c53",
   "lastOpenFiles": [
+    "Learning/Paper/journals/IET/Submission.md",
+    "Daily/Tasks.md",
     "Learning/Paper/journals/IET/Main.md",
     "Learning/CS/Backend/FastApi.md",
-    "Learning/Paper/journals/IET/Submission.md",
     "Learning/CS/Backend",
     "Learning/Reading list.md",
     "Learning/Paper/journals/IET/ITE computer vision.md",
@@ -227,7 +228,6 @@
     "Learning/Paper/journals",
     "Learning/Paper",
     "assets/Pasted image 20240916211902.png",
-    "Daily/Tasks.md",
     "assets/myself.jpeg",
     "Daily/writing/2024-9.md",
     "index.md",
