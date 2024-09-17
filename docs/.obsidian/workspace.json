@@ -23,6 +23,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Features/Admonitions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afed0badeb22f89d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Learning/Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "source": false
@@ -30,7 +42,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -195,33 +207,36 @@
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "oz-clear-unused-images:Clear Unused Images": false
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "79f5631338b21d85",
+  "active": "afed0badeb22f89d",
   "lastOpenFiles": [
+    "Learning/Paper/journals/IET/Main.md",
+    "Learning/Paper/journals/IET/Cover question.md",
+    "Features/Admonitions.md",
     "assets/resume/Reactive Resume.pdf",
-    "assets/resume/RxResume_Atticus_Zhou.pdf",
     "Learning/Paper/journals/IET/Submission.md",
+    "Learning/Paper/journals/IET/ITE computer vision.md",
+    "Learning/Paper/journals/IET/~WRD0000.tmp",
+    "Learning/Paper/journals/IET/~$T+Computer+Vision+Submission+Questions.docx",
+    "assets/IET+Computer+Vision+Submission+Questions (4) 1.docx",
+    "assets/IET+Computer+Vision+Submission+Questions (4).docx",
+    "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
+    "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions (4).docx",
+    "assets/resume/RxResume_Atticus_Zhou.pdf",
     "Features/Text Formatting.md",
     "index.md",
     "assets/resume",
     "Learning/Reading list.md",
     "Daily/Tasks.md",
-    "Learning/Paper/journals/IET/Main.md",
     "Learning/CS/Backend/FastApi.md",
     "Learning/CS/Backend",
-    "Learning/Paper/journals/IET/ITE computer vision.md",
-    "Learning/Paper/journals/IET/Cover question.md",
     "Learning/Paper/journals/IET/Free Format.md",
-    "Learning/Paper/journals/IET/iet-computer-vision.csl",
-    "Learning/Paper/journals/IET",
-    "Learning/Paper/journals",
-    "Learning/Paper",
     "assets/Pasted image 20240916211902.png",
     "assets/myself.jpeg",
     "Daily/writing/2024-9.md",
-    "Features/Admonitions.md",
     "Features/Icons, Emojis.md",
     "Features/Image.md",
     "Features/LaTeX Math Support.md",
@@ -229,7 +244,6 @@
     "Learning/CS/OS/Ubuntu/wsl.md",
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
-    "assets/logo",
     "Learning/CS/tools/IDE/plugin.md",
     "Learning/CS/tools/git-install-instruction.md",
     "Features/Diagrams.md",
@@ -244,7 +258,6 @@
     "assets/Pasted_image_20240306115828.png",
     "assets/Pasted_image_20240303125609.png",
     "assets/Pasted_image_20240303125518.png",
-    "docs/VCS/github",
     "Untitled.canvas",
     "未命名.canvas",
     "未命名 3.canvas",

@@ -127,7 +127,7 @@
     },
     "emphasis-style": {
       "enabled": true,
-      "style": "consistent"
+      "style": "underscore"
     },
     "no-bare-urls": {
       "enabled": false,

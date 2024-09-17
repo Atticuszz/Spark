@@ -9,14 +9,45 @@
 
 ## Procedure
 
+### Pre-Screening
+
+All papers must be written in English and are pre-screened to ensure that only the most significant are sent for review. Please ensure that your manuscript satisfies the following points:
+
+1. Originality: is the work scientifically rigorous, accurate and novel? Does the work contain significant additional material to that already published? Has its value been demonstrated?
+2. Motivation: does the problem considered have a sound motivation? Does the paper clearly demonstrate the scientific interest of the results?
+3. Referencing: has reference been made to the most recent and most appropriate work? Is the present work set in the context of the previous work?
+4. Clarity: is the English clear and well written? Poorly written English may obscure the scientific merit of your paper. Are the ideas expressed clearly and concisely? Are the concepts understandable?
+
+> [!note] Paper cover
+> The authors of all submitted papers are __required__ to include a cover sheet with answers to the questions and requirements listed in this template.
+
+- [x] prepare the _Paper Submission Cover Sheet_
+****
+
 ### Type, Title, & Abstract
 
 - [ ] tile
+	- [ ] The title page of the manuscript, including statements relating to our ethics and integrity policies (see information on these policies below):
+
+> [!info]
+> - Data availability statement;
+> - Funding statement;
+> - Conflict of interest disclosure;
+> - Ethics approval statement;
+> - Patient consent statement;
+> - Permission to reproduce material from other sources;
+> - Clinical trial registration.
+
 - [ ] Abstract
 
 ### File Upload
 
 - [ ] paper resources
+	- [ ] main part
+
+> [!QUOTE] main body
+> All required sections should be contained in your manuscript, including _abstract, introduction, methods, results, and conclusions_. Figures and tables should have legends. References may be submitted in any style or format, as long as it is consistent throughout the manuscript.
+
 - [x] Corresponding author profile
 	- [x] [cut out](https://swanhub.co/ZeYiLin/HivisionIDPhotos/demo)
 	- [x] [resume](https://rxresume.analyticsvidhya.com/) [[assets/resume/RxResume_Atticus_Zhou.pdf|RxResume_Atticus_Zhou]]
