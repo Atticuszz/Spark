@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Learning/CS/Backend/FastApi.md",
+                "file": "docs/Daily/writing/2024-9.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/Learning/CS/Backend/FastApi.md",
+            "file": "docs/Daily/writing/2024-9.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/Learning/CS/Backend/FastApi.md",
+            "file": "docs/Daily/writing/2024-9.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -141,7 +141,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Learning/CS/Backend/FastApi.md"
+            "file": "docs/Daily/writing/2024-9.md"
           }
         }
       },
@@ -167,10 +167,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57ac6d6cdaf2e448",
+  "active": "f32626862f702ea8",
   "lastOpenFiles": [
-    "docs/Daily/writing/2024-9.md",
+    "docs/Learning/Paper/journals/IET/Submission.md",
     "docs/Learning/CS/Backend/FastApi.md",
+    "docs/assets/resume/RxResume_Atticus_Zhou.pdf",
+    "docs/assets/resume/Reactive Resume.pdf",
+    "docs/Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
+    "/docs/assets/resume/RxResume_Atticus_Zhou.pdf",
+    "/docs/assets/resume/Reactive Resume.pdf",
+    "/docs/Learning/Paper/journals/IET/Submission.md",
+    "/docs/Learning/Paper/journals/IET/Main.md",
+    "/docs/Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
+    "/docs/Learning/Paper/journals/IET/Cover question.md",
+    "docs/assets/resume",
+    "/docs/assets/resume",
+    "docs/Daily/writing/2024-9.md",
     "docs/Learning/CS/Backend",
     "docs/Daily/Tasks.md",
     "docs/Reflections",
@@ -178,26 +190,14 @@
     "docs/assets/myself.jpeg",
     "docs/assets/Pasted image 20240916211902.png",
     "docs/Learning/Reading list.md",
-    "docs/Learning/Paper/journals/IET/iet-computer-vision.csl",
-    "docs/Learning/Paper/journals/IET/Submission.md",
     "docs/Learning/Paper/journals/IET/Main.md",
     "docs/Learning/Paper/journals/IET/ITE computer vision.md",
     "docs/Learning/Paper/journals/IET/Cover question.md",
     "/docs/assets/myself.jpeg",
     "/docs/assets/Pasted image 20240916211902.png",
     "/docs/Learning/Reading list.md",
-    "/docs/Learning/Paper/journals/IET/iet-computer-vision.csl",
-    "/docs/Learning/Paper/journals/IET/Submission.md",
-    "/docs/Learning/Paper/journals/IET/Main.md",
     "/docs/Learning/Paper/journals/IET/ITE computer vision.md",
-    "/docs/Learning/Paper/journals/IET/Cover question.md",
     "/docs/Daily/writing/2024-9.md",
-    "docs/Learning/Paper/journals/IET",
-    "docs/Learning/Paper/journals",
-    "docs/Learning/Paper",
-    "/docs/Learning/Paper/journals/IET",
-    "/docs/Learning/Paper/journals",
-    "/docs/Learning/Paper",
     "/docs/Daily/Tasks.md",
     "/docs/Features/Admonitions.md",
     "docs/Features/Text Formatting.md",
