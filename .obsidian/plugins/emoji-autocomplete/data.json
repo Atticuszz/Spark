@@ -4,13 +4,13 @@
   "considerHistory": true,
   "historyLimit": 25,
   "history": [
+    "angry",
     "books",
     "sad",
     "canned_food",
     "candy",
     "sleepy",
     "night",
-    "angry",
     "socks"
   ],
   "highlightMatches": true,

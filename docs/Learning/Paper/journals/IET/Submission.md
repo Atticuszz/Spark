@@ -34,13 +34,14 @@ All papers must be written in English and are pre-screened to ensure that only t
 		- [ ] schools _including affiliation_
 		- [ ] Correspondence
 	- [ ] latex format
+
 > [!quote]
 > - Data availability statement;
 > - Funding statement;
 > - Conflict of interest disclosure;
 > - Your co-author details, including affiliation and email address;
 > - An ORCID ID, freely available at [****https://orcid.org****](https://orcid.org/);
-> - A separate file containing a summary of the corresponding author’s profile. This should consist of: the corresponding author’s institutional email address; their profile page on their institution’s website; their Google Scholar page; and a list of up to ten most recent published papers with links (where available).
+> - A separate file containing a summary of the corresponding author's profile. This should consist of: the corresponding author's institutional email address; their profile page on their institution's website; their Google Scholar page; and a list of up to ten most recent published papers with links (where available).
 
 - [ ] Abstract
 
