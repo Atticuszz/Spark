@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Daily/Tasks.md",
+                "file": "docs/Daily/writing/2024-9.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/Daily/Tasks.md",
+            "file": "docs/Daily/writing/2024-9.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/Daily/Tasks.md",
+            "file": "docs/Daily/writing/2024-9.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Daily/Tasks.md"
+            "file": "docs/Daily/writing/2024-9.md"
           }
         }
       },
@@ -154,6 +154,7 @@
   },
   "active": "ac6489836e53e3c3",
   "lastOpenFiles": [
+    "docs/Daily/Tasks.md",
     "docs/Daily/writing/2024-9.md",
     "docs/Reflections",
     "docs/Reflections.md",
@@ -182,7 +183,6 @@
     "/docs/Learning/Paper",
     "/docs/Daily/Tasks.md",
     "/docs/Features/Admonitions.md",
-    "docs/Daily/Tasks.md",
     "docs/Features/Text Formatting.md",
     "/docs/Features/Text Formatting.md",
     "docs/Learning/CS/VCS/git.md",
