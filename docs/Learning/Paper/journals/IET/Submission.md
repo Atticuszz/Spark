@@ -1,5 +1,8 @@
 # Submission
 
+- [Author Guidelines](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17519640/homepage/author-guidelines#pys)
+- [Author Guidelines_zh](https://zhuanlan.zhihu.com/p/499184217?utm_id=0)
+
 ## Account
 
 [login in to submit](https://mc.manuscriptcentral.com/theiet-cvi)
@@ -22,21 +25,22 @@ All papers must be written in English and are pre-screened to ensure that only t
 > The authors of all submitted papers are __required__ to include a cover sheet with answers to the questions and requirements listed in this template.
 
 - [x] prepare the _Paper Submission Cover Sheet_
-****
 
 ### Type, Title, & Abstract
 
 - [ ] tile
-	- [ ] The title page of the manuscript, including statements relating to our ethics and integrity policies (see information on these policies below):
-
-> [!info]
+	- [ ] The title page of the manuscript, including statements relating to our ethics and integrity policies (see information on these policies below)
+		- [ ] co-works _co-author details, email address_
+		- [ ] schools _including affiliation_
+		- [ ] Correspondence
+	- [ ] latex format
+> [!quote]
 > - Data availability statement;
 > - Funding statement;
 > - Conflict of interest disclosure;
-> - Ethics approval statement;
-> - Patient consent statement;
-> - Permission to reproduce material from other sources;
-> - Clinical trial registration.
+> - Your co-author details, including affiliation and email address;
+> - An ORCID ID, freely available at [****https://orcid.org****](https://orcid.org/);
+> - A separate file containing a summary of the corresponding author’s profile. This should consist of: the corresponding author’s institutional email address; their profile page on their institution’s website; their Google Scholar page; and a list of up to ten most recent published papers with links (where available).
 
 - [ ] Abstract
 
@@ -59,3 +63,5 @@ All papers must be written in English and are pre-screened to ensure that only t
 > [!warning] Editable text file
 > Please ensure you upload an editable text file (if LaTeX, please also supply a PDF) and figures in
 > the highest resolution available.
+
+### Author
