@@ -17,9 +17,11 @@
 ### File Upload
 
 - [ ] paper resources
-- [ ] Corresponding author profile
+
+
+- [x] Corresponding author profile
 	- [x] [cut out](https://swanhub.co/ZeYiLin/HivisionIDPhotos/demo)
-	- [x] [resume](https://rxresume.analyticsvidhya.com/) ![[assets/resume/RxResume_Atticus_Zhou.pdf|RxResume_Atticus_Zhou]]
+	- [x] [resume](https://rxresume.analyticsvidhya.com/) [[assets/resume/RxResume_Atticus_Zhou.pdf|RxResume_Atticus_Zhou]]
 
 > [!tips] file format
 > In order to improve the author experience, this journal has adopted a [Free Format](https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/free-format-submission.html%E2%80%9Dtarget=%E2%80%9D_new%E2%80%9D) approach, whereby we minimise any
