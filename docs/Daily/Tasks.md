@@ -14,6 +14,6 @@
 
 - [ ] filter familiar words in momo
 
+## Diet
 
-## diet 
-- [ ] find out food with enough carbohydrates for matainin
+- [ ] find out food 🥫 with enough carbohydrates for keeping a basic level of blood sugar🍬

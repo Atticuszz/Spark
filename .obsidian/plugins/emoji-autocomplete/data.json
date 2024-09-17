@@ -4,6 +4,8 @@
   "considerHistory": true,
   "historyLimit": 25,
   "history": [
+    "canned_food",
+    "candy",
     "sleepy",
     "night",
     "angry",
