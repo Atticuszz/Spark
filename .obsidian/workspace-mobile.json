@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Daily/writing/2024-9.md",
+                "file": "docs/Learning/CS/Backend/FastApi.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Learning/CS/Backend/FastApi.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md",
+            "file": "docs/Learning/CS/Backend/FastApi.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -141,7 +141,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/Daily/writing/2024-9.md"
+            "file": "docs/Learning/CS/Backend/FastApi.md"
           }
         }
       },
@@ -167,10 +167,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f32626862f702ea8",
+  "active": "57ac6d6cdaf2e448",
   "lastOpenFiles": [
-    "docs/Daily/Tasks.md",
     "docs/Daily/writing/2024-9.md",
+    "docs/Learning/CS/Backend/FastApi.md",
+    "docs/Learning/CS/Backend",
+    "docs/Daily/Tasks.md",
     "docs/Reflections",
     "docs/Reflections.md",
     "docs/assets/myself.jpeg",
@@ -202,7 +204,6 @@
     "/docs/Features/Text Formatting.md",
     "docs/Learning/CS/VCS/git.md",
     "docs/assets/logo/logo.svg",
-    "/mkdocs.yml",
     "/docs/assets/logo/logo.svg",
     "/docs/Features/Image.md",
     "Untitled.canvas",
