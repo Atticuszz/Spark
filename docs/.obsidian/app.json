@@ -14,5 +14,6 @@
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
   "newLinkFormat": "absolute",
-  "trashOption": "local"
+  "trashOption": "local",
+  "showRibbon": true
 }
