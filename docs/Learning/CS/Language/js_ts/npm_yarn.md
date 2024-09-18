@@ -66,7 +66,7 @@ npm config delete https-proxy
 
 ```
 
-### vesrion
+## Vesrion
 
 - 更新
 
@@ -78,13 +78,13 @@ npm update
 yarn upgrade
 ```
 
-### 代码格式化
+## 代码格式化
 
 ```
 yarn add eslint
 ```
 
-### 根据openapi.json自动生成client
+## 根据 openapi.json 自动生成 Client
 
 ```shell
 yarn add openapi-typescript-codegen --save-dev

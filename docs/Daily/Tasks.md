@@ -16,4 +16,4 @@
 
 ## Diet
 
-- [ ] find out food 🥫 with enough carbohydrates for keeping a basic level of blood sugar🍬
+- [x] find out food 🥫 with enough carbohydrates for keeping a basic level of blood sugar🍬

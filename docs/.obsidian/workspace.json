@@ -42,7 +42,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Admonitions.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Admonitions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md"
+                "file": "Features/Admonitions.md"
               }
             }
           },
@@ -210,12 +210,22 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "afed0badeb22f89d",
+  "active": "79f5631338b21d85",
   "lastOpenFiles": [
-    "Features/Admonitions.md",
-    "assets/resume/Reactive Resume.pdf",
-    "Learning/Paper/journals/IET/Submission.md",
+    "Daily/writing/2024-9.md",
+    "Daily/Tasks.md",
+    "Learning/CS/Language/C++/Data_model/map.md",
     "Learning/Paper/journals/IET/Main.md",
+    "Learning/CS/Language/C++/Data_model/set.md",
+    "Learning/CS/Language/C++/Data_model/stack.md",
+    "Learning/CS/Language/C++/Pointer.md",
+    "Learning/CS/OS/Ubuntu/shell.md",
+    "Learning/CS/Language/python/py-env/Poetry.md",
+    "Learning/CS/Language/js_ts/npm_yarn.md",
+    "Features/Text Formatting.md",
+    "Features/Admonitions.md",
+    "Learning/Paper/journals/IET/Submission.md",
+    "assets/resume/Reactive Resume.pdf",
     "Learning/Paper/journals/IET/Cover question.md",
     "Learning/Paper/journals/IET/ITE computer vision.md",
     "Learning/Paper/journals/IET/~WRD0000.tmp",
@@ -225,17 +235,14 @@
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions (4).docx",
     "assets/resume/RxResume_Atticus_Zhou.pdf",
-    "Features/Text Formatting.md",
     "index.md",
     "assets/resume",
     "Learning/Reading list.md",
-    "Daily/Tasks.md",
     "Learning/CS/Backend/FastApi.md",
     "Learning/CS/Backend",
     "Learning/Paper/journals/IET/Free Format.md",
     "assets/Pasted image 20240916211902.png",
     "assets/myself.jpeg",
-    "Daily/writing/2024-9.md",
     "Features/Icons, Emojis.md",
     "Features/Image.md",
     "Features/LaTeX Math Support.md",
@@ -244,12 +251,6 @@
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
     "Learning/CS/tools/IDE/plugin.md",
-    "Learning/CS/tools/git-install-instruction.md",
-    "Features/Diagrams.md",
-    "Features/code.md",
-    "Learning/CS/tools/IDE/JetBrains.md",
-    "Learning/CS/OS/Docker.md",
-    "Learning/CS/OS/GPU.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
