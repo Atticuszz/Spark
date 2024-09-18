@@ -167,8 +167,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f32626862f702ea8",
+  "active": "57ac6d6cdaf2e448",
   "lastOpenFiles": [
+    "/docs/Daily/writing/2024-9.md",
+    "/docs/Features/footntoes.md",
+    "/docs/Learning/CS/Language/python/py-env/Poetry.md",
+    "/docs/Learning/CS/Language/js_ts/npm_yarn.md",
+    "/docs/Learning/CS/Language/C++/Data_model/stack.md",
     "docs/Daily/Tasks.md",
     "docs/Daily/writing/2024-9.md",
     "docs/assets/resume/RxResume_Atticus_Zhou.pdf",
@@ -197,7 +202,6 @@
     "/docs/assets/Pasted image 20240916211902.png",
     "/docs/Learning/Reading list.md",
     "/docs/Learning/Paper/journals/IET/ITE computer vision.md",
-    "/docs/Daily/writing/2024-9.md",
     "/docs/Daily/Tasks.md",
     "/docs/Features/Admonitions.md",
     "docs/Features/Text Formatting.md",
@@ -211,8 +215,6 @@
     "assets/Image example.png",
     "conflict-files-obsidian-git.md",
     "/assets/icon/logo.svg",
-    "assets/icon/logo.svg",
-    "docs/Learning/CS/Language/python/py-env/UV.md",
-    "Untitled.md"
+    "assets/icon/logo.svg"
   ]
 }
