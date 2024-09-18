@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Features/footntoes.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Features/footntoes.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Admonitions.md",
+                "file": "Features/footntoes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Admonitions.md"
+                "file": "Features/footntoes.md"
               }
             }
           },
@@ -212,6 +212,10 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "Features/Admonitions.md",
+    "Features/footntoes.md",
+    "index.md",
+    "Learning/Paper/journals/IET/Cover question.md",
     "Daily/writing/2024-9.md",
     "Daily/Tasks.md",
     "Learning/CS/Language/C++/Data_model/map.md",
@@ -223,10 +227,8 @@
     "Learning/CS/Language/python/py-env/Poetry.md",
     "Learning/CS/Language/js_ts/npm_yarn.md",
     "Features/Text Formatting.md",
-    "Features/Admonitions.md",
     "Learning/Paper/journals/IET/Submission.md",
     "assets/resume/Reactive Resume.pdf",
-    "Learning/Paper/journals/IET/Cover question.md",
     "Learning/Paper/journals/IET/ITE computer vision.md",
     "Learning/Paper/journals/IET/~WRD0000.tmp",
     "Learning/Paper/journals/IET/~$T+Computer+Vision+Submission+Questions.docx",
@@ -235,7 +237,6 @@
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions (4).docx",
     "assets/resume/RxResume_Atticus_Zhou.pdf",
-    "index.md",
     "assets/resume",
     "Learning/Reading list.md",
     "Learning/CS/Backend/FastApi.md",
@@ -250,7 +251,6 @@
     "Learning/CS/OS/Ubuntu/wsl.md",
     "Learning/CS/VCS/git.md",
     "assets/logo/logo.svg",
-    "Learning/CS/tools/IDE/plugin.md",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
     "assets/Pasted_image_20240306122129.png",
