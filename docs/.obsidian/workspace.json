@@ -207,8 +207,7 @@
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-importer:Open Importer": false
+      "oz-clear-unused-images:Clear Unused Images": false
     }
   },
   "active": "afed0badeb22f89d",
