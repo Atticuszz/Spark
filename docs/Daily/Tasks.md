@@ -12,7 +12,7 @@
 
 ## English
 
-- [ ] filter familiar words in momo
+- [x] filter familiar words in momo
 
 ## Diet
 
