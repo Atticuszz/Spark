@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Table.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Table.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md"
+                "file": "Features/Table.md"
               }
             }
           },
@@ -212,6 +212,9 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "Features/LaTeX Math Support.md",
+    "Features/Image.md",
+    "Learning/Paper/journals/IET/Submission.md",
     "assets/drawio/pipeline",
     "Learning/Paper/journals/IET/Main.md",
     "Learning/Paper/journals/IET/Cover question.md",
@@ -228,7 +231,6 @@
     "Learning/CS/Language/python/py-env/Poetry.md",
     "Learning/CS/Language/js_ts/npm_yarn.md",
     "Features/Text Formatting.md",
-    "Learning/Paper/journals/IET/Submission.md",
     "assets/resume/Reactive Resume.pdf",
     "Learning/Paper/journals/IET/ITE computer vision.md",
     "Learning/Paper/journals/IET/~WRD0000.tmp",
@@ -241,13 +243,10 @@
     "assets/resume",
     "Learning/Reading list.md",
     "Learning/CS/Backend/FastApi.md",
-    "Learning/CS/Backend",
     "Learning/Paper/journals/IET/Free Format.md",
     "assets/Pasted image 20240916211902.png",
     "assets/myself.jpeg",
     "Features/Icons, Emojis.md",
-    "Features/Image.md",
-    "Features/LaTeX Math Support.md",
     "Features/Table.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
     "assets/logo/logo.svg",
