@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/footntoes.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/footntoes.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/footntoes.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/footntoes.md"
+                "file": "Learning/Paper/journals/IET/Submission.md"
               }
             }
           },
@@ -212,14 +212,14 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
-    "Features/Admonitions.md",
-    "Features/footntoes.md",
-    "index.md",
+    "Learning/Paper/journals/IET/Main.md",
     "Learning/Paper/journals/IET/Cover question.md",
+    "Features/footntoes.md",
+    "Features/Admonitions.md",
+    "index.md",
     "Daily/writing/2024-9.md",
     "Daily/Tasks.md",
     "Learning/CS/Language/C++/Data_model/map.md",
-    "Learning/Paper/journals/IET/Main.md",
     "Learning/CS/Language/C++/Data_model/set.md",
     "Learning/CS/Language/C++/Data_model/stack.md",
     "Learning/CS/Language/C++/Pointer.md",
