@@ -4,6 +4,8 @@
   "considerHistory": true,
   "historyLimit": 25,
   "history": [
+    "hurt",
+    "warning",
     "brain",
     "paperclip",
     "newspaper",
