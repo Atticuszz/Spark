@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Table.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Table.md",
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Table.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Table.md"
+                "file": "index.md"
               }
             }
           },
@@ -199,8 +199,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "e5fb1abf4287bce9",
+  "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "Learning/Reading list.md",
+    "Learning/CS/VCS/git.md",
+    "Features/Table.md",
     "Features/LaTeX Math Support.md",
     "Features/Image.md",
     "Learning/Paper/journals/IET/Submission.md",
@@ -230,13 +233,11 @@
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions (4).docx",
     "assets/resume/RxResume_Atticus_Zhou.pdf",
     "assets/resume",
-    "Learning/Reading list.md",
     "Learning/CS/Backend/FastApi.md",
     "Learning/Paper/journals/IET/Free Format.md",
     "assets/Pasted image 20240916211902.png",
     "assets/myself.jpeg",
     "Features/Icons, Emojis.md",
-    "Features/Table.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
     "assets/logo/logo.svg",
     "assets/Pasted_image_20240306200159.png",
