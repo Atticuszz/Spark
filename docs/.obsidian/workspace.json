@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Paper/journals/IET/Submission.md"
+                "file": "Features/Image.md"
               }
             }
           },
@@ -187,6 +187,8 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "assets/Flowcharts.png",
+    "Learning/Paper/journals/IET/Submission.md",
     "assets/Pasted image 20240920184027.png",
     "assets/Pasted image 20240920184021.png",
     "assets/Pasted image 20240920183614.png",
@@ -197,7 +199,6 @@
     "assets/Pasted image 20240920182814.png",
     "assets/Pasted image 20240920181136.png",
     "Learning/Paper/journals/IET/Main.md",
-    "Learning/Paper/journals/IET/Submission.md",
     "index.md",
     "Learning/Reading list.md",
     "Learning/CS/VCS/git.md",
@@ -231,7 +232,6 @@
     "Learning/CS/Backend/FastApi.md",
     "Learning/Paper/journals/IET/Free Format.md",
     "assets/Pasted image 20240916211902.png",
-    "assets/myself.jpeg",
     "Features/Icons, Emojis.md",
     "Untitled.canvas",
     "未命名.canvas",

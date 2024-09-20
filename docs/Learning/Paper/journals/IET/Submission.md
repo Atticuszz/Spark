@@ -67,5 +67,4 @@ All papers must be written in English and are pre-screened to ensure that only t
 
 ### Author
 
-
-![[assets/Pasted image 20240920181136.png]]![[assets/Pasted image 20240920182814.png]] ![[assets/Pasted image 20240920184027.png]] 
+![[assets/Pasted image 20240920181136.png]]![[assets/Pasted image 20240920182814.png]] ![[assets/Pasted image 20240920184027.png]]
