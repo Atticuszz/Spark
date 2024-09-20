@@ -66,3 +66,6 @@ All papers must be written in English and are pre-screened to ensure that only t
 > the highest resolution available.
 
 ### Author
+
+
+![[assets/Pasted image 20240920181136.png]]

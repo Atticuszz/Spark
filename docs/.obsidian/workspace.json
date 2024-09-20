@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Learning/Paper/journals/IET/Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,16 +151,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Learning/Paper/journals/IET/Submission.md"
               }
-            }
-          },
-          {
-            "id": "6c7a22ce9a44906b",
-            "type": "leaf",
-            "state": {
-              "type": "code-execute-manage-executors",
-              "state": {}
             }
           },
           {
@@ -170,21 +162,13 @@
               "type": "git-view",
               "state": {}
             }
-          },
-          {
-            "id": "79aef470e1fbe4d9",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,18 +187,19 @@
   },
   "active": "79f5631338b21d85",
   "lastOpenFiles": [
+    "assets/Pasted image 20240920181136.png",
+    "Learning/Paper/journals/IET/Main.md",
+    "Learning/Paper/journals/IET/Submission.md",
+    "index.md",
     "Learning/Reading list.md",
     "Learning/CS/VCS/git.md",
     "Features/Table.md",
     "Features/LaTeX Math Support.md",
     "Features/Image.md",
-    "Learning/Paper/journals/IET/Submission.md",
     "assets/drawio/pipeline",
-    "Learning/Paper/journals/IET/Main.md",
     "Learning/Paper/journals/IET/Cover question.md",
     "Features/footntoes.md",
     "Features/Admonitions.md",
-    "index.md",
     "Daily/writing/2024-9.md",
     "Daily/Tasks.md",
     "Learning/CS/Language/C++/Data_model/map.md",
@@ -240,7 +225,6 @@
     "assets/Pasted image 20240916211902.png",
     "assets/myself.jpeg",
     "Features/Icons, Emojis.md",
-    "Learning/CS/OS/Ubuntu/wsl.md",
     "assets/logo/logo.svg",
     "assets/Pasted_image_20240306200159.png",
     "assets/Pasted_image_20240306142902.png",
