@@ -1,5 +1,8 @@
 # PostgreSQL
 
+[PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+[DBA Roadmap: Learn to become a database administrator with PostgreSQL](https://roadmap.sh/postgresql-dba)
+
 ## Install
 
 ### [Postgresql](https://www.postgresql.org/download/linux/ubuntu/)
@@ -10,7 +13,11 @@ sudo apt install postgresql
 
 ### [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-apt/)
 
-#### Setup the Repository
+a web-based tool to connect to the PostgreSQL server
+
+[PostgreSQL Administration](https://www.postgresqltutorial.com/postgresql-administration/)
+
+Setup the Repository
 
 ```bash
 # Install the public key for the repository (if not done previously):
@@ -20,7 +27,7 @@ curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --d
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 ```
 
-#### Install pgAdmin
+Install pgAdmin
 
 ```bash
 # Install for both desktop and web modes:
