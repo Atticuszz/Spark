@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0cb70fb2c9b28a6e",
+            "id": "79f5631338b21d85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/Reading list.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,16 +138,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/Reading list.md"
+                "file": "Paper/journals/IET/Submission.md"
               }
-            }
-          },
-          {
-            "id": "6c7a22ce9a44906b",
-            "type": "leaf",
-            "state": {
-              "type": "code-execute-manage-executors",
-              "state": {}
             }
           },
           {
@@ -157,21 +149,13 @@
               "type": "git-view",
               "state": {}
             }
-          },
-          {
-            "id": "79aef470e1fbe4d9",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,54 +172,54 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0cb70fb2c9b28a6e",
+  "active": "79f5631338b21d85",
   "lastOpenFiles": [
-    "CS/VCS/Pre-commit.md",
-    "Features/Image.md",
-    "CS/Backend/DB/PostgreSQL.md",
-    "index.md",
-    "Learning/Reading list.md",
-    "Paper/journals/IET/ITE computer vision.md",
+    "Paper/journals/IET/Main.md",
     "Paper/journals/IET/Cover question.md",
-    "CS/tools/IDE/JetBrains.md",
-    "CS/tools/IDE/plugin.md",
-    "CS/Language/python/Venv/conda.md",
-    "CS/Backend/DB/ORM/SQLModel.md",
-    "CS/Language/python/Std/Pathlib.md",
-    "CS/Backend/DB/ORM",
-    "Learning/CS/Language/python/third_party_lib/pyqt6.md",
+    "Features/Image.md",
     "CS/Language/python/Venv/UV.md",
     "CS/Language/python/Venv/Poetry.md",
     "CS/Language/python/Venv/Pip.md",
-    "CS/Language/js_ts/npm_yarn.md",
+    "CS/Language/python/Std/Pathlib.md",
+    "CS/Language/python/Venv/conda.md",
+    "CS/Language/C++/STL/unordered_set.md",
+    "CS/Language/C++/STL/vector.md",
+    "CS/Language/C++/STL/unordered_map.md",
+    "CS/Language/C++/STL/String.md",
+    "CS/Language/C++/STL/stack.md",
+    "CS/Language/C++/STL/set.md",
+    "CS/Language/C++/STL/Pointer.md",
+    "CS/Language/C++/STL/Queue.md",
+    "CS/Language/C++/STL/map.md",
+    "CS/Language/C++/STL/algorithm.md",
     "CS/Language/js_ts/vue.js/nuxt.js.md",
-    "CS/Backend/DB/Sqlite.md",
-    "CS/OS/Ubuntu/wsl.md",
-    "CS/Backend/DB",
-    "assets/png_flowchart.png",
+    "CS/Language/C++/Data_model/vector.md",
+    "CS/Language/C++/Data_model/unordered_set.md",
+    "CS/Language/C++/Data_model/unordered_map.md",
+    "CS/Language/C++/Data_model/String.md",
+    "CS/Language/C++/Data_model/set.md",
+    "CS/Language/C++/Data_model/stack.md",
+    "CS/Language/C++/Data_model/Queue.md",
+    "CS/Language/python/Std",
+    "CS/Language/python/Venv",
+    "CS/Language/C++/STL",
+    "CS/Language/js_ts/vue.js",
+    "CS/Language/C++/Data_model",
+    "CS/Backend/DB/ORM",
+    "CS/OS/Ubuntu",
+    "CS/OS/Windows",
+    "CS/VCS/github",
+    "CS/tools/IDE",
     "assets/png_N_background.png",
-    "assets/inverted_image.png",
+    "assets/png_flowchart.png",
+    "assets/Flowcharts (2).svg",
+    "assets/Flowcharts (1).png",
+    "assets/Flowcharts (1).svg",
     "assets/Pasted image 20240921191130.png",
     "assets/Pasted image 20240921191125.png",
     "assets/Pasted image 20240921191115.png",
-    "assets/Flowcharts (2).svg",
+    "assets/inverted_image.png",
     "assets/Pasted image 20240921184838.png",
-    "assets/drawio/pipeline",
-    "assets/Pasted image 20240920184027.png",
-    "assets/Pasted image 20240920182814.png",
-    "Paper/journals/IET/iet-computer-vision.csl",
-    "Paper/journals/IET/Submission.md",
-    "Paper/journals/IET/Main.md",
-    "Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
-    "Paper/journals/IET",
-    "Paper/journals",
-    "Paper",
-    "CS/Backend/FastApi.md",
-    "CS/Backend",
-    "Features/Icons, Emojis.md",
-    "Features/Text Formatting.md",
-    "Features/Table.md",
-    "docs/VCS/github",
     "Untitled.canvas",
     "未命名.canvas",
     "未命名 3.canvas",
