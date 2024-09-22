@@ -110,4 +110,4 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 
 Dark model `Preferences --> User Interface --> Themes --> Dark`
 
-Register  [Server Dialog — pgAdmin 4 8.11 documentation](http://127.0.0.1:37813/help/help/server_dialog.html)
+Register [Server Dialog — pgAdmin 4 8.11 documentation](http://127.0.0.1:37813/help/help/server_dialog.html)

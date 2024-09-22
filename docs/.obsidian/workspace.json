@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/Backend/DB/SQLModel.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/Backend/DB/SQLModel.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/Backend/DB/SQLModel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md"
+                "file": "Learning/CS/Backend/DB/SQLModel.md"
               }
             }
           },
@@ -204,8 +204,9 @@
   },
   "active": "e4b2b643529b5c53",
   "lastOpenFiles": [
-    "Learning/CS/Language/python/py-env/UV.md",
     "Learning/CS/Backend/DB/PostgreSQL.md",
+    "Learning/CS/Backend/DB/SQLModel.md",
+    "Learning/CS/Language/python/py-env/UV.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
     "Learning/CS/Backend/DB/Sqlite.md",
     "Features/Image.md",
@@ -247,7 +248,6 @@
     "Learning/CS/OS/Docker.md",
     "Learning/CS/OS/GPU.md",
     "Learning/CS/OS/Windows/Powersehll.md",
-    "Learning/CS/OS/Windows/CMD.md",
     "docs/VCS/github",
     "docs/VCS",
     "Untitled.canvas",
