@@ -7,9 +7,9 @@
 [PostgreSQL: Linux downloads (Ubuntu)](https://www.postgresql.org/download/linux/ubuntu/)
 
 ```bash
-apt install postgresql 
+sudo apt install postgresql 
 ```
-
+su
 ### pgAdmin
 
 [Download](https://www.pgadmin.org/download/pgadmin-4-apt/)
