@@ -51,6 +51,7 @@ enable remote connections
 ```bash
 sudo sed -i '/^host/s/ident/md5/' /etc/postgresql/16/main/pg_hba.conf sudo sed -i '/^local/s/peer/trust/' /etc/postgresql/16/main/pg_hba.conf echo "host all all 0.0.0.0/0 md5" | sudo tee -a /etc/postgresql/16/main/pg_hba.conf
 sudo systemctl restart postgresql
+sudo ufw allow 5432/tcp
 ```
 
 #### Connection
