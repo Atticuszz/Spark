@@ -3,13 +3,73 @@
 [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 [DBA Roadmap: Learn to become a database administrator with PostgreSQL](https://roadmap.sh/postgresql-dba)
 
-## Install
+## Initial Config
 
-### [Postgresql](https://www.postgresql.org/download/linux/ubuntu/)
+### [Install PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
+
+Automated repository configuration:
 
 ```bash
-sudo apt install postgresql 
+sudo apt install -y postgresql-common  
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 ```
+
+```bash
+# Update the package lists:
+sudo apt update
+
+# Install the latest version of PostgreSQL:
+# If you want a specific version, use 'postgresql-16' or similar instead of 'postgresql'
+sudo apt -y install postgresql-16
+```
+
+start/stop app
+
+```bash
+sudo systemctl start/stop postgresql
+```
+
+start/stop as start up
+
+```bash
+sudo systemctl enable/disable postgresql
+```
+
+### Configure PostgreSQL Server (remote)
+
+set listening port as `listen_addresses = '*'`
+
+```bash
+sudo nano /etc/postgresql/16/main/postgresql.conf
+```
+
+enable remote connections
+
+```bash
+sudo sed -i '/^host/s/ident/md5/' /etc/postgresql/16/main/pg_hba.conf sudo sed -i '/^local/s/peer/trust/' /etc/postgresql/16/main/pg_hba.conf echo "host all all 0.0.0.0/0 md5" | sudo tee -a /etc/postgresql/16/main/pg_hba.conf
+sudo systemctl restart postgresql
+```
+
+### Connection
+
+switch to `postgres` user and get into `psql`  
+
+```bash
+sudo -u postgres psql
+```
+
+input your password then with `\q` to quit
+
+```bash
+\password postgres
+```
+
+> [!info] Default User
+> username: postgres
+> pswd: postgres
+> port: 5423
+> ip: localhost
+
 
 ### [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-apt/)
 
@@ -43,16 +103,4 @@ sudo apt install pgadmin4-web
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
 
-## Start and End
-
-start/stop app
-
-```bash
-sudo systemctl start/stop postgresql
-```
-
-start/stop as start up
-
-```bash
-sudo systemctl enable/disable postgresql
-```
+Preferences --> User Interface --> Themes --> Dark
