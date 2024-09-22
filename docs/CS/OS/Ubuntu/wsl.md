@@ -361,7 +361,7 @@ guvcview
 
 解决在 wsl 中普通的网页令牌认证，推送代码的过程中出现了权限问题，使用 ssh 配 https 转发解决推送的身份验证问题
 
-git ssh 命令详见 [SSH](Learning/CS/VCS/git.md)，具体操作如下
+git ssh 命令详见 [SSH](CS/VCS/git.md)，具体操作如下
 
 1. 添加 SSH 密钥
 

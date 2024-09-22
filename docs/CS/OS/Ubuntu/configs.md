@@ -58,13 +58,13 @@ connect by ssh ,enter password first time and try to connect by ssh-key
 
 #### Wsl
 
-[proxy](Learning/CS/OS/Ubuntu/wsl.md#proxy)
+[proxy](CS/OS/Ubuntu/wsl.md#proxy)
 
 1. set shared proxies first!!
 
 #### Native Ubuntu
 
-1. run clash itself by [clash](Learning/CS/OS/Ubuntu/net.md#clash)
+1. run clash itself by [clash](CS/OS/Ubuntu/net.md#clash)
 2. or in the same subnet ,share your clash proxy by open allow lan
 
 ### Basic Web Tools
@@ -85,6 +85,6 @@ sudo apt-get install unzip
 
 ### Code Envs
 
-[code_env](Learning/CS/OS/Ubuntu/code_env.md)
+[code_env](CS/OS/Ubuntu/code_env.md)
 
 - python, conda ,pip, poetry ,cmake…
