@@ -5,7 +5,9 @@
 
 ## Initial Config
 
-### [Install PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
+### PostgreSQL
+
+#### [Install](https://www.postgresql.org/download/linux/ubuntu/)
 
 Automated repository configuration:
 
@@ -35,8 +37,9 @@ start/stop as start up
 sudo systemctl enable/disable postgresql
 ```
 
-### Configure PostgreSQL Server (remote)
+#### Configure PostgreSQL Server (remote)
 
+[Install PostgreSQL on Linux (Ubuntu)](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/)
 set listening port as `listen_addresses = '*'`
 
 ```bash
@@ -50,9 +53,9 @@ sudo sed -i '/^host/s/ident/md5/' /etc/postgresql/16/main/pg_hba.conf sudo sed -
 sudo systemctl restart postgresql
 ```
 
-### Connection
+#### Connection
 
-switch to `postgres` user and get into `psql`  
+switch to `postgres` user and get into `psql`
 
 ```bash
 sudo -u postgres psql
@@ -70,8 +73,9 @@ input your password then with `\q` to quit
 > port: 5423
 > ip: localhost
 
+### pgAdmin
 
-### [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-apt/)
+#### [Install](https://www.pgadmin.org/download/pgadmin-4-apt/)
 
 a web-based tool to connect to the PostgreSQL server
 
@@ -103,4 +107,4 @@ sudo apt install pgadmin4-web
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
 
-Preferences --> User Interface --> Themes --> Dark
+Dark model `Preferences --> User Interface --> Themes --> Dark`
