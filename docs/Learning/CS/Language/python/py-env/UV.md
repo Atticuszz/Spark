@@ -56,3 +56,11 @@ source .venv/bin/activate
 ```shell
 uv python find
 ```
+
+## [Project](https://docs.astral.sh/uv/concepts/projects/)
+
+### Update Package
+
+```bash
+uv lock --upgrade
+```

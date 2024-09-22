@@ -9,7 +9,9 @@
 ```bash
 sudo apt install postgresql 
 ```
+
 su
+
 ### pgAdmin
 
 [Download](https://www.pgadmin.org/download/pgadmin-4-apt/)
