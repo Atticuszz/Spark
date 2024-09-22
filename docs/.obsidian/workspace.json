@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Paper/journals/IET/Submission.md",
+                "file": "Features/Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Paper/journals/IET/Submission.md"
+                "file": "Features/Image.md"
               }
             }
           },
@@ -172,8 +172,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "79f5631338b21d85",
+  "active": "e5fb1abf4287bce9",
   "lastOpenFiles": [
+    "Paper/journals/IET/Submission.md",
     "Paper/journals/IET/Main.md",
     "Paper/journals/IET/Cover question.md",
     "Features/Image.md",
@@ -199,7 +200,6 @@
     "CS/Language/C++/Data_model/String.md",
     "CS/Language/C++/Data_model/set.md",
     "CS/Language/C++/Data_model/stack.md",
-    "CS/Language/C++/Data_model/Queue.md",
     "CS/Language/python/Std",
     "CS/Language/python/Venv",
     "CS/Language/C++/STL",

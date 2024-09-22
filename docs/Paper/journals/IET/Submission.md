@@ -51,6 +51,7 @@ All papers must be written in English and are pre-screened to ensure that only t
 	- [x] main part
 - [ ] lack of citation
 - [ ] add figures into tex
+
 > [!QUOTE] main body
 > All required sections should be contained in your manuscript, including _abstract, introduction, methods, results, and conclusions_. Figures and tables should have legends. References may be submitted in any style or format, as long as it is consistent throughout the manuscript.
 
