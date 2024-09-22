@@ -2,19 +2,13 @@
 
 ## Install
 
-### Postgresql
-
-[PostgreSQL: Linux downloads (Ubuntu)](https://www.postgresql.org/download/linux/ubuntu/)
+### [Postgresql](https://www.postgresql.org/download/linux/ubuntu/)
 
 ```bash
 sudo apt install postgresql 
 ```
 
-su
-
-### pgAdmin
-
-[Download](https://www.pgadmin.org/download/pgadmin-4-apt/)
+### [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-apt/)
 
 #### Setup the Repository
 
