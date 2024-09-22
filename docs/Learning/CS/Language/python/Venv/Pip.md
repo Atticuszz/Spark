@@ -1,3 +1,5 @@
+# Pip
+
 1. pip freeze > requirements.txt 1. 生成依赖项
    yarn create strapi-app strapi_cms --quickstart
    npx create-strapi-app@latest strapi_cms --quickstart

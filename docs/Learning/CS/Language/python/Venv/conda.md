@@ -1,10 +1,6 @@
-- path env
+# Conda
 
-```
-C:\Users\18317\anaconda3\Scripts
-```
-
-### proxy for clash
+## Proxy for Clash
 
 - add and test
 
@@ -23,7 +19,7 @@ conda config --show proxy_servers
 conda install --dry-run fastapi
 ```
 
-### channels
+## Channels
 
 - 3rd
 
@@ -42,7 +38,7 @@ conda config --show channels
 conda search cudnn --channel conda-forge
 ```
 
-### install deps
+## Install Deps
 
 - install from environment.yml
 
@@ -68,7 +64,7 @@ conda env update -f environment.yml
 conda install <package> --update-all
 ```
 
-### info check
+## Info Check
 
 - show conda info
 

@@ -1,10 +1,10 @@
-- **_现代的 面向对象 的系统 路径 管理库_**
+- ___ 现代的 面向对象 的系统 路径 管理库 ___
 
-*classmethod* Path.cwd()[](https://docs.python.org/zh-cn/3/library/pathlib.html#pathlib.Path.cwd "永久链接至目标")
+_classmethod_ Path.cwd()[](https://docs.python.org/zh-cn/3/library/pathlib.html#pathlib.Path.cwd "永久链接至目标")
 返回一个新的表示当前目录的路径对象（和 [`os.getcwd()`](https://docs.python.org/zh-cn/3/library/os.html#os.getcwd "os.getcwd") 返回的相同，也是脚本被调用的地方
-Path(\_\_file\_\_)是脚本文件所在的路径，和被调用者无关
+Path(\_\_file\_\_) 是脚本文件所在的路径，和被调用者无关
 
-# class attributes
+# Class Attributes
 
 1. PurePath.parents[](https://docs.python.org/zh-cn/3/library/pathlib.html#pathlib.PurePath.parents "永久链接至目标")
    提供访问此路径的逻辑祖先的不可变序列:
@@ -20,7 +20,7 @@ True
 ```
 
 1. PurePath.name
-   - 最后一个组件，即dir最深处的file_name（with suffix）or folder_name
+   - 最后一个组件，即 dir 最深处的 file_name（with suffix）or folder_name
 
 ```python
 >>> PurePosixPath('my/library/setup.py').name
@@ -28,7 +28,7 @@ True
 ```
 
 1. PurePath.suffix[¶](https://docs.python.org/zh-cn/3/library/pathlib.html#pathlib.PurePath.suffix "永久链接至目标")
-   - 即PurePath.name的后缀str
+   - 即 PurePath.name 的后缀 str
 
 ```python
 

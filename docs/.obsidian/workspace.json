@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/CS/Language/python/py-env/UV.md",
+                "file": "Learning/CS/Language/python/Venv/UV.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/CS/Language/js_ts/npm_yarn.md",
+                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/CS/Language/js_ts/npm_yarn.md",
+                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/CS/Language/js_ts/npm_yarn.md",
+                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/CS/Language/js_ts/npm_yarn.md"
+                "file": "Learning/CS/Backend/DB/PostgreSQL.md"
               }
             }
           },
@@ -204,11 +204,24 @@
   },
   "active": "e4b2b643529b5c53",
   "lastOpenFiles": [
+    "index.md",
+    "Learning/Reading list.md",
+    "Learning/Paper/journals/IET/ITE computer vision.md",
+    "Learning/Paper/journals/IET/Cover question.md",
+    "Learning/CS/tools/IDE/JetBrains.md",
+    "Learning/CS/tools/IDE/plugin.md",
+    "Learning/CS/Language/python/Venv/conda.md",
+    "Learning/CS/Backend/DB/ORM/SQLModel.md",
+    "Learning/CS/Language/python/Std/Pathlib.md",
+    "Learning/CS/Backend/DB/ORM",
+    "Learning/CS/Language/python/third_party_lib/pyqt6.md",
+    "Learning/CS/Language/python/Venv/UV.md",
+    "Learning/CS/Language/python/Venv/Poetry.md",
+    "Learning/CS/Language/python/Venv/Pip.md",
+    "Learning/CS/Language/js_ts/npm_yarn.md",
     "Learning/CS/Language/js_ts/vue.js/nuxt.js.md",
     "Learning/CS/Backend/DB/PostgreSQL.md",
     "Learning/CS/Backend/DB/Sqlite.md",
-    "Learning/CS/Backend/DB/SQLModel.md",
-    "Learning/CS/Language/python/py-env/UV.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
     "Features/Image.md",
     "Learning/CS/Backend/DB",
@@ -223,13 +236,10 @@
     "assets/drawio/pipeline",
     "assets/Pasted image 20240920184027.png",
     "assets/Pasted image 20240920182814.png",
-    "Learning/Reading list.md",
     "Learning/Paper/journals/IET/iet-computer-vision.csl",
     "Learning/Paper/journals/IET/Submission.md",
     "Learning/Paper/journals/IET/Main.md",
-    "Learning/Paper/journals/IET/ITE computer vision.md",
     "Learning/Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
-    "Learning/Paper/journals/IET/Cover question.md",
     "Learning/Paper/journals/IET",
     "Learning/Paper/journals",
     "Learning/Paper",
@@ -238,18 +248,8 @@
     "Features/Icons, Emojis.md",
     "Features/Text Formatting.md",
     "Features/Table.md",
-    "index.md",
     "Learning/CS/VCS/git.md",
-    "Learning/CS/tools/IDE/plugin.md",
-    "Learning/CS/tools/git-install-instruction.md",
-    "Features/Admonitions.md",
-    "Features/Diagrams.md",
-    "Features/code.md",
-    "Learning/CS/tools/IDE/JetBrains.md",
-    "Learning/CS/OS/Docker.md",
-    "Learning/CS/OS/GPU.md",
     "docs/VCS/github",
-    "docs/VCS",
     "Untitled.canvas",
     "未命名.canvas",
     "未命名 3.canvas",
