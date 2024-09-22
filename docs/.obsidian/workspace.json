@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/CS/Language/python/Venv/UV.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4b2b643529b5c53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/VCS/Pre-commit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/VCS/Pre-commit.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md",
+                "file": "Learning/CS/VCS/Pre-commit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning/CS/Backend/DB/PostgreSQL.md"
+                "file": "Learning/CS/VCS/Pre-commit.md"
               }
             }
           },
@@ -202,8 +188,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "e4b2b643529b5c53",
+  "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
+    "Features/Image.md",
+    "Learning/CS/VCS/Pre-commit.md",
+    "Learning/CS/Backend/DB/PostgreSQL.md",
     "index.md",
     "Learning/Reading list.md",
     "Learning/Paper/journals/IET/ITE computer vision.md",
@@ -220,10 +209,8 @@
     "Learning/CS/Language/python/Venv/Pip.md",
     "Learning/CS/Language/js_ts/npm_yarn.md",
     "Learning/CS/Language/js_ts/vue.js/nuxt.js.md",
-    "Learning/CS/Backend/DB/PostgreSQL.md",
     "Learning/CS/Backend/DB/Sqlite.md",
     "Learning/CS/OS/Ubuntu/wsl.md",
-    "Features/Image.md",
     "Learning/CS/Backend/DB",
     "assets/png_flowchart.png",
     "assets/png_N_background.png",
@@ -248,7 +235,6 @@
     "Features/Icons, Emojis.md",
     "Features/Text Formatting.md",
     "Features/Table.md",
-    "Learning/CS/VCS/git.md",
     "docs/VCS/github",
     "Untitled.canvas",
     "未命名.canvas",
