@@ -1,12 +1,12 @@
 p
 
-# init app
+# Init App
 
 ```powershell
 npx nuxi init <app>
 ```
 
-# eslint
+# Eslint
 
 ```powershell
 yarn add -D eslint
@@ -15,13 +15,13 @@ yarn add -D @nuxtjs/eslint-module
 
 ```
 
-2. Add `@nuxtjs/eslint-module` to the `modules` section of `nuxt.config.ts`
+1. Add `@nuxtjs/eslint-module` to the `modules` section of `nuxt.config.ts`
 
 ```ts
 export default defineNuxtConfig({  modules: [    // Simple usage    '@nuxtjs/eslint-module',    // With options    ['@nuxtjs/eslint-module', { /* module options */ }]  ]})
 ```
 
-# pinia
+# Pinia
 
 ```powershell
 npm i @pinia/nuxt
@@ -34,13 +34,13 @@ config
 export default defineNuxtConfig({ modules: ["@pinia/nuxt"] });
 ```
 
-# auto-animate
+# Auto-animate
 
 ```powershell
 yarn add @formkit/auto-animate
 ```
 
-# nuxt-vutify
+# Nuxt-vutify
 
 ```powershell
 yarn add --dev "@invictus.codes/nuxt-vuetify"
