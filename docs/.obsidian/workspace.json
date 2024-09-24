@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/Image.md",
+                "file": "Paper/journals/IET/Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Image.md"
+                "file": "Paper/journals/IET/Submission.md"
               }
             }
           },
@@ -172,12 +172,13 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "e5fb1abf4287bce9",
+  "active": "79f5631338b21d85",
   "lastOpenFiles": [
-    "Paper/journals/IET/Submission.md",
-    "Paper/journals/IET/Main.md",
+    "Paper/journals/IET/ITE computer vision.md",
     "Paper/journals/IET/Cover question.md",
     "Features/Image.md",
+    "Paper/journals/IET/Submission.md",
+    "Paper/journals/IET/Main.md",
     "CS/Language/python/Venv/UV.md",
     "CS/Language/python/Venv/Poetry.md",
     "CS/Language/python/Venv/Pip.md",
@@ -199,7 +200,6 @@
     "CS/Language/C++/Data_model/unordered_map.md",
     "CS/Language/C++/Data_model/String.md",
     "CS/Language/C++/Data_model/set.md",
-    "CS/Language/C++/Data_model/stack.md",
     "CS/Language/python/Std",
     "CS/Language/python/Venv",
     "CS/Language/C++/STL",
