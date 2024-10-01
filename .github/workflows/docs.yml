@@ -24,6 +24,7 @@ jobs:
         with:
           enable-cache: true
 
-      - run: |
+      - name: install dependencies and deploy
+        run: |
           uv sync --frozen
           uv run mkdocs gh-deploy --force
