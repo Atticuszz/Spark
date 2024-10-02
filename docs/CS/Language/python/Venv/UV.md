@@ -116,15 +116,14 @@ Add a `git` dependency
 uv add requests --git https://github.com/psf/requests
 ```
 
-There ate _three_ sort of groups in `pyproject.toml`,
+There ate _three_ sort of groups in `pyproject.toml`
 1. we add package to `dependencies` of `[project]` normally
 2. `dev-dependencies` of `[tool.uv]` contains developments needed
+3. `optional_group` of `[project.optional-dependencies]` contains special group needed
 
 ```bash
 uv add pytest --dev
 ```
-
-1. `optional_group` of `[project.optional-dependencies]` contains special group needed
 
 ```bash
 uv add mkdocs-material pymdown-extensions mkdocs-glightbox mkdocs-git-revision-date-localized-plugin mkdocs-obsidian-bridge mkdocs-publisher --optional mkdocs
