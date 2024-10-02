@@ -84,6 +84,7 @@ then we would find some the declaration of dependencies in your `your_script.py`
 ### Project
 
 [Projects | uv](https://docs.astral.sh/uv/concepts/projects/)
+
 we use `pyproject.toml` to manage python projects' dependencies.
 
 #### Sync
