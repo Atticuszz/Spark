@@ -57,10 +57,6 @@ source .venv/bin/activate
 uv python find
 ```
 
-## Project
-
-[Projects | uv](https://docs.astral.sh/uv/concepts/projects/)
-
 ## Tool
 
 package installed as tool would be manage in a special isolated environment
@@ -87,6 +83,7 @@ then we would find some the declaration of dependencies in your `your_script.py`
 
 ### Project
 
+[Projects | uv](https://docs.astral.sh/uv/concepts/projects/)
 we use `pyproject.toml` to manage python projects' dependencies.
 
 #### Sync
