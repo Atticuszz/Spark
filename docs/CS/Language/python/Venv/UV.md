@@ -97,6 +97,8 @@ sync all dependencies from `pyproject.toml`
 uv sync --all-extras --dev
 ```
 
+`sync` ->`dependencies`, `--all-extras` -> `--optional`, `--dev` -> `dev-dependencies`
+
 #### Add
 
 Package name and version would be added into `pyproject.toml` while calling:
