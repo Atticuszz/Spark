@@ -41,7 +41,7 @@ Start-Service ssh-agent
 
 #### Generate Key-pair
 
-```powershell/bash
+```bash
 ssh-keygen -t ed25519 -C "1831768457@qq.com"
 ```
 
@@ -55,7 +55,7 @@ ssh-add C:\Users\18317\.ssh\id_ed25519
 
 ```bash
 eval $(ssh-agent -s)
-ssh-add /root/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519
 ```
 
 #### Copy id_ed25519.pub into [github_ssh_setting](https://github.com/settings/keys) Set Auth Key Type
