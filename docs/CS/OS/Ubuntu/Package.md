@@ -60,12 +60,12 @@ Assume we have created a remote repository called `deb-get-index` belonging to u
 
 > [!EXAMPLE]
 >
->```text
+>```bash
 >.
 >└── 02-github
->    ├── manifest
->    └── packages
->        └── <your_packages>
+>	├── manifest
+>	└── packages
+>		└── <your_packages>
 >```
 
 - first line in `manifest` is same to the `02-github.repo` ,then each line is `<your_packages>`
