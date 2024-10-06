@@ -58,8 +58,8 @@ curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | su
 
 
 ```bash
-sudo touch /etc/deb-get/99-github.repo
-echo "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main" | sudo tee /etc/deb-get/99-github.repo
+sudo touch /etc/deb-get/02-github.repo
+echo "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main" | sudo tee /etc/deb-get/02-github.repo
 
 ```
 
