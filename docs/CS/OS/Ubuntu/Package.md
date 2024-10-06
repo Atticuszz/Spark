@@ -54,13 +54,34 @@ curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | su
 - Install software: `sudo deb-get install <package>`
 - Update all software: `deb-get update && deb-get upgrade`
 
-### Adding External Repositories
+### [Adding External Repositories](https://github.com/wimpysworld/deb-get/tree/main?tab=readme-ov-file#adding-external-repositories)
 
+Assume we have created a remote repository called `deb-get-index` belonging to user `Atticuszz`,with a structure looks like:
+
+> [!EXAMPLE]
+>
+>```text
+>.
+>└── 02-github
+>    ├── manifest
+>    └── packages
+>        └── <your_packages>
+>```
+
+- first line in `manifest` is same to the `02-github.repo` ,then each line is `<your_packages>`
+- `<your_packages>` should be created follow the [deb-get/EXTREPO.md](https://github.com/wimpysworld/deb-get/blob/main/EXTREPO.md)
+
+So, we create `02-github.repo` locally and put into our `url`
 
 ```bash
 sudo touch /etc/deb-get/02-github.repo
 echo "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main" | sudo tee /etc/deb-get/02-github.repo
+```
 
+Finally, update local index
+
+```bash
+deb-get update
 ```
 
 ## [Flatpak](https://flathub.org/)
