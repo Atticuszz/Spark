@@ -54,12 +54,7 @@ curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | su
 - Install software: `sudo deb-get install <package>`
 - Update all software: `deb-get update && deb-get upgrade`
 
-
-### Adding external repositories
-
-
-
-
+### Adding External Repositories
 
 ## [Flatpak](https://flathub.org/)
 
