@@ -1,40 +1,5 @@
 # Shell
 
-## Auto Read Envs
-
-> make ur bash auto read envs from shells like bash,zsh and Centralize it for easier management
-
-- for origin bash
-  _bash is the basic shell in linux_
-
-```bash
-nano /etc/bash.bashrc
-# add following
-set -a
-. /etc/environment
-set +a
-# note it's run in new session,instead of in /etc/bash.bashrc
-source /etc/bash.bashrc
-```
-
-- for zsh
-  _zsh is the enhanced and popular shell_
-
-```bash
-nano ~/.zshrc
-set -a
-. /etc/environment
-set +a
-source ~/.zshrc
-```
-
-## Add Envs to `/etc/environment`
-
-```bash
-echo 'MY_ENV_VAR="my_value"' | sudo tee -a /etc/environment > /dev/null
-
-```
-
 ## Install Zsh
 
 see yellow hints
