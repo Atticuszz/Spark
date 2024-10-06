@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/OS/Ubuntu/shell.md",
+                "file": "CS/OS/Ubuntu/Terminal.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/OS/Ubuntu/shell.md",
+                "file": "CS/OS/Ubuntu/Terminal.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/OS/Ubuntu/shell.md",
+                "file": "CS/OS/Ubuntu/Terminal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/OS/Ubuntu/shell.md"
+                "file": "CS/OS/Ubuntu/Terminal.md"
               }
             }
           },
@@ -199,7 +199,7 @@
     "CS/Frontend",
     "CS/OS/Ubuntu/wsl.md",
     "CS/OS/Ubuntu/system.md",
-    "CS/OS/Ubuntu/shell.md",
+    "CS/OS/Ubuntu/Terminal.md",
     "Features/Image.md",
     "assets/Pasted image 20240922181517.png",
     "Learning/Reading list.md",

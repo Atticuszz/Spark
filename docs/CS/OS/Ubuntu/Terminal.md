@@ -1,12 +1,15 @@
-# Shell
+# Terminal
 
-## Install Zsh
+## Front
 
-see yellow hints
-![assets/Pasted_image_20240224182254.png](assets/Pasted_image_20240224182254.png)
+preferences-->profiles->Text
+
+## Zsh
+
 [ZSH + Oh My ZSH! on Windows with WSL - DEV Community](https://dev.to/equiman/zsh-on-windows-with-wsl-1jck)
+![assets/Pasted_image_20240224182254.png](assets/Pasted_image_20240224182254.png)
 
-1. install zsh
+### Install Zsh
 
 ```bash
 sudo apt install zsh
@@ -14,22 +17,15 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-1. install front,[GitHub - romkatv/powerlevel10k: A Zsh theme](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k),select one of `.ttf` download and move it into `~/.front`
-
-```bash
-sudo apt install fontconfig
-fc-cache -fv
-```
-
-1. install theme
+### Install Theme
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-- add theme config `~/.zshrc`,then remember to source it
+copy the following theme config into `~/.zshrc`
 
-```bash
+```text
 # correct the old ZSH_THEME or can not find p10k command
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history)
@@ -38,13 +34,13 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 export LS_COLORS="rs=0:no=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:"
 ```
 
-1. restart terminal and config themes
+then restart terminal and config themes
 
 ```bash
 p10k configure
 ```
 
-1. install plugins
+### Install Plugins
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -52,8 +48,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/Pilaton/OhMyZsh-full-autoupdate.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ohmyzsh-full-autoupdate
 ```
 
-- add plugins config
-  _must add the following before the `source $ZSH/oh-my-zsh.sh`_
+add plugins config
 
 ```bash
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
@@ -83,7 +78,12 @@ plugins=(
 )
 ```
 
-1. vs code terminal , Add these properties to the user `setttings.json`
+> [!NOTE]
+ > plugin config  must  before the `source $ZSH/oh-my-zsh.sh`
+
+### Vscode
+
+vs code terminal , Add these properties to the user `setttings.json`
 
 ```json
 {
