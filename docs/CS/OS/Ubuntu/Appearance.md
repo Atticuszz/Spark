@@ -18,6 +18,14 @@ cd WhiteSur-gtk-theme
 ./install.sh
 ```
 
+### Tweak
+
+Firefox theme
+
+```bash
+./tweaks.sh -f
+```
+
 ## Icons
 
 [GitHub - vinceliuice/WhiteSur-icon-theme: MacOS Big Sur style icon theme for linux desktops](https://github.com/vinceliuice/WhiteSur-icon-theme)

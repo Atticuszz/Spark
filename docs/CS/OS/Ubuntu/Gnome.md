@@ -5,7 +5,6 @@
 Install extensions manager
 
 ```bash
-sudo apt install gnome-shell-extensions
 sudo apt install gnome-shell-extension-manager
 ```
 
