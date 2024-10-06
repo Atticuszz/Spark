@@ -25,12 +25,13 @@ PPA (Personal Package Archive) allows developers and users to create their own s
 
 PPA source files are located in the `/etc/apt/sources.list.d/` directory.
 
-## 2. Deb-Get
+## [Deb-Get](https://github.com/wimpysworld/deb-get)
 
 Deb-Get is a tool for installing `.deb` packages, particularly useful for obtaining software from platforms like GitHub.
 
 ### Installing Deb-Get
 ```bash
+sudo apt install curl lsb-release wget
 curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
 ```
 
@@ -38,8 +39,8 @@ curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | su
 1. Create a PAT on GitHub: Settings > Developer settings > Personal access tokens
 2. Set environment variable:
    ```bash
-   echo 'export GITHUB_TOKEN=your_token_here' >> ~/.bashrc
-   source ~/.bashrc
+   echo 'export GITHUB_TOKEN=your_token_here' >> ~/.zshrc
+   source ~/.zshrc
    ```
 
 ### Basic Usage

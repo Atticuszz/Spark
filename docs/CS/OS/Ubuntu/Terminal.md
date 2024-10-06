@@ -79,7 +79,7 @@ plugins=(
 ```
 
 > [!NOTE]
- > plugin config  must  before the `source $ZSH/oh-my-zsh.sh`
+ > plugin config must before the `source $ZSH/oh-my-zsh.sh`
 
 ### Vscode
 
