@@ -56,6 +56,13 @@ curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | su
 
 ### Adding External Repositories
 
+
+```bash
+sudo touch /etc/deb-get/99-github.repo
+echo "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main" | sudo tee /etc/deb-get/99-github.repo
+
+```
+
 ## [Flatpak](https://flathub.org/)
 
 Flatpak is a system for building and distributing desktop applications.
