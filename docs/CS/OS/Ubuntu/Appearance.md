@@ -15,7 +15,22 @@
 ```bash
 git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
-./install.sh
+./install.sh --libadwaita \
+--monterey \
+-c Dark \
+-t blue \
+--gnome-shell \
+--round \
+
+sudo flatpak override --filesystem=xdg-config/gtk-3.0 && sudo flatpak override --filesystem=xdg-config/gtk-4.0
+
+./tweaks.sh -F \
+-f \
+--dash-to-dock \
+--color Dark \
+--theme blue
+
+
 ```
 
 ### Tweak
@@ -34,4 +49,12 @@ Firefox theme
 git clone git@github.com:vinceliuice/WhiteSur-icon-theme.git
 cd WhiteSur-icon-theme 
 ./install.sh -a -b
+```
+
+## Cursors
+
+```bash
+git clone git@github.com:vinceliuice/McMojave-cursors.git
+cd McMojave-cursors
+sudo ./install.sh
 ```
