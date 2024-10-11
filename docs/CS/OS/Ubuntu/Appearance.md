@@ -15,30 +15,34 @@
 ```bash
 git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
+```
+
+```bash
 ./install.sh --libadwaita \
---monterey \
 -c Dark \
 -t blue \
 --gnome-shell \
---round \
+--round 
+```
 
+Flatpak
+
+```bash
 sudo flatpak override --filesystem=xdg-config/gtk-3.0 && sudo flatpak override --filesystem=xdg-config/gtk-4.0
+```
 
+### Tweak
+
+Firefox , GDE, Flatpak
+
+```bash
 ./tweaks.sh -F \
 -f \
 --dash-to-dock \
 --color Dark \
 --theme blue
 
-
-```
-
-### Tweak
-
-Firefox theme
-
-```bash
-./tweaks.sh -f
+sudo ./tweaks.sh -g -b blank
 ```
 
 ## Icons
