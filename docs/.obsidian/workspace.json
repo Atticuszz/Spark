@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/VCS/git.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/VCS/git.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/VCS/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md"
+                "file": "CS/VCS/git.md"
               }
             }
           },
@@ -190,6 +190,7 @@
   },
   "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
+    "index.md",
     "CS/OS/Ubuntu/Package.md",
     "CS/OS/Ubuntu/Appearance.md",
     "CS/OS/Ubuntu/Terminal.md",
@@ -208,7 +209,6 @@
     "Learning/Reading list.md",
     "CS/VCS/Pre-commit.md",
     "CS/Backend/DB/PostgreSQL.md",
-    "index.md",
     "Paper/journals/IET/ITE computer vision.md",
     "Paper/journals/IET/Cover question.md",
     "CS/tools/IDE/JetBrains.md",
