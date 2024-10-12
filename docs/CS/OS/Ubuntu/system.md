@@ -57,13 +57,6 @@ sudo chown -R %username%  %filepath%
 
 setting-> display-> night light
 
-### Snap Shop Update
-
-```bash
-sudo snap refresh snap-store
-sudo snap refresh
-```
-
 ### Keyboard
 
 ```bash
@@ -80,15 +73,19 @@ sudo apt-get install timeshift
 
 ### Clipboard
 
+[linux clipboard FOSS](https://itsfoss.com/linux-clipboard-managers/#3-diodon)
+
 ```bash
 sudo apt update
-sudo apt install copyQ
+sudo apt install diodon
 ```
 
-### Gpu Monitor
+[Custom Shortcuts](https://esite.ch/2015/07/using-custom-shortcuts-of-de-as-diodon-hotkey/) `setting->Keyboard->Keyboard Shortcuts->Custom Shortcuts` set as `win+alt+v`
+
+### Gpu Monito
 
 ```bash
-conda install -c conda-forge nvitop
+conda install -c conda-forge nvtop
 ```
 
 ### Fan Mode

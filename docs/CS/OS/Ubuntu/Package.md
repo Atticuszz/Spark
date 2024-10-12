@@ -118,3 +118,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ### Restart
 
 To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
+
+### Unsnap
+
+[GitHub - popey/unsnap: Quickly migrate from using snap packages to flatpaks](https://github.com/popey/unsnap)
