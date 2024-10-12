@@ -42,7 +42,7 @@ Firefox , GDE, Flatpak
 --color Dark \
 --theme blue
 
-sudo ./tweaks.sh -g -b blank
+sudo ./tweaks.sh -g -b <path_wallpapaer>
 ```
 
 ## Icons
