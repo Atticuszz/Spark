@@ -76,4 +76,4 @@ sudo ./install.sh
 ![[assets/Wallpapaer/wallpaper_1.jpg]]
 ![[assets/Wallpapaer/wallpaper_2.jpg]]
 ![[assets/Wallpapaer/wallpaper_3.jpg]]
-![[wa]]
+![[assets/Wallpapaer/wallpaper_4.jpg]]
