@@ -25,6 +25,9 @@ cd WhiteSur-gtk-theme
 --round 
 ```
 
+> [!NOTE]
+> enable solid one in `Tweaks`
+
 Flatpak
 
 ```bash
@@ -43,6 +46,12 @@ Firefox , GDE, Flatpak
 --theme blue
 ```
 
+Lock Screen
+
+```bash
+sudo ./tweaks.sh -g -N
+```
+
 ## Icons
 
 [GitHub - vinceliuice/WhiteSur-icon-theme: MacOS Big Sur style icon theme for linux desktops](https://github.com/vinceliuice/WhiteSur-icon-theme)
@@ -59,13 +68,4 @@ cd WhiteSur-icon-theme
 git clone git@github.com:vinceliuice/McMojave-cursors.git
 cd McMojave-cursors
 sudo ./install.sh
-```
-
-## Lock
-
-[How to Change the Lock Screen Background in Ubuntu - OMG! Ubuntu](https://www.omgubuntu.co.uk/2023/08/change-lock-screen-wallpaper-ubuntu)
-[Lock screen background - GNOME Shell Extensions](https://extensions.gnome.org/extension/1476/unlock-dialog-background/)
-
-```bash
-sudo apt install gir1.2-clutter-1.0
 ```
