@@ -41,8 +41,6 @@ Firefox , GDE, Flatpak
 --dash-to-dock \
 --color Dark \
 --theme blue
-
-sudo ./tweaks.sh -g -b <path_wallpapaer>
 ```
 
 ## Icons
@@ -61,4 +59,13 @@ cd WhiteSur-icon-theme
 git clone git@github.com:vinceliuice/McMojave-cursors.git
 cd McMojave-cursors
 sudo ./install.sh
+```
+
+## Lock
+
+[How to Change the Lock Screen Background in Ubuntu - OMG! Ubuntu](https://www.omgubuntu.co.uk/2023/08/change-lock-screen-wallpaper-ubuntu)
+[Lock screen background - GNOME Shell Extensions](https://extensions.gnome.org/extension/1476/unlock-dialog-background/)
+
+```bash
+sudo apt install gir1.2-clutter-1.0
 ```
