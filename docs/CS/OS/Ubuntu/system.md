@@ -78,6 +78,7 @@ sudo apt install firefox
 ```
 
 [PWA plugin](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/)
+
 ### Use Eye Protection Mode
 
 setting-> display-> night light
