@@ -122,3 +122,9 @@ To complete setup, restart your system. Now all you have to do is [install some 
 ### Unsnap
 
 [GitHub - popey/unsnap: Quickly migrate from using snap packages to flatpaks](https://github.com/popey/unsnap)
+
+```bash
+git clone git@github.com:popey/unsnap.git
+cd unsnap 
+./unsnap auto
+```
