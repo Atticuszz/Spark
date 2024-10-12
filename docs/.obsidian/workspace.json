@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/OS/Ubuntu/system.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/OS/Ubuntu/system.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md",
+                "file": "CS/OS/Ubuntu/system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/OS/Ubuntu/Appearance.md"
+                "file": "CS/OS/Ubuntu/system.md"
               }
             }
           },
@@ -190,10 +190,11 @@
   },
   "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
-    "CS/OS/Ubuntu/Gnome.md",
-    "CS/OS/Ubuntu/Appearance.md",
     "CS/OS/Ubuntu/Package.md",
+    "CS/OS/Ubuntu/Gnome.md",
     "CS/OS/Ubuntu/system.md",
+    "CS/OS/Ubuntu/net.md",
+    "CS/OS/Ubuntu/Appearance.md",
     "CS/VCS/git.md",
     "index.md",
     "CS/OS/Ubuntu/Terminal.md",
@@ -219,7 +220,6 @@
     "CS/Language/python/Std/Pathlib.md",
     "CS/Backend/DB/ORM",
     "Learning/CS/Language/python/third_party_lib/pyqt6.md",
-    "CS/Language/python/Venv/Poetry.md",
     "CS/Backend/DB",
     "assets/png_flowchart.png",
     "assets/png_N_background.png",

@@ -53,6 +53,31 @@ sudo chown -R %username%  %filepath%
 
 ## Basic Tools for Desktop
 
+### Browse
+
+#### [FireFox](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04)
+
+```bash
+sudo snap remove firefox
+```
+
+```bash
+sudo install -d -m 0755 /etc/apt/keyrings
+wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
+echo '  
+Package: *  
+Pin: origin packages.mozilla.org  
+Pin-Priority: 1000  
+  
+Package: firefox*  
+Pin: release o=Ubuntu  
+Pin-Priority: -1' | sudo tee /etc/apt/preferences.d/mozilla
+sudo apt update && sudo apt remove FireFox 
+sudo apt install firefox
+```
+
+[PWA plugin](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/)
 ### Use Eye Protection Mode
 
 setting-> display-> night light
