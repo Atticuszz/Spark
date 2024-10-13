@@ -70,7 +70,6 @@ cd McMojave-cursors
 sudo ./install.sh
 ```
 
-
 ## Wallpaper
 
 ![[assets/Wallpapaer/wallpaper_1.jpg]]
