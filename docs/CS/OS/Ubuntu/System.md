@@ -14,19 +14,6 @@ HandleLidSwitchDocked=ignore
 sudo systemctl restart systemd-logind
 ```
 
-### Gui
-
-> no test
-
-```bash
-sudo apt update
-sudo apt full-upgrade
-sudo apt install --no-install-recommends xserver-xorg
-sudo apt install --no-install-recommends xinit
-sudo apt install raspberrypi-ui-mods
-sudo apt install --no-install-recommends lightdm
-```
-
 ### Qt
 
 ```bash
