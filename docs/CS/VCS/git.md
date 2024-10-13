@@ -7,8 +7,8 @@ Git game in [Learn Git Branching](https://learngitbranching.js.org/?locale=en_US
 ### Auth
 
 ```bash
-git config --global user.name "Atticuszz"
-git config --global user.email "1831768457@qq.com"
+git config --global user.name "A.J.Zeller"
+git config --global user.email "atticus.zeller@pm.me"
 # 以下确保在初次安装时候应该正确的内容
 git config --global init.defaultBranch main
 git config credential.helper
