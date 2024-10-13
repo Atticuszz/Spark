@@ -11,9 +11,12 @@
             "id": "0cb70fb2c9b28a6e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/Wallpapaer/wallpaper_2.jpg"
+                "file": "CS/OS/Ubuntu/system.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/Wallpapaer/wallpaper_2.jpg",
+                "file": "CS/OS/Ubuntu/system.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/Wallpapaer/wallpaper_2.jpg",
+                "file": "CS/OS/Ubuntu/system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/Wallpapaer/wallpaper_2.jpg"
+                "file": "CS/OS/Ubuntu/system.md"
               }
             }
           },
@@ -164,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -185,10 +188,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0cb70fb2c9b28a6e",
+  "active": "fe33bc386c72aa8e",
   "lastOpenFiles": [
-    "assets/Wallpapaer/wallpaper_3.jpg",
+    "CS/OS/Ubuntu/configs.md",
     "assets/Wallpapaer/wallpaper_2.jpg",
+    "assets/Wallpapaer/wallpaper_3.jpg",
     "assets/Wallpapaer/wallpaper_1.jpg",
     "CS/Language/python/Venv/UV.md",
     "assets/Wallpapaer/wallpaper_4.jpg",
