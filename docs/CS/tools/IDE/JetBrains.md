@@ -1,7 +1,7 @@
 # JetBrains
 
 ## 激活工具
-
+[Linux激活教程 - Feishu Docs](https://laq8aq5ywv.feishu.cn/docx/C2eMdPsfTojpK9xXjqdc44sFn9f)
 - 下载地址
 	https://wwkh.lanzout.com/b03jufqhg
 	密码:7bou
