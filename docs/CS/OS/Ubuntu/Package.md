@@ -129,9 +129,10 @@ cd unsnap
 ./unsnap auto
 ```
 
+### Local Management
 
-### Local  Management
 [GitHub - flattool/warehouse: A versatile toolbox for viewing flatpak info, managing user data, and batch managing installed flatpaks](https://github.com/flattool/warehouse)
+
 ```bash
 flatpak install flathub io.github.flattool.Warehouse
 ```
