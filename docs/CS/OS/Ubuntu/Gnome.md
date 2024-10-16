@@ -25,3 +25,8 @@ sudo apt install gnome-tweaks
 ```bash
 sudo apt install gnome-shell-extension-gsconnect
 ```
+
+
+## Accelerate
+
+- Impatience
