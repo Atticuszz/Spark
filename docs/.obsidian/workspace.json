@@ -13,29 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reference/System - A.J.Zeller.md",
+                "file": "Reference/How to Monitor and Test the Health of SSD in Linux 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System - A.J.Zeller"
-            }
-          },
-          {
-            "id": "96fc8cbd920acf02",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "How to Monitor and Test the Health of SSD in Linux 1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reference/System - A.J.Zeller.md",
+                "file": "Reference/How to Monitor and Test the Health of SSD in Linux 1.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for System - A.J.Zeller"
+              "title": "Backlinks for How to Monitor and Test the Health of SSD in Linux 1"
             }
           },
           {
@@ -126,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reference/System - A.J.Zeller.md",
+                "file": "Reference/How to Monitor and Test the Health of SSD in Linux 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from System - A.J.Zeller"
+              "title": "Outgoing links from How to Monitor and Test the Health of SSD in Linux 1"
             }
           },
           {
@@ -167,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reference/System - A.J.Zeller.md"
+                "file": "Reference/How to Monitor and Test the Health of SSD in Linux 1.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of System - A.J.Zeller"
+              "title": "Outline of How to Monitor and Test the Health of SSD in Linux 1"
             }
           },
           {
@@ -225,10 +212,13 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "96fc8cbd920acf02",
+  "active": "0cb70fb2c9b28a6e",
   "lastOpenFiles": [
-    "CS/tools/IDE/JetBrains.md",
+    "Reference/How to Monitor and Test the Health of SSD in Linux.md",
+    "Reference/How to Monitor and Test the Health of SSD in Linux 1.md",
+    "Reference/Early access versions - Obsidian Help.md",
     "Reference/System - A.J.Zeller.md",
+    "CS/tools/IDE/JetBrains.md",
     "Reference",
     "CS/tools/IDE/plugin.md",
     "CS/OS/Ubuntu/Gnome.md",
@@ -259,9 +249,6 @@
     "CS/VCS/Pre-commit.md",
     "CS/Backend/DB/PostgreSQL.md",
     "Paper/journals/IET/ITE computer vision.md",
-    "Paper/journals/IET/Cover question.md",
-    "CS/Language/python/Venv/conda.md",
-    "CS/Backend/DB/ORM/SQLModel.md",
     "CS/Backend/DB/ORM",
     "CS/Backend/DB",
     "assets/png_flowchart.png",
