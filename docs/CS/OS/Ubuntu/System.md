@@ -86,12 +86,9 @@ sudo apt-get install timeshift
 
 ### Clipboard
 
-[linux clipboard FOSS](https://itsfoss.com/linux-clipboard-managers/#3-diodon)
+[GitHub - Tudmotu/gnome-shell-extension-clipboard-indicator: The most popular clipboard manager for GNOME, with over 1M downloads](https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator)
 
-```bash
-sudo apt update
-sudo apt install diodon
-```
+[Clipboard Indicator - GNOME Shell Extensions](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
 [Custom Shortcuts](https://esite.ch/2015/07/using-custom-shortcuts-of-de-as-diodon-hotkey/) `setting->Keyboard->Keyboard Shortcuts->Custom Shortcuts` set as `win+alt+v`
 
