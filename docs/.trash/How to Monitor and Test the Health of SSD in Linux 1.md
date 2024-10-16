@@ -9,21 +9,23 @@ description: "A detailed analysis on S.M.A.R.T. technologies for Solid State Dri
 tags:
   - "linux"
 ---
+# How to Monitor and Test the Health of SSD in Linux 1
+
 [![Warp Terminal](https://linuxhandbook.com/assets/images/warp-terminal.webp)](https://www.warp.dev/?utm_source=linux_handbook&utm_medium=display&utm_campaign=linux_launch)
 
-### What is S.M.A.R.T.?
+## What is S.M.A.R.T.?
 
 S.M.A.R.T. –for [Self-Monitoring, Analysis, and Reporting Technology](https://en.wikipedia.org/wiki/S.M.A.R.T.)— is a technology embedded in storage devices like hard disk drives or SSDs and whose goal is to monitor their health status.
 
 In practice, S.M.A.R.T. will monitor several disk parameters during normal drive operations, like the number of reading errors, the drive startup times or even the environmental condition. Moreover, S.M.A.R.T. and can also perform on-demand tests on the drive.
 
-Ideally, S.M.A.R.T. would allow anticipating **predictable** failures such as those caused by mechanical wearing or degradation of the disk surface, as well as **unpredictable** failures caused by an unexpected defect. Since drives usually don’t fail abruptly, S.M.A.R.T. gives an option for the operating system or the system administrator to identify soon-to-fail drives so they can be replaced before any data loss occurs.
+Ideally, S.M.A.R.T. would allow anticipating __predictable__ failures such as those caused by mechanical wearing or degradation of the disk surface, as well as __unpredictable__ failures caused by an unexpected defect. Since drives usually don’t fail abruptly, S.M.A.R.T. gives an option for the operating system or the system administrator to identify soon-to-fail drives so they can be replaced before any data loss occurs.
 
 ![SSD health check on Linux](https://linuxhandbook.com/content/images/2020/06/check-ssd-health-linux.jpeg)
 
-### What isn’t S.M.A.R.T.?
+## What isn’t S.M.A.R.T.?
 
-All that seems wonderful. However, S.M.A.R.T. is not a crystal ball. It cannot predict with 100% accuracy a failure nor, on the other hand, guarantee a drive will not fail without any early warning. At best, S.M.A.R.T. should be used to **estimate the likeliness** of a failure.
+All that seems wonderful. However, S.M.A.R.T. is not a crystal ball. It cannot predict with 100% accuracy a failure nor, on the other hand, guarantee a drive will not fail without any early warning. At best, S.M.A.R.T. should be used to __estimate the likeliness__ of a failure.
 
 Given the statistical nature of failure prediction, the S.M.A.R.T. technology particularly interests company using a large number of storage units, and field studies have been conducted to estimate the accuracy of S.M.A.R.T. reported issues to anticipate disk replacement needs in data centers or server farms.
 
@@ -37,11 +39,11 @@ While the underlying technology is radically different, that indicator seems as 
 
 This is a symptom of a problem with the underlying flash hardware where the drive was unable to clear or store data in a block. Because of imperfections in the manufacturing process, few such errors can be anticipated. However, flash memories have a limited number of clear/write cycles. So, once again, a sudden increase in the number of events might indicate the drive has reached its end of life limit, and we can anticipate many more memory cells to fail soon.CRC and Uncorrectable errors (“Data Error”):
 
-These events can be caused either by storage error or issues with the drive’s internal communication link. This indicator takes into account both **corrected** errors (thus without any issue reported to the host system) as well as **uncorrected** errors (thus blocks the drive has reported being unable to read to the host system). In other words, **correctable** errors are invisible to the host operating system, but they nevertheless impact the drive performances since data has to be corrected by the drive firmware, and a possible sector relocation might occur.SATA downshift count:
+These events can be caused either by storage error or issues with the drive’s internal communication link. This indicator takes into account both __corrected__ errors (thus without any issue reported to the host system) as well as __uncorrected__ errors (thus blocks the drive has reported being unable to read to the host system). In other words, __correctable__ errors are invisible to the host operating system, but they nevertheless impact the drive performances since data has to be corrected by the drive firmware, and a possible sector relocation might occur.SATA downshift count:
 
 Because of temporary disturbances, issues with the communication link between the drive and the host, or because of internal drive issues, the SATA interface can switch to a lower signaling rate. Downgrading the link below the nominal link rate has the obvious impact on the observed drive performances. Selecting a lower signaling rate is not uncommon, especially on older drives. So this indicator is most significant when correlated with the presence of one or several of the preceding ones.
 
-According to the study, 62% of the failed SSD showed **at least** one of the above symptoms. However, if you reverse that statement, that also means 38% of the studied SSDs failed **without** showing any of the above symptoms. The study did not mention though if the failed drives have exhibited any other S.M.A.R.T. reported failure or not. So this cannot be directly compared to the 36% failure-without-prior-notice mentioned for hard drives in the Google paper.
+According to the study, 62% of the failed SSD showed __at least__ one of the above symptoms. However, if you reverse that statement, that also means 38% of the studied SSDs failed __without__ showing any of the above symptoms. The study did not mention though if the failed drives have exhibited any other S.M.A.R.T. reported failure or not. So this cannot be directly compared to the 36% failure-without-prior-notice mentioned for hard drives in the Google paper.
 
 The Microsoft/Pennsylvania State University paper does not disclose the exact drive models studied, but according to the authors, most of the drives are coming from the same vendor spanning several generations.
 
@@ -53,11 +55,11 @@ Most interestingly, and I gave some possible reasons earlier, the paper mentions
 
 “”” There is a higher likelihood of the symptoms preceding SSD failures, with an intense manifestation and rapid progression preventing their survivability beyond a few months “””
 
-****In other words, one occasional S.M.A.R.T. reported error is probably not to be considered as a signal of imminent failure. However, when a healthy SSD starts reporting more and more errors, a short- to mid-term failure has to be anticipated.****
+____In other words, one occasional S.M.A.R.T. reported error is probably not to be considered as a signal of imminent failure. However, when a healthy SSD starts reporting more and more errors, a short- to mid-term failure has to be anticipated.____
 
 But how to know if your hard drive or SSD is healthy? Either to satisfy your curiosity or because you want to start monitoring your drives closely, it is time now to introduce the `smartctl` monitoring tool:
 
-## Using smartctl to Monitor Status of your SSD in Linux
+# Using Smartctl to Monitor Status of Your SSD in Linux
 
 There are [ways to list disks in Linux](https://linuxhandbook.com/linux-list-disks/) but to monitor the S.M.A.R.T. status of your disk, I suggest the `smartctl` tool, part of the `smartmontool` package (at least on Debian/Ubuntu).
 
@@ -268,9 +270,9 @@ Selective self-test flags (0x0):
 If Selective self-test is pending on power-up, resume after 0 minute delay.
 ```
 
-### Understanding the output of smartctl command
+## Understanding the Output of Smartctl Command
 
-That is a lot of information and it is not always easy to interpret those data. The most interesting part is probably the one labeled as **“Vendor Specific SMART Attributes with Thresholds”**. It reports various statistics gathered by the S.M.A.R.T. device and let you compare those value (current or all-time worst) with some vendor-defined threshold.
+That is a lot of information and it is not always easy to interpret those data. The most interesting part is probably the one labeled as __“Vendor Specific SMART Attributes with Thresholds”__. It reports various statistics gathered by the S.M.A.R.T. device and let you compare those value (current or all-time worst) with some vendor-defined threshold.
 
 For example, here is how my disk reports relocated sectors:
 
@@ -279,7 +281,7 @@ ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_
   5 Reallocated_Sector_Ct   0x0033   100   100   036    Pre-fail  Always       -       3
 ```
 
-You can see this a “pre-fail” attribute. That just means that attribute is corresponding to anomalies. So, **if** that attribute exceeds the threshold, that could be an indicator of imminent failure. The other category is “Old\_age” for attributes corresponding to “normal wearing” attributes.
+You can see this a “pre-fail” attribute. That just means that attribute is corresponding to anomalies. So, __if__ that attribute exceeds the threshold, that could be an indicator of imminent failure. The other category is “Old\_age” for attributes corresponding to “normal wearing” attributes.
 
 The last field (here “3”) is corresponding the raw value for that attribute as reported by the drive. Usually, this number has a physical significance. Here, this is the actual number of relocated sectors. However, for other attributes, it could be a temperature in degrees Celcius, a time in hours or minutes, or the number of times the drive has encountered a specific condition.
 
@@ -411,7 +413,7 @@ If Selective self-test is pending on power-up, resume after 0 minute delay.
 
 This is typically the output you can expect for a brand new SSD. Even if, because of the lack of normalization or metainformation for vendor-specific data, many attributes are reported as “Unknown\_SSD\_Attribute.” I may only hope future versions of `smartctl` will incorporate data relative to that particular drive model in the tool database, so I could more accurately identify possible issues.
 
-## Test your SSD in Linux with smartctl
+# Test Your SSD in Linux with Smartctl
 
 Until now we have examined the data collected by the drive during its normal operations. However, the S.M.A.R.T. protocol also supports several “self-tests” commands to launch diagnosis on demand.
 
@@ -488,7 +490,7 @@ Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA
 # 4  Short offline       Completed without error       00%         0         -
 ```
 
-Interestingly, in that case, it appears both the drive and the computer manufacturers seems to have performed some quick tests on the disk (at lifetime 0h and 12h). **I** was definitely much less concerned with monitoring the drive health myself. So, since I am running some self-tests for that article, let’s start an **extended** test to so how it goes:
+Interestingly, in that case, it appears both the drive and the computer manufacturers seems to have performed some quick tests on the disk (at lifetime 0h and 12h). __I__ was definitely much less concerned with monitoring the drive health myself. So, since I am running some self-tests for that article, let’s start an __extended__ test to so how it goes:
 
 ```
 sh$ sudo smartctl -t long /dev/sdb
@@ -523,7 +525,7 @@ Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA
 # 5  Short offline       Completed without error       00%         0         -
 ```
 
-In that latter case, pay special attention to the different outcomes obtained with the short and extended tests, even if they were performed one right after the other. Well, maybe that disk is not that healthy after all! An important thing to notice is the test will stop after the first read error. So if you want an exhaustive diagnosis of all read errors, you will have to **continue** the test after each error. I encourage you to take a look at the very well written smartctl(8) manual page for the more information about the options `-t select,N-max` and `-t select,cont` for that:
+In that latter case, pay special attention to the different outcomes obtained with the short and extended tests, even if they were performed one right after the other. Well, maybe that disk is not that healthy after all! An important thing to notice is the test will stop after the first read error. So if you want an exhaustive diagnosis of all read errors, you will have to __continue__ the test after each error. I encourage you to take a look at the very well written smartctl(8) manual page for the more information about the options `-t select,N-max` and `-t select,cont` for that:
 
 ```
 sh$ sudo smartctl -t select,810665230-max /dev/sdb
@@ -537,6 +539,7 @@ SPAN         STARTING_LBA           ENDING_LBA
 Drive command "Execute SMART Selective self-test routine immediately in off-line mode" successful.
 Testing has begun.
 ```
+
 ```
 smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.9.0-6-amd64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
@@ -552,8 +555,8 @@ Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA
 # 6  Short offline       Completed without error       00%         0         -
 ```
 
-### Conclusion
+## Conclusion
 
 Definitely, S.M.A.R.T. reporting is a technology you can add to your [tool chest to monitor your servers](https://linuxhandbook.com/server-monitoring-tools/) disk health. In that case, you should also take a look at the S.M.A.R.T. Disk Monitoring Daemon [smartd(8)](https://www.smartmontools.org/browser/trunk/smartmontools/smartd.8.in) that could help you automate monitoring through [syslog](https://linuxhandbook.com/syslog-guide/) reporting.
 
-Given the statistical nature of failure prediction, I am a little bit less convinced however that aggressive S.M.A.R.T. monitoring is of great benefit on a personal computer. Finally, don’t forget whatever is its technology, a drive **will** fail— and we have seen earlier, in one-third of the case, it will fail without prior notice. So nothing will replace [RAID](https://en.wikipedia.org/wiki/RAID) **and** offline backups to ensure your data integrity!
+Given the statistical nature of failure prediction, I am a little bit less convinced however that aggressive S.M.A.R.T. monitoring is of great benefit on a personal computer. Finally, don’t forget whatever is its technology, a drive __will__ fail— and we have seen earlier, in one-third of the case, it will fail without prior notice. So nothing will replace [RAID](https://en.wikipedia.org/wiki/RAID) __and__ offline backups to ensure your data integrity!
