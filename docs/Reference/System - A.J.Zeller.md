@@ -1,0 +1,1 @@
+Web Clipper requires Obsidian 1.7.2 or above. You may need to install the [early access](https://help.obsidian.md/Obsidian/Early+access+versions) version, or enable legacy mode in Web Clipper settings.
