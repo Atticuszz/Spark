@@ -6,30 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A detailed analysis on S.M.A.R.T. technologies for Solid State Drives and how to use smartctl tool to monitor and check the health of SSD in Linux.">
       
       
-        <link rel="canonical" href="https://atticuszz.github.io/Spark/CS/OS/Ubuntu/configs/">
+        <meta name="author" content="['[[Sylvain Leroux]]']">
       
       
-        <link rel="prev" href="../code_env/">
+        <link rel="canonical" href="https://atticuszz.github.io/Spark/Reference/How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux/">
       
       
-        <link rel="next" href="../net/">
+        <link rel="prev" href="../How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux%201/">
       
       
-      <link rel="icon" href="../../../../assets/logo/logo.svg">
+        <link rel="next" href="../System%20-%20A.J.Zeller/">
+      
+      
+      <link rel="icon" href="../../assets/logo/logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
     
     
       
-        <title>Configs - A.J.Zeller</title>
+        <title>How to Monitor and Test the Health of SSD in Linux - A.J.Zeller</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,18 +54,18 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/obsidian.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/obsidian.min.css">
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/obsidian.min.css.map">
+      <link rel="stylesheet" href="../../assets/stylesheets/obsidian.min.css.map">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -70,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -89,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configs" class="md-skip">
+        <a href="#how-to-monitor-and-test-the-health-of-ssd-in-linux" class="md-skip">
           Skip to content
         </a>
       
@@ -103,9 +107,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="A.J.Zeller" class="md-header__button md-logo" aria-label="A.J.Zeller" data-md-component="logo">
+    <a href="../.." title="A.J.Zeller" class="md-header__button md-logo" aria-label="A.J.Zeller" data-md-component="logo">
       
-  <img src="../../../../assets/logo/logo.svg" alt="logo">
+  <img src="../../assets/logo/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -122,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configs
+              How to Monitor and Test the Health of SSD in Linux
             
           </span>
         </div>
@@ -236,7 +240,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -251,21 +255,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../Backend/FastApi/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../CS/Backend/FastApi/" class="md-tabs__link">
           
   
   CS
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Features/Admonitions/" class="md-tabs__link">
+        <a href="../../Features/Admonitions/" class="md-tabs__link">
           
   
   Features
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Learning/Reading%20list/" class="md-tabs__link">
+        <a href="../../Learning/Reading%20list/" class="md-tabs__link">
           
   
   Learning
@@ -334,7 +334,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Paper/journals/IET/Cover%20question/" class="md-tabs__link">
+        <a href="../../Paper/journals/IET/Cover%20question/" class="md-tabs__link">
           
   
   Paper
@@ -354,11 +354,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../Reference/Early%20access%20versions%20-%20Obsidian%20Help/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Early%20access%20versions%20-%20Obsidian%20Help/" class="md-tabs__link">
           
   
   Reference
@@ -391,9 +393,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="A.J.Zeller" class="md-nav__button md-logo" aria-label="A.J.Zeller" data-md-component="logo">
+    <a href="../.." title="A.J.Zeller" class="md-nav__button md-logo" aria-label="A.J.Zeller" data-md-component="logo">
       
-  <img src="../../../../assets/logo/logo.svg" alt="logo">
+  <img src="../../assets/logo/logo.svg" alt="logo">
 
     </a>
     A.J.Zeller
@@ -420,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -437,28 +439,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -469,7 +466,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             CS
@@ -521,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backend/FastApi/" class="md-nav__link">
+      <a href="../../CS/Backend/FastApi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backend/DB/PostgreSQL/" class="md-nav__link">
+      <a href="../../CS/Backend/DB/PostgreSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backend/DB/Sqlite/" class="md-nav__link">
+      <a href="../../CS/Backend/DB/Sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Backend/DB/ORM/SQLModel/" class="md-nav__link">
+      <a href="../../CS/Backend/DB/ORM/SQLModel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -781,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Frontend/React/Next.js/" class="md-nav__link">
+      <a href="../../CS/Frontend/React/Next.js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Pointer/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Pointer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/packages/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/packages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/syntax/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -995,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/Queue/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/Queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/String/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/String/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1037,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/map/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/set/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1079,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/stack/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1100,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/unordered_map/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/unordered_map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/unordered_set/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/unordered_set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/Data_model/vector/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/Data_model/vector/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/Pointer/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/Pointer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/Queue/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/Queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1251,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/String/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/String/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1272,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/algorithm/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1293,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/map/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1314,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/set/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1335,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/stack/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1356,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/unordered_map/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/unordered_map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1377,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/unordered_set/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/unordered_set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1398,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/C%2B%2B/STL/vector/" class="md-nav__link">
+      <a href="../../CS/Language/C%2B%2B/STL/vector/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1473,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/js_ts/npm_yarn/" class="md-nav__link">
+      <a href="../../CS/Language/js_ts/npm_yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1532,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/js_ts/vue.js/nuxt.js/" class="md-nav__link">
+      <a href="../../CS/Language/js_ts/vue.js/nuxt.js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1607,7 +1604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Ruff/" class="md-nav__link">
+      <a href="../../CS/Language/python/Ruff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1666,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Std/Pathlib/" class="md-nav__link">
+      <a href="../../CS/Language/python/Std/Pathlib/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1733,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Venv/Pip/" class="md-nav__link">
+      <a href="../../CS/Language/python/Venv/Pip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Venv/Poetry/" class="md-nav__link">
+      <a href="../../CS/Language/python/Venv/Poetry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1775,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Venv/UV/" class="md-nav__link">
+      <a href="../../CS/Language/python/Venv/UV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1796,7 +1793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Language/python/Venv/conda/" class="md-nav__link">
+      <a href="../../CS/Language/python/Venv/conda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1838,8 +1835,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1849,11 +1844,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -1867,7 +1862,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             OS
@@ -1881,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Docker/" class="md-nav__link">
+      <a href="../../CS/OS/Docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1902,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../GPU/" class="md-nav__link">
+      <a href="../../CS/OS/GPU/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1920,8 +1915,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1931,11 +1924,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
         
           
           <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
@@ -1949,7 +1942,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4_3">
             <span class="md-nav__icon md-icon"></span>
             Ubuntu
@@ -1963,7 +1956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Appearance/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/Appearance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1984,7 +1977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Gnome/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/Gnome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2005,7 +1998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Package/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/Package/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2026,7 +2019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../System/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/System/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2047,7 +2040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Terminal/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/Terminal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2068,7 +2061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bugs/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/bugs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2089,7 +2082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code_env/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/code_env/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2107,30 +2100,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Configs
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../CS/OS/Ubuntu/configs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2139,167 +2112,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install System
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Install System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connection
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connection">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wsl_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#native-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Native Ubuntu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Initialization
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Initialization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-proxies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Proxies
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Set Proxies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wsl_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#native-ubuntu_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Native Ubuntu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basic-web-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Web Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shell
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-envs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Envs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2312,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../net/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/net/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2333,7 +2145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wsl/" class="md-nav__link">
+      <a href="../../CS/OS/Ubuntu/wsl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2400,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Windows/CMD/" class="md-nav__link">
+      <a href="../../CS/OS/Windows/CMD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2421,7 +2233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Windows/Powersehll/" class="md-nav__link">
+      <a href="../../CS/OS/Windows/Powersehll/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2496,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../VCS/Pre-commit/" class="md-nav__link">
+      <a href="../../CS/VCS/Pre-commit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2517,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../VCS/git/" class="md-nav__link">
+      <a href="../../CS/VCS/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2576,7 +2388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../VCS/github/SSH_keypair_setup_for_GitHub/" class="md-nav__link">
+      <a href="../../CS/VCS/github/SSH_keypair_setup_for_GitHub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2651,7 +2463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/git-install-instruction/" class="md-nav__link">
+      <a href="../../CS/tools/git-install-instruction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2710,7 +2522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/IDE/JetBrains/" class="md-nav__link">
+      <a href="../../CS/tools/IDE/JetBrains/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2731,7 +2543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/IDE/plugin/" class="md-nav__link">
+      <a href="../../CS/tools/IDE/plugin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2813,7 +2625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Admonitions/" class="md-nav__link">
+      <a href="../../Features/Admonitions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2834,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Diagrams/" class="md-nav__link">
+      <a href="../../Features/Diagrams/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2855,7 +2667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Draw/" class="md-nav__link">
+      <a href="../../Features/Draw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2876,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Icons%2C%20Emojis/" class="md-nav__link">
+      <a href="../../Features/Icons%2C%20Emojis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2897,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Image/" class="md-nav__link">
+      <a href="../../Features/Image/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2918,7 +2730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/LaTeX%20Math%20Support/" class="md-nav__link">
+      <a href="../../Features/LaTeX%20Math%20Support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2939,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Table/" class="md-nav__link">
+      <a href="../../Features/Table/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2960,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/Text%20Formatting/" class="md-nav__link">
+      <a href="../../Features/Text%20Formatting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2981,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/code/" class="md-nav__link">
+      <a href="../../Features/code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3002,7 +2814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Features/footntoes/" class="md-nav__link">
+      <a href="../../Features/footntoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3068,7 +2880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Learning/Reading%20list/" class="md-nav__link">
+      <a href="../../Learning/Reading%20list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3210,7 +3022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Paper/journals/IET/Cover%20question/" class="md-nav__link">
+      <a href="../../Paper/journals/IET/Cover%20question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3231,7 +3043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Paper/journals/IET/ITE%20computer%20vision/" class="md-nav__link">
+      <a href="../../Paper/journals/IET/ITE%20computer%20vision/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3252,7 +3064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Paper/journals/IET/Main/" class="md-nav__link">
+      <a href="../../Paper/journals/IET/Main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3273,7 +3085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Paper/journals/IET/Submission/" class="md-nav__link">
+      <a href="../../Paper/journals/IET/Submission/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3314,23 +3126,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3341,7 +3158,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Reference
@@ -3355,7 +3172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Reference/Early%20access%20versions%20-%20Obsidian%20Help/" class="md-nav__link">
+      <a href="../Early%20access%20versions%20-%20Obsidian%20Help/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3376,7 +3193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Reference/How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux%201/" class="md-nav__link">
+      <a href="../How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux%201/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3394,10 +3211,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../Reference/How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -3406,6 +3232,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3418,7 +3245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Reference/System%20-%20A.J.Zeller/" class="md-nav__link">
+      <a href="../System%20-%20A.J.Zeller/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3459,155 +3286,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install System
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Install System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connection
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connection">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wsl_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#native-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Native Ubuntu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Initialization
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Initialization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-proxies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Proxies
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Set Proxies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wsl_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wsl
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#native-ubuntu_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Native Ubuntu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basic-web-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Web Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shell
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-envs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Envs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3621,7 +3299,7 @@
                   
 
   
-    <a href="https://github.com/Atticuszz/Spark/edit/main/docs/CS/OS/Ubuntu/configs.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Atticuszz/Spark/edit/main/docs/Reference/How to Monitor and Test the Health of SSD in Linux.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -3629,85 +3307,12 @@
   
 
 
-<h1 id="configs">Configs<a class="headerlink" href="#configs" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>ubuntu could be install via usb or wsl</p>
-</blockquote>
-<h2 id="install-system">Install System<a class="headerlink" href="#install-system" title="Permanent link">&para;</a></h2>
-<h3 id="usb">Usb<a class="headerlink" href="#usb" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>official tutorial<a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">Install Ubuntu desktop | Ubuntu</a></p>
-</li>
-<li>
-<p>download <code>ios file</code> <a href="https://ubuntu.com/download/desktop">Download Ubuntu Desktop | Download | Ubuntu</a></p>
-</li>
-<li>download <code>Flash OS images app</code><a href="https://etcher.balena.io/">balenaEtcher - Flash OS images to SD cards &amp; USB drives</a></li>
-<li>let device start by the <strong>flashed</strong> drivers</li>
-</ul>
-<h3 id="wsl">Wsl<a class="headerlink" href="#wsl" title="Permanent link">&para;</a></h3>
-<ul>
-<li>in Microsoft Store download <code>wsl</code> and <code>ubuntu 22</code></li>
-</ul>
-<h3 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link">&para;</a></h3>
-<p>connect by vscode or gateway,wsl mode or ssh</p>
-<h4 id="wsl_1">Wsl<a class="headerlink" href="#wsl_1" title="Permanent link">&para;</a></h4>
-<blockquote>
-<p>before connection</p>
-</blockquote>
-<p>remember to set default user as root for more power <a href="Learning/CS/OS/Ubuntu/wsl#set default user as root" id="78f4c8be942d31c12dcc7dc252188dc6">set root</a>
-<em>optional: if docker installed ,set default wsl distro as ubuntu 22 by <a href="Learning/CS/OS/Ubuntu/wsl#set default distro" id="78f4c8be942d31c12dcc7dc252188dc6">set default distro</a></em></p>
-<h4 id="native-ubuntu">Native Ubuntu<a class="headerlink" href="#native-ubuntu" title="Permanent link">&para;</a></h4>
-<p><em>upgrade power</em></p>
-<ol>
-<li>add into <code>sudo</code> group</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>yourusername
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># check it</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>groups<span class="w"> </span>yourusername
+<h1 id="how-to-monitor-and-test-the-health-of-ssd-in-linux">How to Monitor and Test the Health of SSD in Linux<a class="headerlink" href="#how-to-monitor-and-test-the-health-of-ssd-in-linux" title="Permanent link">&para;</a></h1>
+<p>Ideally, S.M.A.R.T. would allow anticipating <strong>predictable</strong> failures such as those caused by mechanical wearing or degradation of the disk surface, as well as <strong>unpredictable</strong> failures caused by an unexpected defect. Since drives usually don’t fail abruptly, S.M.A.R.T. gives an option for the operating system or the system administrator to identify soon-to-fail drives so they can be replaced before any data loss occurs.</p>
+<p>According to the study, 62% of the failed SSD showed <strong>at least</strong> one of the above symptoms. However, if you reverse that statement, that also means 38% of the studied SSDs failed <strong>without</strong> showing any of the above symptoms. The study did not mention though if the failed drives have exhibited any other S.M.A.R.T. reported failure or not. So this cannot be directly compared to the 36% failure-without-prior-notice mentioned for hard drives in the Google paper.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install smartmontools
 </span></code></pre></div>
-<ol>
-<li>avoid be asked input passwd call <code>sudo</code> every time</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>visudo
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># fine the line begin with %sudo and replace it</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>%sudo<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>NOPASSWD:<span class="w"> </span>ALL
-</span></code></pre></div>
-<p><a href="Learning/CS/OS/Ubuntu/net#install ssh" id="4bee4e6b6cb44527bfa6679790010379">ssh</a>
-connect by ssh ,enter password first time and try to connect by ssh-key</p>
-<h2 id="initialization">Initialization<a class="headerlink" href="#initialization" title="Permanent link">&para;</a></h2>
-<h3 id="set-proxies">Set Proxies<a class="headerlink" href="#set-proxies" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>before any download from web, set proxies first for too slow speed</p>
-</blockquote>
-<h4 id="wsl_2">Wsl<a class="headerlink" href="#wsl_2" title="Permanent link">&para;</a></h4>
-<p><a href="../wsl/#proxy" id="7b662866ee25c19d77a345cc40baf14c">proxy</a></p>
-<ol>
-<li>set shared proxies first!!</li>
-</ol>
-<h4 id="native-ubuntu_1">Native Ubuntu<a class="headerlink" href="#native-ubuntu_1" title="Permanent link">&para;</a></h4>
-<ol>
-<li>run clash itself by <a href="../net/#clash" id="67d2165d5d707115a2c9ef0037f0a614">clash</a></li>
-<li>or in the same subnet ,share your clash proxy by open allow lan</li>
-</ol>
-<h3 id="basic-web-tools">Basic Web Tools<a class="headerlink" href="#basic-web-tools" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>net-tools
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>unzip
-</span></code></pre></div>
-<h3 id="shell">Shell<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h3>
-<ol>
-<li>install <code>zsh</code> for friendly development experience <a href="Learning/CS/OS/Ubuntu/shell#install zsh" id="25c62703a40697b32aa03a127b8411d6">zsh</a></li>
-<li>set auto read envs <a href="Learning/CS/OS/Ubuntu/shell#auto read envs" id="25c62703a40697b32aa03a127b8411d6">auto read env</a></li>
-</ol>
-<h3 id="code-envs">Code Envs<a class="headerlink" href="#code-envs" title="Permanent link">&para;</a></h3>
-<p><a href="../code_env/" id="64de74cca69c266d3175f1c83d239c28">code_env</a></p>
-<ul>
-<li>python, conda ,pip, poetry ,cmake…</li>
-</ul>
+<p>As you can see, my laptop internal hard drive indeed has S.M.A.R.T. capabilities, and S.M.A.R.T. support is enabled. So, what now about the S.MA.R.T. status? Are there some errors recorded?</p>
 
 
 
@@ -3730,7 +3335,7 @@ connect by ssh ,enter password first time and try to connect by ssh-key</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2024-09-22 08:07:11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2024-10-16 13:47:56</span>
   </span>
 
     
@@ -3740,7 +3345,7 @@ connect by ssh ,enter password first time and try to connect by ssh-key</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2024-09-13 10:07:20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2024-10-16 13:47:56</span>
   </span>
 
     
@@ -3775,7 +3380,7 @@ connect by ssh ,enter password first time and try to connect by ssh-key</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../code_env/" class="md-footer__link md-footer__link--prev" aria-label="Previous: code_env">
+          <a href="../How%20to%20Monitor%20and%20Test%20the%20Health%20of%20SSD%20in%20Linux%201/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to Monitor and Test the Health of SSD in Linux">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3785,20 +3390,20 @@ connect by ssh ,enter password first time and try to connect by ssh-key</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                code_env
+                How to Monitor and Test the Health of SSD in Linux
               </div>
             </div>
           </a>
         
         
           
-          <a href="../net/" class="md-footer__link md-footer__link--next" aria-label="Next: Net">
+          <a href="../System%20-%20A.J.Zeller/" class="md-footer__link md-footer__link--next" aria-label="Next: System - A.J.Zeller">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Net
+                System - A.J.Zeller
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3872,12 +3477,12 @@ connect by ssh ,enter password first time and try to connect by ssh-key</p>
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.action.edit", "content.footnote.tooltips", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.footer", "navigation.top", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.action.edit", "content.footnote.tooltips", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.footer", "navigation.top", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../../js/katex.js"></script>
+        <script src="../../js/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
