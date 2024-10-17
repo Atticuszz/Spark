@@ -77,7 +77,7 @@ So, we create `02-github.repo` locally and put into our `url`
 
 ```bash
 sudo touch /etc/deb-get/02-github.repo
-echo "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main" | sudo tee /etc/deb-get/02-github.repo
+sudo curl -s "https://raw.githubusercontent.com/Atticuszz/deb-get-index/main/02-github/manifest" | sudo tee /etc/deb-get/02-github.repo > /dev/null
 ```
 
 Finally, update local index

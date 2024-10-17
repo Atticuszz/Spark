@@ -9,9 +9,12 @@ description: "Systems want to grow and grow, but without pruning, they collapse.
 tags:
   - "blog"
 ---
+
+# What Can We Remove
+
 Our bias is to always add more. More rules, more process, more code, more features, more stuff. Interdependencies proliferate, and gradually strangle us. Systems want to grow and grow, but without pruning, they collapse. Slowly, then spectacularly.
 
-When a piece of trash drifts across the beach, it is our duty to pick it up so the next person can enjoy a pristine shoreline. When a thousand pieces litter the beach, it is too late. We can only lament the landscape. *That’s just how beaches are now*.
+When a piece of trash drifts across the beach, it is our duty to pick it up so the next person can enjoy a pristine shoreline. When a thousand pieces litter the beach, it is too late. We can only lament the landscape. _That’s just how beaches are now_.
 
 A good system is designed to be periodically cleared of cruft. It has a built-in counterbalance. Without this pressure, our bias drives us to add band-aid after band-aid, until the only choice is to destroy the whole system and start from scratch.
 
