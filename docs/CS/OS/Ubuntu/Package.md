@@ -136,3 +136,7 @@ cd unsnap
 ```bash
 flatpak install flathub io.github.flattool.Warehouse
 ```
+
+
+> [!Bug]  BUGs 
+>  1. use `flatpak-spawn --host --env=TERM=xterm-256color zsh` as shell path in `pycharm`  [Can't use zsh in terminal · Issue #23 · flathub/com.jetbrains.IntelliJ-IDEA-Ultimate · GitHub](https://github.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/issues/23)
