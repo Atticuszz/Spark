@@ -6,22 +6,15 @@ Poetry is a dependency management and packaging tool in Python. It allows you to
 
 Reference Documentation: [Poetry Official Documentation](https://python-poetry.org/docs/)
 
-Install Poetry with the following PowerShell command:
-
-```powershell
-
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
-
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 ### Setting Environment Variables
 
-Ensure that the `poetry.exe` file is located in `C:\Users\18317\AppData\Local\Programs\Python\Python311\Scripts` and add this path to the environment variable:
-
-```powershell
-
-$Env:Path += ";C:\Users\35238\AppData\Roaming\Python\Scripts"; setx PATH "$Env:Path"
-
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 ## Poetry Commands
