@@ -108,7 +108,7 @@ sudo chmod +x ./scripts/ocr_clipboard.sh
 [scripts/ocr\_clipboard.sh at main · Atticuszz/scripts · GitHub](https://github.com/Atticuszz/scripts/blob/main/ocr_clipboard.sh)
 `setting->keyboard->shortcuts`
 - command :`~/DevSpace/ocr_clipboard.sh`
-- shortcuts : `ctrl+shift+Q`
+- shortcuts : `ctrl+win+Q`
 
 ### Gpu Monito
 
